@@ -67,7 +67,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  border-radius: 999px;
+  border-radius: 4px;
   padding: 10px 24px;
   font-size: 0.84rem;
   font-weight: 700;
@@ -177,7 +177,7 @@
   width: min(1200px, 100%);
   margin: 0 22px;
   padding: 18px 24px;
-  border-radius: 10px;
+  border-radius: 4px;
   background: #ffffff;
   box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
   display: grid;
@@ -201,7 +201,7 @@
   flex: 0 0 auto;
   width: 56px;
   height: 56px;
-  border-radius: 999px;
+  border-radius: 4px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -302,7 +302,7 @@
   width: 100%;
   appearance: none;
   border: 1px solid #d1d5db;
-  border-radius: 8px;
+  border-radius: 4px;
   background: #ffffff;
   color: #0c6650;
   font-size: 13px;
@@ -358,7 +358,7 @@
 .home-analytics-empty {
   margin-top: 18px;
   border: 1px dashed #d1d5db;
-  border-radius: 12px;
+  border-radius: 4px;
   background: #ffffff;
   text-align: center;
   padding: 26px 18px;
@@ -388,7 +388,7 @@
 .home-analytics-loading {
   margin-top: 18px;
   border: 1px solid rgba(12, 102, 80, 0.16);
-  border-radius: 12px;
+  border-radius: 4px;
   padding: 18px;
   text-align: center;
   color: #0C6650;
@@ -417,7 +417,7 @@
 .home-analytics-card {
   background: #ffffff;
   border: 2px solid rgba(12, 102, 80, 0.2);
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 16px;
 }
 
@@ -444,7 +444,7 @@
   flex: 0 0 auto;
   width: 46px;
   height: 46px;
-  border-radius: 999px;
+  border-radius: 4px;
   background: rgba(12, 102, 80, 0.1);
   display: inline-flex;
   align-items: center;
@@ -495,7 +495,7 @@
   margin-top: 16px;
   background: #ffffff;
   border: 2px solid rgba(12, 102, 80, 0.2);
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 16px;
 }
 
@@ -588,7 +588,7 @@
   align-items: center;
   gap: 14px;
   padding: 18px;
-  border-radius: 12px;
+  border-radius: 4px;
   background: #ffffff;
   border: 1px solid rgba(12, 102, 80, 0.12);
   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
@@ -599,7 +599,7 @@
   flex: 0 0 auto;
   width: 44px;
   height: 44px;
-  border-radius: 999px;
+  border-radius: 4px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -635,3 +635,4 @@
     grid-template-columns: 1fr;
   }
 }
+
