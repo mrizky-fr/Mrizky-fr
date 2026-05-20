@@ -260,13 +260,11 @@
   display: flex;
   justify-content: center;
   padding: 76px 0 64px;
-  background:
-    radial-gradient(circle at top left, rgba(229, 220, 107, 0.18), transparent 34%),
-    linear-gradient(180deg, #ffffff 0%, #f8faf9 100%);
+  background: #ffffff;
 }
 
 .home-company-shell {
-  width: min(980px, 100%);
+  width: min(1200px, 100%);
   margin: 0 22px;
   text-align: center;
 }
@@ -294,7 +292,7 @@
 
 .home-company-description {
   margin: 18px auto 0;
-  max-width: 860px;
+  max-width: 1080px;
   color: #365166;
   font-size: clamp(0.95rem, 1.4vw, 1.05rem);
   line-height: 1.85;

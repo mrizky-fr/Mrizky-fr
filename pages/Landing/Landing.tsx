@@ -87,9 +87,7 @@ const Landing: React.FC = () => {
                         target.style.animationDelay = revealDelay ? `${revealDelay}ms` : '0ms';
                         target.classList.add('animate-fade-in-up');
                         target.classList.remove('opacity-0');
-                    } else {
-                        target.classList.remove('animate-fade-in-up');
-                        target.classList.add('opacity-0');
+                        observer.unobserve(target);
                     }
                 });
             },
@@ -225,19 +223,28 @@ const Landing: React.FC = () => {
                         <p>
                             Bio Energy Semesta Tama merupakan perusahaan yang berdedikasi menghadirkan solusi energi terbarukan
                             berkualitas melalui produksi wood pellet. Dengan fokus pada energi biomassa, kami berkomitmen menyediakan
-                            produk yang efisien, stabil, dan sesuai kebutuhan pelanggan di berbagai sektor industri.
+                            produk yang efisien, stabil, dan sesuai kebutuhan pelanggan di berbagai sektor industri. Kami juga
+                            menempatkan konsistensi mutu sebagai prioritas utama agar setiap pengiriman wood pellet mampu
+                            memberikan performa pembakaran yang optimal, aman digunakan, dan relevan untuk kebutuhan operasional
+                            industri skala kecil hingga besar secara berkelanjutan.
                         </p>
 
                         <p>
                             Didukung oleh proses produksi yang terkontrol, pemilihan bahan baku yang tepat, serta komitmen terhadap
                             kualitas, wood pellet dari Bio Energy Semesta Tama dirancang untuk menjadi pilihan energi alternatif yang
                             dapat diandalkan bagi kebutuhan boiler, pemanas, pembangkit biomassa, maupun proses produksi industri.
+                            Setiap tahapan, mulai dari seleksi material, pengeringan, pemadatan, hingga pengujian akhir, dilakukan
+                            dengan standar kerja yang disiplin untuk menjaga kadar air, densitas, dan nilai kalor tetap konsisten
+                            sehingga pelanggan memperoleh produk dengan kualitas yang dapat diprediksi pada setiap batch produksi.
                         </p>
 
                         <p>
                             Dengan kualitas unggul, kepedulian terhadap lingkungan, dan layanan kerja sama yang profesional,
                             Bio Energy Semesta Tama siap menjadi mitra terpercaya dalam penyediaan wood pellet di Indonesia serta
-                            mendukung terciptanya masa depan energi yang lebih hijau dan berkelanjutan.
+                            mendukung terciptanya masa depan energi yang lebih hijau dan berkelanjutan. Kami percaya kemitraan yang
+                            baik tidak hanya berfokus pada pasokan produk, tetapi juga pada kecepatan respons, kejelasan komunikasi,
+                            serta kemampuan menyesuaikan layanan terhadap kebutuhan spesifik setiap pelanggan agar kerja sama jangka
+                            panjang dapat berjalan lebih efektif, efisien, dan saling menguntungkan.
                         </p>
                     </div>
 
