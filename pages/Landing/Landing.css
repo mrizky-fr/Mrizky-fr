@@ -9,8 +9,8 @@
 
 .home-hero {
   width: 100%;
-  height: 450px;
-  min-height: 450px;
+  height: 563px;
+  min-height: 563px;
   display: grid;
   grid-template-columns: 3fr 2fr;
   align-items: center;
@@ -81,12 +81,12 @@
 .home-hero__button--primary {
   border: 1px solid #ffffff;
   background: #ffffff;
-  color: #214132; /* Laziznu green */
+  color: #214132;
 }
 
 .home-hero__button--primary:hover {
   border-color: #ffffff;
-  background: #E5DC6B; /* Light green */
+  background: #E5DC6B;
 }
 
 .home-hero__button--secondary {
@@ -108,8 +108,8 @@
 @media (max-width: 900px) {
   .home-hero {
     grid-template-columns: 1fr;
-    height: 450px;
-    min-height: 450px;
+    height: 563px;
+    min-height: 563px;
     padding: 36px 22px;
     background-position: 62% center;
   }
@@ -129,8 +129,8 @@
 
 @media (max-width: 640px) {
   .home-hero {
-    height: 450px;
-    min-height: 450px;
+    height: 563px;
+    min-height: 563px;
     align-items: center;
     padding: 28px 22px;
     background-image:
@@ -586,8 +586,8 @@
 .home-inquiry-card {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 18px;
+  gap: 18px;
+  padding: 18px 24px;
   border-radius: 4px;
   background: #ffffff;
   border: 1px solid rgba(12, 102, 80, 0.12);
@@ -597,8 +597,8 @@
 
 .home-inquiry-card__icon {
   flex: 0 0 auto;
-  width: 44px;
-  height: 44px;
+  width: 56px;
+  height: 56px;
   border-radius: 4px;
   display: inline-flex;
   align-items: center;
@@ -609,21 +609,22 @@
 
 .home-inquiry-card__copy {
   min-width: 0;
+  padding-top: 4px;
 }
 
 .home-inquiry-card__title {
   margin: 0;
   color: #1f2937;
   font-size: 1rem;
-  line-height: 1.35;
+  line-height: 1.3;
   font-weight: 600;
 }
 
 .home-inquiry-card__description {
-  margin: 2px 0 0;
+  margin: 4px 0 0;
   color: #4b5563;
   font-size: 0.92rem;
-  line-height: 1.6;
+  line-height: 1.3;
 }
 
 @media (max-width: 900px) {
@@ -635,7 +636,3 @@
     grid-template-columns: 1fr;
   }
 }
-
-
-
-

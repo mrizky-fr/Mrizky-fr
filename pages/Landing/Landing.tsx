@@ -1,10 +1,14 @@
 import React, { useEffect } from 'react';
 import {
     CircleHelp,
+    Factory,
+    Flame,
+    Leaf,
+    PackageCheck,
     ScanEye,
     ShieldCheck,
-    Smartphone,
     Target,
+    Truck,
     Users,
 } from 'lucide-react';
 import PublicHeader from '../../components/Header/PublicHeader';
@@ -19,27 +23,27 @@ type FaqItem = {
 
 const FAQ_ITEMS: FaqItem[] = [
     {
-        question: 'Apa itu Bio Energy Semesta Tama?',
+        question: 'Apa itu wood pellet?',
         answer:
-            'Bio Energy Semesta Tama adalah perusahaan yang berfokus membangun layanan profesional, kolaborasi jangka panjang, dan pertumbuhan bisnis yang berkelanjutan.',
+            'Wood pellet adalah bahan bakar biomassa berbentuk pelet padat yang dibuat dari limbah kayu atau serbuk kayu terkompresi dan digunakan sebagai sumber energi alternatif yang lebih ramah lingkungan.',
         icon: CircleHelp,
     },
     {
-        question: 'Layanan apa yang tersedia?',
+        question: 'Untuk kebutuhan apa wood pellet digunakan?',
         answer:
-            'Kami menyediakan layanan yang dapat disesuaikan dengan kebutuhan klien, mulai dari konsultasi, pengembangan solusi, hingga dukungan implementasi.',
-        icon: Target,
+            'Wood pellet dapat digunakan untuk kebutuhan energi industri, pemanas, boiler, pembangkit listrik biomassa, hingga berbagai proses produksi yang membutuhkan bahan bakar efisien dan stabil.',
+        icon: Flame,
     },
     {
-        question: 'Bagaimana standar kualitas kerja perusahaan?',
+        question: 'Bagaimana standar kualitas wood pellet yang diproduksi?',
         answer:
-            'Setiap proses kerja dijalankan secara terstruktur, transparan, dan terukur untuk memastikan hasil yang konsisten serta berdampak nyata.',
+            'Kualitas wood pellet dijaga melalui pemilihan bahan baku, proses pengeringan, pemadatan, serta kontrol mutu agar menghasilkan produk dengan kadar air rendah, pembakaran stabil, dan performa energi yang konsisten.',
         icon: ScanEye,
     },
     {
-        question: 'Siapa yang dapat bekerja sama dengan kami?',
+        question: 'Apakah Bio Energy Semesta Tama melayani kerja sama jangka panjang?',
         answer:
-            'Perusahaan, institusi, maupun komunitas yang membutuhkan mitra profesional dapat berkolaborasi bersama Bio Energy Semesta Tama.',
+            'Ya, kami terbuka untuk kerja sama pasokan wood pellet secara berkelanjutan dengan perusahaan, industri, distributor, maupun mitra bisnis yang membutuhkan sumber energi biomassa terpercaya.',
         icon: Users,
     },
 ];
@@ -78,11 +82,11 @@ const Landing: React.FC = () => {
                         <h1 className="home-hero__title scroll-reveal opacity-0" style={{ animationDelay: '100ms' }}>
                             Bio Energy Semesta Tama
                             <br />
-                            Professional Business Partner
+                            Mitra Energi Biomassa Terpercaya untuk Industri Berkelanjutan
                         </h1>
                         <p className="home-hero__description scroll-reveal opacity-0" style={{ animationDelay: '200ms' }}>
-                            Kami hadir sebagai mitra bisnis yang adaptif, terpercaya, dan berorientasi pada kualitas untuk
-                            mendukung pertumbuhan perusahaan Anda di berbagai sektor.
+                            Kami menghadirkan solusi energi biomassa berkualitas melalui produksi wood pellet yang efisien,
+                            konsisten, dan berstandar industri untuk mendukung kebutuhan energi ramah lingkungan di berbagai sektor usaha.
                         </p>
                         <div className="home-hero__actions scroll-reveal opacity-0" style={{ animationDelay: '300ms' }}>
                             <a href="#about" className="home-hero__button home-hero__button--primary">
@@ -101,34 +105,34 @@ const Landing: React.FC = () => {
                 <div className="home-benefits-strip">
                     <div className="home-benefit-item">
                         <div className="home-benefit-icon">
-                            <ShieldCheck size={28} strokeWidth={1.5} aria-hidden="true" />
+                            <Leaf size={28} strokeWidth={1.5} aria-hidden="true" />
                         </div>
                         <div className="home-benefit-copy">
-                            <h3 className="home-benefit-title">Integritas Profesional</h3>
+                            <h3 className="home-benefit-title">Energi Ramah Lingkungan</h3>
                             <p className="home-benefit-description">
-                                Setiap kerja sama dijalankan dengan komitmen, keterbukaan, dan tanggung jawab tinggi.
+                                Wood pellet menjadi solusi energi biomassa yang mendukung efisiensi bahan bakar dan pengurangan ketergantungan pada energi fosil.
                             </p>
                         </div>
                     </div>
                     <div className="home-benefit-item">
                         <div className="home-benefit-icon">
-                            <Smartphone size={28} strokeWidth={1.5} aria-hidden="true" />
+                            <Factory size={28} strokeWidth={1.5} aria-hidden="true" />
                         </div>
                         <div className="home-benefit-copy">
-                            <h3 className="home-benefit-title">Solusi Adaptif</h3>
+                            <h3 className="home-benefit-title">Produksi Terstandar</h3>
                             <p className="home-benefit-description">
-                                Pendekatan kerja yang fleksibel dan relevan untuk kebutuhan bisnis yang terus berkembang.
+                                Proses produksi dilakukan secara terkontrol untuk menjaga kualitas, kepadatan, kadar air, dan performa pembakaran wood pellet.
                             </p>
                         </div>
                     </div>
                     <div className="home-benefit-item">
                         <div className="home-benefit-icon">
-                            <Target size={28} strokeWidth={1.5} aria-hidden="true" />
+                            <Truck size={28} strokeWidth={1.5} aria-hidden="true" />
                         </div>
                         <div className="home-benefit-copy">
-                            <h3 className="home-benefit-title">Berorientasi Hasil</h3>
+                            <h3 className="home-benefit-title">Pasokan Berkelanjutan</h3>
                             <p className="home-benefit-description">
-                                Fokus pada hasil yang terukur untuk mendukung pertumbuhan jangka panjang mitra kami.
+                                Kami mendukung kebutuhan industri dengan pasokan wood pellet yang konsisten, terencana, dan siap untuk kerja sama jangka panjang.
                             </p>
                         </div>
                     </div>
@@ -137,15 +141,17 @@ const Landing: React.FC = () => {
 
             <section id="faq" className="home-inquiry-section scroll-reveal opacity-0" aria-label="Pertanyaan Umum Bio Energy Semesta Tama">
                 <div className="home-inquiry-shell">
-                    <h2 className="home-inquiry-title">Pertanyaan Umum Tentang Bio Energy Semesta Tama</h2>
-                    <p className="home-inquiry-description">Informasi singkat mengenai perusahaan dan layanan kami.</p>
+                    <h2 className="home-inquiry-title">Pertanyaan Umum Tentang Wood Pellet</h2>
+                    <p className="home-inquiry-description">
+                        Informasi singkat mengenai produk wood pellet, kualitas produksi, dan peluang kerja sama bersama Bio Energy Semesta Tama.
+                    </p>
                     <div className="home-inquiry-grid">
                         {FAQ_ITEMS.map((item) => {
                             const Icon = item.icon;
                             return (
                                 <article key={item.question} className="home-inquiry-card">
                                     <div className="home-inquiry-card__icon" aria-hidden="true">
-                                        <Icon size={22} />
+                                        <Icon size={28} strokeWidth={1.5} />
                                     </div>
                                     <div className="home-inquiry-card__copy">
                                         <h3 className="home-inquiry-card__title">{item.question}</h3>
