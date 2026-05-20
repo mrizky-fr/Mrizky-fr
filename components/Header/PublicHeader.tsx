@@ -5,26 +5,39 @@ import './PublicHeader.css';
 
 type HeaderMenuItem = {
   label: string;
-  to?: string;
+  href?: string;
   onClick?: () => void;
 };
 
 const PublicHeader: React.FC = () => {
-  const [activeHash, setActiveHash] = useState<string>(window.location.hash || '#home');
+  const [locationState, setLocationState] = useState({
+    pathname: window.location.pathname || '/',
+    hash: window.location.hash || '',
+  });
 
   const headerMenuItems: HeaderMenuItem[] = [
-    { label: 'Home', to: '#home' },
-    { label: 'Tentang', to: '#about' },
-    { label: 'Faq', to: '#faq' },
+    { label: 'Home', href: '/#home' },
+    { label: 'About', href: '/about' },
+    { label: 'Faq', href: '/#faq' },
   ];
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [headerHeight, setHeaderHeight] = useState(0);
   const headerInnerRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
-    const updateHash = () => setActiveHash(window.location.hash || '#home');
-    window.addEventListener('hashchange', updateHash);
-    return () => window.removeEventListener('hashchange', updateHash);
+    const updateLocation = () =>
+      setLocationState({
+        pathname: window.location.pathname || '/',
+        hash: window.location.hash || '',
+      });
+
+    window.addEventListener('hashchange', updateLocation);
+    window.addEventListener('popstate', updateLocation);
+
+    return () => {
+      window.removeEventListener('hashchange', updateLocation);
+      window.removeEventListener('popstate', updateLocation);
+    };
   }, []);
 
   useEffect(() => {
@@ -63,10 +76,25 @@ const PublicHeader: React.FC = () => {
   }, [isDrawerOpen]);
 
   const isActiveMenu = (item: HeaderMenuItem) => {
-    if (!item.to) {
+    if (!item.href) {
       return false;
     }
-    return activeHash === item.to;
+
+    const { pathname, hash } = locationState;
+
+    if (item.href === '/about') {
+      return pathname === '/about';
+    }
+
+    if (item.href === '/#faq') {
+      return pathname === '/' && hash === '#faq';
+    }
+
+    if (item.href === '/#home') {
+      return pathname === '/' && (hash === '' || hash === '#home');
+    }
+
+    return false;
   };
 
   const closeDrawer = () => setIsDrawerOpen(false);
@@ -77,7 +105,7 @@ const PublicHeader: React.FC = () => {
       <div className="hero-header">
         <header ref={headerInnerRef} className="main-header">
           <div className="main-header__inner">
-            <a className="header-logo" href="#home" aria-label="Bio Energy Semesta Tama logo">
+            <a className="header-logo" href="/" aria-label="Bio Energy Semesta Tama logo">
               <img
                 src={logoNucare}
                 alt="Bio Energy Semesta Tama"
@@ -86,10 +114,10 @@ const PublicHeader: React.FC = () => {
 
             <nav className="header-menu" aria-label="Main navigation">
               {headerMenuItems.map((item) => (
-                item.to ? (
+                item.href ? (
                   <a
                     key={item.label}
-                    href={item.to}
+                    href={item.href}
                     className={`header-menu__link${isActiveMenu(item) ? ' is-active' : ''}`}
                   >
                     {item.label}
@@ -147,7 +175,7 @@ const PublicHeader: React.FC = () => {
 
           <aside className="header-drawer__content" aria-label="Mobile navigation">
             <div className="header-drawer__head">
-              <a className="header-logo" href="#home" aria-label="Bio Energy Semesta Tama logo">
+              <a className="header-logo" href="/" aria-label="Bio Energy Semesta Tama logo">
                 <img
                   src={logoNucare}
                   alt="Bio Energy Semesta Tama"
@@ -165,10 +193,10 @@ const PublicHeader: React.FC = () => {
 
             <nav className="header-drawer__menu" aria-label="Mobile main navigation">
               {headerMenuItems.map((item) => (
-                item.to ? (
+                item.href ? (
                   <a
                     key={`drawer-${item.label}`}
-                    href={item.to}
+                    href={item.href}
                     className={`header-drawer__link${isActiveMenu(item) ? ' is-active' : ''}`}
                     onClick={closeDrawer}
                   >
