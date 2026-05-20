@@ -122,7 +122,7 @@ const PublicHeader: React.FC = () => {
                   className="header-cta header-cta--primary"
                 >
                   <Headset size={18} aria-hidden="true" />
-                  Pusat Bantuan!
+                  <span>Pusat Bantuan!</span>
                 </button>
               </div>
               <button
@@ -208,7 +208,7 @@ const PublicHeader: React.FC = () => {
                 }}
               >
                 <Headset size={18} aria-hidden="true" />
-                Pusat Bantuan!
+                <span>Pusat Bantuan!</span>
               </button>
             </div>
           </aside>

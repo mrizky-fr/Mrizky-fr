@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import PublicHeader from '../../components/Header/PublicHeader';
 import PublicFooter from '../../components/Footer/PublicFooter';
+import logoNucare from '../../assets/logo nucare.png';
 import './Landing.css';
 
 type FaqItem = {
@@ -210,7 +211,7 @@ const Landing: React.FC = () => {
                 <div className="home-company-shell">
                     <div className="home-company-logo-wrap scroll-reveal opacity-0" data-reveal-delay="100">
                         <img
-                            src="/logo.png"
+                            src={logoNucare}
                             alt="Bio Energy Semesta Tama"
                             className="home-company-logo"
                         />
