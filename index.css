@@ -31,10 +31,10 @@ select,
 
 /* Custom theme - Tailwind v4 style */
 @theme {
-  --color-primary: #0C6650;
-  --color-primary-dark: #0A5744;
-  --color-primary-darker: #094D3C;
-  --color-accent: #9cd847;
+  --color-primary: #214132;
+  --color-primary-dark: #1B362A;
+  --color-primary-darker: #162C22;
+  --color-accent: #E5DC6B;
   --radius-xs: 4px;
   --radius-sm: 4px;
   --radius-md: 4px;
@@ -80,11 +80,11 @@ select,
 }
 
 .app-field {
-  @apply rounded border border-neutral-300/50 bg-white px-3 py-2 text-[13px] text-gray-700 transition-all duration-200 placeholder:text-gray-400 focus:border-[#0C6650] focus:outline-none focus:ring-2 focus:ring-[#0C6650]/20;
+  @apply rounded border border-neutral-300/50 bg-white px-3 py-2 text-[13px] text-gray-700 transition-all duration-200 placeholder:text-gray-400 focus:border-[#214132] focus:outline-none focus:ring-2 focus:ring-[#214132]/20;
 }
 
 .app-btn-primary {
-  @apply inline-flex items-center justify-center gap-2 rounded bg-gradient-to-r from-[#0C6650] to-[#0C6650] px-3 py-2 text-[13px] font-medium text-white transition-opacity hover:opacity-90;
+  @apply inline-flex items-center justify-center gap-2 rounded bg-gradient-to-r from-[#214132] to-[#214132] px-3 py-2 text-[13px] font-medium text-white transition-opacity hover:opacity-90;
 }
 
 .app-btn-secondary {
@@ -92,7 +92,7 @@ select,
 }
 
 .app-btn-outline-hover-primary {
-  @apply inline-flex items-center justify-center gap-2 rounded border border-gray-300 bg-white px-3 py-2 text-[13px] font-medium text-gray-700 transition-all hover:border-transparent hover:bg-gradient-to-r hover:from-[#0C6650] hover:to-[#0C6650] hover:text-white;
+  @apply inline-flex items-center justify-center gap-2 rounded border border-gray-300 bg-white px-3 py-2 text-[13px] font-medium text-gray-700 transition-all hover:border-transparent hover:bg-gradient-to-r hover:from-[#214132] hover:to-[#214132] hover:text-white;
 }
 
 .app-btn-danger {
@@ -197,3 +197,4 @@ select,
 .overflow-x-auto > table td {
   white-space: nowrap;
 }
+

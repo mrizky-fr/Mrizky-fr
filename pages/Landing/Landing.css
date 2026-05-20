@@ -81,12 +81,12 @@
 .home-hero__button--primary {
   border: 1px solid #ffffff;
   background: #ffffff;
-  color: #0C6650; /* Laziznu green */
+  color: #214132; /* Laziznu green */
 }
 
 .home-hero__button--primary:hover {
   border-color: #ffffff;
-  background: #e6f6eb; /* Light green */
+  background: #E5DC6B; /* Light green */
 }
 
 .home-hero__button--secondary {
@@ -205,8 +205,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #e6f6eb;
-  color: #0C6650;
+  background: #E5DC6B;
+  color: #214132;
 }
 
 .home-benefit-copy {
@@ -261,7 +261,7 @@
 
 .home-analytics-title {
   margin: 0;
-  color: #0C6650;
+  color: #214132;
   font-size: clamp(1.25rem, 2.3vw, 1.78rem);
   line-height: 1.35;
   font-weight: 600;
@@ -304,7 +304,7 @@
   border: 1px solid #d1d5db;
   border-radius: 4px;
   background: #ffffff;
-  color: #0c6650;
+  color: #214132;
   font-size: 13px;
   font-weight: 500;
   line-height: 1;
@@ -323,7 +323,7 @@
 
 .home-analytics-filter-select:focus {
   outline: none;
-  border-color: #0C6650;
+  border-color: #214132;
   box-shadow: 0 0 0 2px rgba(12, 102, 80, 0.12);
 }
 
@@ -339,7 +339,7 @@
   left: 10px;
   width: 14px;
   height: 14px;
-  color: #0C6650;
+  color: #214132;
   transform: translateY(-50%);
   pointer-events: none;
 }
@@ -350,7 +350,7 @@
   right: 10px;
   width: 14px;
   height: 14px;
-  color: #0C6650;
+  color: #214132;
   transform: translateY(-50%);
   pointer-events: none;
 }
@@ -391,7 +391,7 @@
   border-radius: 4px;
   padding: 18px;
   text-align: center;
-  color: #0C6650;
+  color: #214132;
   background: #f8fcf9;
   font-size: 0.92rem;
   font-weight: 600;
@@ -454,7 +454,7 @@
 .home-analytics-card__icon {
   width: 22px;
   height: 22px;
-  color: #0C6650;
+  color: #214132;
 }
 
 .home-analytics-card__value {
@@ -484,7 +484,7 @@
 }
 
 .home-analytics-card__trend--up {
-  color: #0C6650;
+  color: #214132;
 }
 
 .home-analytics-card__trend--down {
@@ -562,7 +562,7 @@
 
 .home-inquiry-title {
   margin: 0;
-  color: #0C6650;
+  color: #214132;
   font-size: clamp(1.2rem, 2.3vw, 1.72rem);
   line-height: 1.35;
   font-weight: 600;
@@ -603,8 +603,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #e6f6eb;
-  color: #0C6650;
+  background: #E5DC6B;
+  color: #214132;
 }
 
 .home-inquiry-card__copy {
@@ -635,5 +635,7 @@
     grid-template-columns: 1fr;
   }
 }
+
+
 
 
