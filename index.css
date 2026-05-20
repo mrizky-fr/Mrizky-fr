@@ -1,0 +1,199 @@
+@import "tailwindcss";
+
+/* Global font family - SN Pro */
+html,
+body {
+  font-family: 'SN Pro', sans-serif;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  font-family: inherit;
+}
+
+/* Global cursor pointer for interactive elements */
+button,
+[type="button"],
+[type="submit"],
+[type="reset"],
+select,
+[role="button"] {
+  cursor: pointer;
+}
+
+/* Custom theme - Tailwind v4 style */
+@theme {
+  --color-primary: #0C6650;
+  --color-primary-dark: #0A5744;
+  --color-primary-darker: #094D3C;
+  --color-accent: #9cd847;
+  --radius-xs: 8px;
+  --radius-sm: 8px;
+  --radius-md: 8px;
+  --radius-lg: 8px;
+  --radius-xl: 8px;
+  --radius-2xl: 8px;
+  --radius-3xl: 8px;
+  --radius-4xl: 8px;
+}
+
+/* Custom animation classes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease forwards;
+  opacity: 0;
+}
+
+.app-section-card {
+  @apply overflow-hidden rounded border border-gray-200 bg-white shadow-sm;
+}
+
+.app-section-body {
+  @apply px-5 py-4 sm:px-6;
+}
+
+.app-title-text {
+  @apply text-sm leading-5;
+}
+
+.app-description-text {
+  @apply text-[10px] leading-[14px] text-gray-600 md:text-[13px] md:leading-[18px];
+}
+
+.app-field {
+  @apply rounded border border-neutral-300/50 bg-white px-3 py-2 text-[13px] text-gray-700 transition-all duration-200 placeholder:text-gray-400 focus:border-[#0C6650] focus:outline-none focus:ring-2 focus:ring-[#0C6650]/20;
+}
+
+.app-btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded bg-gradient-to-r from-[#0C6650] to-[#0C6650] px-3 py-2 text-[13px] font-medium text-white transition-opacity hover:opacity-90;
+}
+
+.app-btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded border border-gray-300 bg-white px-3 py-2 text-[13px] font-medium text-gray-700 transition-colors hover:bg-gray-50;
+}
+
+.app-btn-outline-hover-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded border border-gray-300 bg-white px-3 py-2 text-[13px] font-medium text-gray-700 transition-all hover:border-transparent hover:bg-gradient-to-r hover:from-[#0C6650] hover:to-[#0C6650] hover:text-white;
+}
+
+.app-btn-danger {
+  @apply inline-flex items-center justify-center gap-2 rounded bg-red-500 px-3 py-2 text-[13px] font-medium text-white transition-colors hover:bg-red-600;
+}
+
+.app-btn-success {
+  @apply inline-flex items-center justify-center gap-2 rounded bg-green-600 px-3 py-2 text-[13px] font-medium text-white transition-colors hover:bg-green-700;
+}
+
+.app-btn-outline-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded border border-primary bg-white px-3 py-2 text-[13px] font-medium text-primary transition-colors hover:bg-primary/5;
+}
+
+.app-modal-actions {
+  @apply flex flex-col gap-2 sm:flex-row sm:justify-end;
+}
+
+.app-modal-action-btn {
+  @apply w-full sm:w-auto sm:min-w-[120px];
+}
+
+.app-tab-button {
+  @apply rounded border px-3 py-1.5 text-[13px] font-medium transition-colors;
+}
+
+.app-tab-button-plain {
+  @apply rounded px-3 py-1.5 text-[13px] font-medium transition-all;
+}
+
+.app-filter-button {
+  @apply flex items-center justify-between gap-2 rounded border px-3 py-2 text-[13px] font-medium transition-colors;
+}
+
+.app-table-head-row {
+  @apply border-b border-gray-200 bg-gray-50 uppercase;
+  letter-spacing: 0.04em;
+}
+
+.app-table-head-row > th {
+  font-size: 9px;
+}
+
+@media (min-width: 768px) {
+  .app-table-head-row > th {
+    font-size: 11px;
+  }
+}
+
+.app-toolbar-control {
+  @apply min-h-[34px] px-3 py-1.5 text-xs md:text-[13px];
+}
+
+/* Global Section Spacing */
+.section-spacing {
+  @apply py-24 lg:py-16;
+}
+
+.hero-section-spacing {
+  @apply pt-12 pb-24 lg:pt-16 lg:pb-16;
+}
+
+/* Project table standard */
+.project-table-scroll {
+  width: 100%;
+  max-width: calc(100vw - 2rem);
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+}
+
+@media (min-width: 768px) {
+  .project-table-scroll {
+    max-width: 100%;
+  }
+}
+
+.project-table {
+  width: max-content;
+  min-width: 100%;
+  table-layout: auto;
+}
+
+.project-table th,
+.project-table td {
+  white-space: nowrap;
+}
+
+/*
+ * Backward-compatible table behavior for existing pages that still use the
+ * old overflow wrapper pattern.
+ */
+.overflow-x-auto > table {
+  width: max-content;
+  min-width: 100%;
+  table-layout: auto;
+}
+
+.overflow-x-auto > table th,
+.overflow-x-auto > table td {
+  white-space: nowrap;
+}
