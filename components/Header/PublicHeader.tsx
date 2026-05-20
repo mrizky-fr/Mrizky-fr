@@ -14,7 +14,7 @@ const PublicHeader: React.FC = () => {
 
   const headerMenuItems: HeaderMenuItem[] = [
     { label: 'Home', to: '#home' },
-    { label: 'Pentasyarufan', to: '#pentasyarufan' },
+    { label: 'Tentang', to: '#about' },
     { label: 'Faq', to: '#faq' },
   ];
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -77,10 +77,10 @@ const PublicHeader: React.FC = () => {
       <div className="hero-header">
         <header ref={headerInnerRef} className="main-header">
           <div className="main-header__inner">
-            <a className="header-logo" href="#home" aria-label="LazisNU logo">
+            <a className="header-logo" href="#home" aria-label="Bio Energy Semesta Tama logo">
               <img
                 src={logoNucare}
-                alt="LazisNU"
+                alt="Bio Energy Semesta Tama"
               />
             </a>
 
@@ -147,10 +147,10 @@ const PublicHeader: React.FC = () => {
 
           <aside className="header-drawer__content" aria-label="Mobile navigation">
             <div className="header-drawer__head">
-              <a className="header-logo" href="#home" aria-label="LazisNU logo">
+              <a className="header-logo" href="#home" aria-label="Bio Energy Semesta Tama logo">
                 <img
                   src={logoNucare}
-                  alt="LazisNU"
+                  alt="Bio Energy Semesta Tama"
                 />
               </a>
               <button

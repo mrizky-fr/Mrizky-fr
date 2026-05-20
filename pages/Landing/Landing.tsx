@@ -1,17 +1,12 @@
 import React, { useEffect } from 'react';
 import {
     CircleHelp,
-    Coins,
-    HandCoins,
-    PieChart,
     ScanEye,
     ShieldCheck,
     Smartphone,
     Target,
-    TrendingUp,
     Users,
 } from 'lucide-react';
-import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import PublicHeader from '../../components/Header/PublicHeader';
 import PublicFooter from '../../components/Footer/PublicFooter';
 import './Landing.css';
@@ -22,68 +17,32 @@ type FaqItem = {
     icon: React.ElementType;
 };
 
-type SummaryCard = {
-    label: string;
-    value: number;
-    change: number;
-    icon: React.ElementType;
-};
-
 const FAQ_ITEMS: FaqItem[] = [
     {
-        question: 'Apa itu LazisNU?',
+        question: 'Apa itu Bio Energy Semesta Tama?',
         answer:
-            'LazisNU adalah lembaga amil zakat, infaq, dan shadaqah Nahdlatul Ulama yang menghimpun serta menyalurkan dana umat secara amanah.',
+            'Bio Energy Semesta Tama adalah perusahaan yang berfokus membangun layanan profesional, kolaborasi jangka panjang, dan pertumbuhan bisnis yang berkelanjutan.',
         icon: CircleHelp,
     },
     {
-        question: 'Dana disalurkan untuk apa saja?',
+        question: 'Layanan apa yang tersedia?',
         answer:
-            'Dana disalurkan untuk program sosial, pendidikan, kesehatan, ekonomi umat, serta bantuan mustahiq yang membutuhkan.',
-        icon: HandCoins,
+            'Kami menyediakan layanan yang dapat disesuaikan dengan kebutuhan klien, mulai dari konsultasi, pengembangan solusi, hingga dukungan implementasi.',
+        icon: Target,
     },
     {
-        question: 'Bagaimana transparansi dan pelaporan dana?',
+        question: 'Bagaimana standar kualitas kerja perusahaan?',
         answer:
-            'Setiap perolehan dan penyaluran dicatat dalam sistem digital sehingga data mudah dipantau dan dipertanggungjawabkan.',
+            'Setiap proses kerja dijalankan secara terstruktur, transparan, dan terukur untuk memastikan hasil yang konsisten serta berdampak nyata.',
         icon: ScanEye,
     },
     {
-        question: 'Siapa yang bisa ikut berkontribusi?',
+        question: 'Siapa yang dapat bekerja sama dengan kami?',
         answer:
-            'Masyarakat umum, warga Nahdliyin, komunitas, dan mitra dapat ikut berzakat, berinfaq, maupun bershadaqah melalui kanal resmi LazisNU.',
+            'Perusahaan, institusi, maupun komunitas yang membutuhkan mitra profesional dapat berkolaborasi bersama Bio Energy Semesta Tama.',
         icon: Users,
     },
 ];
-
-const SUMMARY_CARDS: SummaryCard[] = [
-    { label: 'Hasil Koin', value: 875000000, change: 12.4, icon: Coins },
-    { label: 'Rata-rata Koin / Kotak', value: 425000, change: 4.8, icon: PieChart },
-    { label: 'Pentasarufan', value: 642500000, change: 9.1, icon: HandCoins },
-];
-
-const CHART_DATA = [
-    { name: 'Jan', value: 64000000 },
-    { name: 'Feb', value: 68000000 },
-    { name: 'Mar', value: 72000000 },
-    { name: 'Apr', value: 70000000 },
-    { name: 'Mei', value: 78000000 },
-    { name: 'Jun', value: 81000000 },
-    { name: 'Jul', value: 86000000 },
-    { name: 'Agu', value: 90000000 },
-    { name: 'Sep', value: 94000000 },
-    { name: 'Okt', value: 96000000 },
-    { name: 'Nov', value: 102000000 },
-    { name: 'Des', value: 109000000 },
-];
-
-const formatRupiah = (value: number): string =>
-    new Intl.NumberFormat('id-ID', {
-        style: 'currency',
-        currency: 'IDR',
-        minimumFractionDigits: 0,
-        maximumFractionDigits: 0,
-    }).format(value);
 
 const Landing: React.FC = () => {
     useEffect(() => {
@@ -114,23 +73,23 @@ const Landing: React.FC = () => {
                 <div className="home-hero">
                     <div className="home-hero__content">
                         <div className="scroll-reveal opacity-0">
-                            <p className="home-hero__subtitle-label">SISTEM MANAJEMEN INFAQ TERPADU</p>
+                            <p className="home-hero__subtitle-label">COMPANY PROFILE</p>
                         </div>
                         <h1 className="home-hero__title scroll-reveal opacity-0" style={{ animationDelay: '100ms' }}>
-                            Transparansi Zakat Untuk
+                            Bio Energy Semesta Tama
                             <br />
-                            Kesejahteraan Umat
+                            Professional Business Partner
                         </h1>
                         <p className="home-hero__description scroll-reveal opacity-0" style={{ animationDelay: '200ms' }}>
-                            Amanah dalam setiap transaksi zakat, infaq, dan shadaqah. Pantau perolehan dan penyaluran dana
-                            secara transparan bersama LazisNU Kab. Malang.
+                            Kami hadir sebagai mitra bisnis yang adaptif, terpercaya, dan berorientasi pada kualitas untuk
+                            mendukung pertumbuhan perusahaan Anda di berbagai sektor.
                         </p>
                         <div className="home-hero__actions scroll-reveal opacity-0" style={{ animationDelay: '300ms' }}>
-                            <a href="#pentasyarufan" className="home-hero__button home-hero__button--primary">
-                                <span>Pentasyarufan</span>
+                            <a href="#about" className="home-hero__button home-hero__button--primary">
+                                <span>Tentang Kami</span>
                             </a>
                             <a href="#faq" className="home-hero__button home-hero__button--secondary">
-                                <span>Lebih Kenal LazisNU</span>
+                                <span>Pertanyaan Umum</span>
                             </a>
                         </div>
                     </div>
@@ -138,16 +97,16 @@ const Landing: React.FC = () => {
                 </div>
             </section>
 
-            <section className="home-benefits-section scroll-reveal opacity-0" aria-label="Keunggulan LazisNU">
+            <section id="about" className="home-benefits-section scroll-reveal opacity-0" aria-label="Keunggulan Bio Energy Semesta Tama">
                 <div className="home-benefits-strip">
                     <div className="home-benefit-item">
                         <div className="home-benefit-icon">
                             <ShieldCheck size={28} strokeWidth={1.5} aria-hidden="true" />
                         </div>
                         <div className="home-benefit-copy">
-                            <h3 className="home-benefit-title">Transparansi Dana</h3>
+                            <h3 className="home-benefit-title">Integritas Profesional</h3>
                             <p className="home-benefit-description">
-                                Laporan perolehan dan penyaluran dana tercatat secara publik dan dapat dipantau.
+                                Setiap kerja sama dijalankan dengan komitmen, keterbukaan, dan tanggung jawab tinggi.
                             </p>
                         </div>
                     </div>
@@ -156,9 +115,9 @@ const Landing: React.FC = () => {
                             <Smartphone size={28} strokeWidth={1.5} aria-hidden="true" />
                         </div>
                         <div className="home-benefit-copy">
-                            <h3 className="home-benefit-title">Digitalisasi NU</h3>
+                            <h3 className="home-benefit-title">Solusi Adaptif</h3>
                             <p className="home-benefit-description">
-                                Sistem manajemen zakat dan infaq modern yang dirancang untuk Nahdliyin.
+                                Pendekatan kerja yang fleksibel dan relevan untuk kebutuhan bisnis yang terus berkembang.
                             </p>
                         </div>
                     </div>
@@ -167,85 +126,19 @@ const Landing: React.FC = () => {
                             <Target size={28} strokeWidth={1.5} aria-hidden="true" />
                         </div>
                         <div className="home-benefit-copy">
-                            <h3 className="home-benefit-title">Penyaluran Tepat Sasaran</h3>
+                            <h3 className="home-benefit-title">Berorientasi Hasil</h3>
                             <p className="home-benefit-description">
-                                Dana disalurkan secara amanah kepada para mustahiq yang benar-benar membutuhkan.
+                                Fokus pada hasil yang terukur untuk mendukung pertumbuhan jangka panjang mitra kami.
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section
-                id="pentasyarufan"
-                className="home-analytics-section scroll-reveal opacity-0"
-                aria-label="Analitik Pendapatan Koin Kecamatan"
-            >
-                <div className="home-analytics-shell">
-                    <div className="home-analytics-header">
-                        <h2 className="home-analytics-title">Pendapatan Koin Kecamatan</h2>
-                        <p className="home-analytics-subtitle">Contoh data statis untuk tampilan landing page.</p>
-                    </div>
-
-                    <div className="home-analytics-cards">
-                        {SUMMARY_CARDS.map((item) => {
-                            const Icon = item.icon;
-                            return (
-                                <article key={item.label} className="home-analytics-card">
-                                    <div className="home-analytics-card__body">
-                                        <div className="home-analytics-card__icon-wrap">
-                                            <Icon className="home-analytics-card__icon" />
-                                        </div>
-                                        <div className="home-analytics-card__content">
-                                            <span className="home-analytics-card__label">{item.label}</span>
-                                            <p className="home-analytics-card__value">{formatRupiah(item.value)}</p>
-                                            <div className="home-analytics-card__trend home-analytics-card__trend--up">
-                                                <TrendingUp className="home-analytics-card__trend-icon" />
-                                                <span>+{item.change.toFixed(1)}% dari periode sebelumnya</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            );
-                        })}
-                    </div>
-
-                    <div className="home-analytics-chart-box">
-                        <div className="home-analytics-chart__head">
-                            <h3 className="home-analytics-chart__title">Pendapatan Koin</h3>
-                            <p className="home-analytics-chart__desc">Data statis tahun berjalan.</p>
-                        </div>
-                        <div className="home-analytics-chart">
-                            <ResponsiveContainer width="100%" height="100%">
-                                <AreaChart data={CHART_DATA} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>
-                                    <defs>
-                                        <linearGradient id="landingPendapatanGradient" x1="0" y1="0" x2="0" y2="1">
-                                            <stop offset="5%" stopColor="#0C6650" stopOpacity={0.28} />
-                                            <stop offset="95%" stopColor="#0C6650" stopOpacity={0.05} />
-                                        </linearGradient>
-                                    </defs>
-                                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
-                                    <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: '#6b7280' }} />
-                                    <YAxis hide />
-                                    <Tooltip formatter={(value) => [formatRupiah(Number(value)), 'Pendapatan']} />
-                                    <Area
-                                        type="monotone"
-                                        dataKey="value"
-                                        stroke="#0C6650"
-                                        strokeWidth={2}
-                                        fill="url(#landingPendapatanGradient)"
-                                    />
-                                </AreaChart>
-                            </ResponsiveContainer>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="faq" className="home-inquiry-section scroll-reveal opacity-0" aria-label="Pertanyaan Umum LazisNU">
+            <section id="faq" className="home-inquiry-section scroll-reveal opacity-0" aria-label="Pertanyaan Umum Bio Energy Semesta Tama">
                 <div className="home-inquiry-shell">
-                    <h2 className="home-inquiry-title">Pertanyaan Umum Tentang LazisNU</h2>
-                    <p className="home-inquiry-description">FAQ singkat tentang LazisNU dan pengelolaan dana.</p>
+                    <h2 className="home-inquiry-title">Pertanyaan Umum Tentang Bio Energy Semesta Tama</h2>
+                    <p className="home-inquiry-description">Informasi singkat mengenai perusahaan dan layanan kami.</p>
                     <div className="home-inquiry-grid">
                         {FAQ_ITEMS.map((item) => {
                             const Icon = item.icon;

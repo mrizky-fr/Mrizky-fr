@@ -10,7 +10,7 @@ const PublicFooter: React.FC = () => {
         if (!email) return;
         // Static UI, no actual submission
         setEmail('');
-        alert('Terima kasih telah berlangganan info LazisNU!');
+        alert('Terima kasih telah berlangganan info Bio Energy Semesta Tama.');
     };
 
     return (
@@ -22,16 +22,16 @@ const PublicFooter: React.FC = () => {
                     <div className="site-footer__col site-footer__col--contact">
                         <h3 className="site-footer__title">Hubungi Kami</h3>
                         <p className="site-footer__description">
-                            LazisNU PCNU Kab. Malang. Kami hadir untuk memudahkan Anda dalam menyalurkan Zakat, Infaq, dan Shadaqah demi kesejahteraan umat.
+                            Bio Energy Semesta Tama. Kami hadir sebagai mitra profesional untuk mendukung kebutuhan bisnis Anda dengan layanan yang adaptif dan berkualitas.
                         </p>
                         <p className="site-footer__line">
-                            <strong>Alamat</strong> : Kabupaten Malang, Jawa Timur
+                            <strong>Alamat</strong> : Indonesia
                         </p>
                         <p className="site-footer__line">
                             <strong>Telp</strong> : <a href="tel:03410000000" className="site-footer__contact-link">0341-XXXXXXX</a>
                         </p>
                         <p className="site-footer__line">
-                            <strong>Email</strong> : <a href="mailto:lazisnu.malang@gmail.com" className="site-footer__contact-link">lazisnu.malang@gmail.com</a>
+                            <strong>Email</strong> : <a href="mailto:info@bioenergysemestatama.com" className="site-footer__contact-link">info@bioenergysemestatama.com</a>
                         </p>
                     </div>
 
@@ -40,9 +40,9 @@ const PublicFooter: React.FC = () => {
                         <h3 className="site-footer__title">Tentang Kami</h3>
                         <nav className="site-footer__menu" aria-label="Tentang Kami">
                             <a href="#home" className="site-footer__menu-link">Beranda</a>
-                            <a href="#pentasyarufan" className="site-footer__menu-link">Pentasyarufan</a>
+                            <a href="#about" className="site-footer__menu-link">Tentang</a>
                             <a href="#faq" className="site-footer__menu-link">Pertanyaan Umum (FAQ)</a>
-                            <a href="#" className="site-footer__menu-link">Transparansi Dana</a>
+                            <a href="#" className="site-footer__menu-link">Layanan</a>
                             <a href="#" className="site-footer__menu-link">Kebijakan Privasi</a>
                         </nav>
                     </div>
@@ -71,7 +71,7 @@ const PublicFooter: React.FC = () => {
                             </p>
                         </div>
 
-                        <div className="site-footer__socials" aria-label="Media Sosial LazisNU">
+                        <div className="site-footer__socials" aria-label="Media Sosial Bio Energy Semesta Tama">
                             <a href="#" target="_blank" rel="noreferrer" className="site-footer__social-link" aria-label="Instagram">
                                 <FaInstagram size={15} />
                             </a>
@@ -90,7 +90,7 @@ const PublicFooter: React.FC = () => {
                             <a href="#" target="_blank" rel="noreferrer" className="site-footer__social-link" aria-label="Facebook">
                                 <FaFacebook size={15} />
                             </a>
-                            <a href="mailto:lazisnu.malang@gmail.com" target="_blank" rel="noreferrer" className="site-footer__social-link" aria-label="Email">
+                            <a href="mailto:info@bioenergysemestatama.com" target="_blank" rel="noreferrer" className="site-footer__social-link" aria-label="Email">
                                 <FaEnvelope size={15} />
                             </a>
                         </div>
@@ -100,7 +100,7 @@ const PublicFooter: React.FC = () => {
 
                 {/* Bottom Bar */}
                 <div className="site-footer__bottom">
-                    <p>LazisNU PCNU Kab. Malang &copy; {new Date().getFullYear()} | Hak Cipta Dilindungi Undang-Undang.</p>
+                    <p>Bio Energy Semesta Tama &copy; {new Date().getFullYear()} | Hak Cipta Dilindungi Undang-Undang.</p>
                 </div>
             </div>
         </footer>
