@@ -32,7 +32,7 @@
   margin: 0 0 10px;
   color: #ffffff;
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -42,7 +42,7 @@
   max-width: 100%;
   font-size: clamp(1.58rem, 3vw, 2.03rem);
   line-height: 1.3;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.01em;
 }
 
@@ -70,7 +70,7 @@
   border-radius: 4px;
   padding: 10px 24px;
   font-size: 0.84rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   cursor: pointer;
@@ -219,7 +219,7 @@
   color: #1f2937;
   font-size: 1rem;
   line-height: 1.3;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .home-benefit-description {
@@ -264,7 +264,7 @@
   color: #0C6650;
   font-size: clamp(1.25rem, 2.3vw, 1.78rem);
   line-height: 1.35;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .home-analytics-subtitle {
@@ -375,7 +375,7 @@
   margin: 0;
   color: #374151;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .home-analytics-empty__description {
@@ -437,7 +437,7 @@
 .home-analytics-card__label {
   color: #1f2937;
   font-size: 0.88rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .home-analytics-card__icon-wrap {
@@ -462,7 +462,7 @@
   color: #111827;
   font-size: 1.3rem;
   line-height: 1.3;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .home-analytics-card__trend {
@@ -507,7 +507,7 @@
   margin: 0;
   color: #1f2937;
   font-size: 0.84rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -565,7 +565,7 @@
   color: #0C6650;
   font-size: clamp(1.2rem, 2.3vw, 1.72rem);
   line-height: 1.35;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .home-inquiry-description {
@@ -616,7 +616,7 @@
   color: #1f2937;
   font-size: 1rem;
   line-height: 1.35;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .home-inquiry-card__description {
@@ -635,4 +635,5 @@
     grid-template-columns: 1fr;
   }
 }
+
 
