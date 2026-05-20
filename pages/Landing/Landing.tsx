@@ -4,10 +4,7 @@ import {
     Factory,
     Flame,
     Leaf,
-    PackageCheck,
     ScanEye,
-    ShieldCheck,
-    Target,
     Truck,
     Users,
 } from 'lucide-react';
@@ -48,6 +45,11 @@ const FAQ_ITEMS: FaqItem[] = [
     },
 ];
 
+const HERO_TITLE_LINES = [
+    ['Bio', 'Energy', 'Semesta', 'Tama'],
+    ['Mitra', 'Energi', 'Biomassa', 'Terpercaya', 'untuk', 'Industri', 'Berkelanjutan'],
+];
+
 const Landing: React.FC = () => {
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -69,6 +71,8 @@ const Landing: React.FC = () => {
         return () => observer.disconnect();
     }, []);
 
+    let wordIndex = 0;
+
     return (
         <div className="min-h-screen bg-white overflow-x-hidden">
             <PublicHeader />
@@ -79,16 +83,37 @@ const Landing: React.FC = () => {
                         <div className="scroll-reveal opacity-0">
                             <p className="home-hero__subtitle-label">COMPANY PROFILE</p>
                         </div>
-                        <h1 className="home-hero__title scroll-reveal opacity-0" style={{ animationDelay: '100ms' }}>
-                            Bio Energy Semesta Tama
-                            <br />
-                            Mitra Energi Biomassa Terpercaya untuk Industri Berkelanjutan
+
+                        <h1 className="home-hero__title" aria-label="Bio Energy Semesta Tama Mitra Energi Biomassa Terpercaya untuk Industri Berkelanjutan">
+                            {HERO_TITLE_LINES.map((line, lineIndex) => (
+                                <React.Fragment key={`line-${lineIndex}`}>
+                                    <span className="home-hero__title-line">
+                                        {line.map((word) => {
+                                            const delay = `${wordIndex * 120}ms`;
+                                            wordIndex += 1;
+
+                                            return (
+                                                <span
+                                                    key={`${word}-${wordIndex}`}
+                                                    className="home-hero__word"
+                                                    style={{ animationDelay: delay }}
+                                                >
+                                                    {word}
+                                                </span>
+                                            );
+                                        })}
+                                    </span>
+                                    {lineIndex < HERO_TITLE_LINES.length - 1 && <br />}
+                                </React.Fragment>
+                            ))}
                         </h1>
-                        <p className="home-hero__description scroll-reveal opacity-0" style={{ animationDelay: '200ms' }}>
+
+                        <p className="home-hero__description scroll-reveal opacity-0" style={{ animationDelay: '1450ms' }}>
                             Kami menghadirkan solusi energi biomassa berkualitas melalui produksi wood pellet yang efisien,
                             konsisten, dan berstandar industri untuk mendukung kebutuhan energi ramah lingkungan di berbagai sektor usaha.
                         </p>
-                        <div className="home-hero__actions scroll-reveal opacity-0" style={{ animationDelay: '300ms' }}>
+
+                        <div className="home-hero__actions scroll-reveal opacity-0" style={{ animationDelay: '1600ms' }}>
                             <a href="#about" className="home-hero__button home-hero__button--primary">
                                 <span>Tentang Kami</span>
                             </a>
@@ -97,6 +122,7 @@ const Landing: React.FC = () => {
                             </a>
                         </div>
                     </div>
+
                     <div className="home-hero__spacer" aria-hidden="true" />
                 </div>
             </section>
@@ -114,6 +140,7 @@ const Landing: React.FC = () => {
                             </p>
                         </div>
                     </div>
+
                     <div className="home-benefit-item">
                         <div className="home-benefit-icon">
                             <Factory size={28} strokeWidth={1.5} aria-hidden="true" />
@@ -125,6 +152,7 @@ const Landing: React.FC = () => {
                             </p>
                         </div>
                     </div>
+
                     <div className="home-benefit-item">
                         <div className="home-benefit-icon">
                             <Truck size={28} strokeWidth={1.5} aria-hidden="true" />
@@ -145,9 +173,11 @@ const Landing: React.FC = () => {
                     <p className="home-inquiry-description">
                         Informasi singkat mengenai produk wood pellet, kualitas produksi, dan peluang kerja sama bersama Bio Energy Semesta Tama.
                     </p>
+
                     <div className="home-inquiry-grid">
                         {FAQ_ITEMS.map((item) => {
                             const Icon = item.icon;
+
                             return (
                                 <article key={item.question} className="home-inquiry-card">
                                     <div className="home-inquiry-card__icon" aria-hidden="true">
