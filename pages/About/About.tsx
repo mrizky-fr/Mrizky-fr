@@ -89,6 +89,37 @@ const About: React.FC = () => {
                 </div>
             </section>
 
+            <section id="vision-mission" className="about-vision-section scroll-reveal opacity-0" aria-label="Visi dan Misi">
+                <div className="about-vision-shell">
+                    <div className="about-vision-heading scroll-reveal opacity-0" data-reveal-delay="100">
+                        <h2 className="about-vision-title">Visi dan Misi</h2>
+                        <p className="about-vision-description">
+                            Komitmen PT Bio Energy Semesta Tama dalam menghadirkan energi biomassa berkualitas
+                            untuk mendukung kebutuhan industri yang berkelanjutan.
+                        </p>
+                    </div>
+
+                    <div className="about-vision-grid">
+                        <article className="about-vision-card scroll-reveal opacity-0" data-reveal-delay="180">
+                            <h3 className="about-vision-card__title">Visi</h3>
+                            <p className="about-vision-card__text">
+                                Menjadi perusahaan energi biomassa terpercaya di Indonesia yang menghadirkan wood pellet
+                                berkualitas tinggi, efisien, dan ramah lingkungan untuk kebutuhan industri berkelanjutan.
+                            </p>
+                        </article>
+
+                        <article className="about-vision-card scroll-reveal opacity-0" data-reveal-delay="260">
+                            <h3 className="about-vision-card__title">Misi</h3>
+                            <ul className="about-vision-card__list">
+                                <li>Menyediakan wood pellet dengan kualitas konsisten dan standar produksi terkontrol.</li>
+                                <li>Mendukung kebutuhan pasokan energi biomassa industri secara tepat waktu dan berkelanjutan.</li>
+                                <li>Membangun kemitraan profesional melalui layanan responsif, transparan, dan terpercaya.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
             <section id="contact" className="about-cta-section scroll-reveal opacity-0" aria-label="Ajakan kerja sama">
                 <div className="about-cta-shell">
                     <h2 className="about-cta-title scroll-reveal opacity-0" data-reveal-delay="100">

@@ -81,6 +81,84 @@
   font-weight: 700;
 }
 
+.about-vision-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 8px 0 72px;
+  background: #ffffff;
+}
+
+.about-vision-shell {
+  width: min(1200px, 100%);
+  margin: 0 22px;
+}
+
+.about-vision-heading {
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-vision-title {
+  margin: 0;
+  color: #214132;
+  font-size: clamp(1.45rem, 3vw, 2.12rem);
+  line-height: 1.4;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.about-vision-description {
+  margin: 14px auto 0;
+  max-width: 760px;
+  color: #365166;
+  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+  line-height: 1.4;
+}
+
+.about-vision-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.about-vision-card {
+  border-radius: 4px;
+  background: #ffffff;
+  border: 1px solid rgba(12, 102, 80, 0.12);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+  padding: 22px 24px;
+}
+
+.about-vision-card__title {
+  margin: 0;
+  color: #1f2937;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.about-vision-card__text {
+  margin: 10px 0 0;
+  color: #4b5563;
+  font-size: 0.96rem;
+  line-height: 1.4;
+}
+
+.about-vision-card__list {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: #4b5563;
+  font-size: 0.96rem;
+  line-height: 1.4;
+}
+
+.about-vision-card__list li + li {
+  margin-top: 8px;
+}
+
 .about-cta-section {
   position: relative;
   width: 100vw;
@@ -278,6 +356,14 @@
     padding: 34px 0;
   }
 
+  .about-vision-section {
+    padding: 4px 0 56px;
+  }
+
+  .about-vision-grid {
+    grid-template-columns: 1fr;
+  }
+
   .about-cta-shell {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -327,6 +413,37 @@
 
   .about-profile-highlight p {
     font-size: 1rem;
+  }
+
+  .about-vision-section {
+    padding: 0 0 44px;
+  }
+
+  .about-vision-title {
+    font-size: clamp(1.25rem, 7vw, 1.65rem);
+  }
+
+  .about-vision-description {
+    font-size: 0.94rem;
+    line-height: 1.4;
+  }
+
+  .about-vision-grid {
+    margin-top: 22px;
+    gap: 12px;
+  }
+
+  .about-vision-card {
+    padding: 18px;
+  }
+
+  .about-vision-card__title {
+    font-size: 1rem;
+  }
+
+  .about-vision-card__text,
+  .about-vision-card__list {
+    font-size: 0.92rem;
   }
 
   .about-cta-section {
