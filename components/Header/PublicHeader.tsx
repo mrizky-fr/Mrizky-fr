@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { AlignRight, X, Headset, Phone } from 'lucide-react';
-import logoNucare from '../../assets/logo nucare.png';
+import logoNucare from '../../assets/logo best.png';
 import './PublicHeader.css';
 
 type HeaderMenuItem = {

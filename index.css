@@ -19,6 +19,30 @@ body::-webkit-scrollbar {
   font-family: inherit;
 }
 
+:root {
+  --description-font-family: "SN Pro", "Work Sans", sans-serif;
+}
+
+.site-footer__description,
+.services-description,
+.services-card__description,
+.gallery-description,
+.gallery-card__description,
+.contact-description,
+.contact-info__description,
+.home-hero__description,
+.home-benefit-description,
+.home-company-description,
+.home-company-description p,
+.home-why-card__description,
+.home-inquiry-description,
+.home-inquiry-card__description,
+.about-profile-copy,
+.about-profile-copy p,
+.about-profile-highlight p {
+  font-family: var(--description-font-family);
+}
+
 /* Global cursor pointer for interactive elements */
 button,
 [type="button"],

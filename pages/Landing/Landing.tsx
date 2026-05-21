@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import PublicHeader from '../../components/Header/PublicHeader';
 import PublicFooter from '../../components/Footer/PublicFooter';
-import logoNucare from '../../assets/logo nucare.png';
+import logoNucare from '../../assets/logo best.png';
 import './Landing.css';
 
 type FaqItem = {
