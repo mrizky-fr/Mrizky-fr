@@ -50,6 +50,10 @@
   border: 1px solid rgba(12, 102, 80, 0.12);
   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
   text-align: left;
+  padding: 0;
+  cursor: pointer;
+  appearance: none;
+  width: 100%;
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease,
@@ -81,24 +85,6 @@
   transform: scale(1.05);
 }
 
-.gallery-card__content {
-  padding: 18px 20px 20px;
-}
-
-.gallery-card__title {
-  margin: 0;
-  color: #1f2937;
-  font-size: 1rem;
-  line-height: 1.4;
-  font-weight: 600;
-}
-
-.gallery-card__description {
-  margin: 8px 0 0;
-  color: #4b5563;
-  font-size: 0.92rem;
-  line-height: 1.4;
-}
 
 .gallery-cta-section {
   position: relative;
@@ -315,10 +301,6 @@
 
   .gallery-card__image-wrap {
     height: 220px;
-  }
-
-  .gallery-card__content {
-    padding: 18px;
   }
 
   .gallery-cta-section {

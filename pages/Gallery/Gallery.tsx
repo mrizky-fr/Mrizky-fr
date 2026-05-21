@@ -1,5 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FileText, PhoneCall } from 'lucide-react';
+import Lightbox from 'yet-another-react-lightbox';
+import 'yet-another-react-lightbox/styles.css';
 import PublicHeader from '../../components/Header/PublicHeader';
 import PublicFooter from '../../components/Footer/PublicFooter';
 import PageHeader from '../../components/PageHeader/PageHeader';
@@ -8,49 +10,39 @@ import './Gallery.css';
 type GalleryItem = {
     image: string;
     title: string;
-    description: string;
 };
 
 const GALLERY_ITEMS: GalleryItem[] = [
     {
         image: 'https://i.ibb.co.com/qYRHs669/high-quality-professional-product-photography-of-fish-feed-pellets-a-heap-of.png',
         title: 'Produk Wood Pellet',
-        description:
-            'Wood pellet berkualitas yang diproduksi untuk mendukung kebutuhan energi biomassa industri.',
     },
     {
         image: 'https://i.ibb.co.com/qYRHs669/high-quality-professional-product-photography-of-fish-feed-pellets-a-heap-of.png',
         title: 'Bahan Baku Terpilih',
-        description:
-            'Pemilihan bahan baku menjadi bagian penting dalam menjaga kualitas dan konsistensi produk.',
     },
     {
         image: 'https://i.ibb.co.com/qYRHs669/high-quality-professional-product-photography-of-fish-feed-pellets-a-heap-of.png',
         title: 'Kualitas Terstandar',
-        description:
-            'Setiap produk diproses dengan kontrol kualitas agar performa pembakaran tetap stabil.',
     },
     {
         image: 'https://i.ibb.co.com/qYRHs669/high-quality-professional-product-photography-of-fish-feed-pellets-a-heap-of.png',
         title: 'Pasokan Industri',
-        description:
-            'Kami mendukung kebutuhan pasokan wood pellet untuk kerja sama industri berkelanjutan.',
     },
     {
         image: 'https://i.ibb.co.com/qYRHs669/high-quality-professional-product-photography-of-fish-feed-pellets-a-heap-of.png',
         title: 'Energi Biomassa',
-        description:
-            'Wood pellet menjadi solusi energi alternatif yang efisien dan ramah lingkungan.',
     },
     {
         image: 'https://i.ibb.co.com/qYRHs669/high-quality-professional-product-photography-of-fish-feed-pellets-a-heap-of.png',
         title: 'Mitra Berkelanjutan',
-        description:
-            'Kami siap menjadi mitra terpercaya dalam penyediaan wood pellet berkualitas.',
     },
 ];
 
 const Gallery: React.FC = () => {
+    const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+    const [activeIndex, setActiveIndex] = useState(0);
+
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -75,6 +67,11 @@ const Gallery: React.FC = () => {
         return () => observer.disconnect();
     }, []);
 
+    const openLightbox = (index: number) => {
+        setActiveIndex(index);
+        setIsLightboxOpen(true);
+    };
+
     return (
         <div className="min-h-screen bg-white overflow-x-hidden">
             <PublicHeader />
@@ -93,10 +90,13 @@ const Gallery: React.FC = () => {
 
                     <div className="gallery-grid">
                         {GALLERY_ITEMS.map((item, index) => (
-                            <article
+                            <button
                                 key={`${item.title}-${index}`}
+                                type="button"
                                 className="gallery-card scroll-reveal opacity-0"
                                 data-reveal-delay={180 + index * 80}
+                                onClick={() => openLightbox(index)}
+                                aria-label={`Lihat gambar ${item.title}`}
                             >
                                 <div className="gallery-card__image-wrap">
                                     <img
@@ -105,12 +105,7 @@ const Gallery: React.FC = () => {
                                         className="gallery-card__image"
                                     />
                                 </div>
-
-                                <div className="gallery-card__content">
-                                    <h3 className="gallery-card__title">{item.title}</h3>
-                                    <p className="gallery-card__description">{item.description}</p>
-                                </div>
-                            </article>
+                            </button>
                         ))}
                     </div>
                 </div>
@@ -143,6 +138,13 @@ const Gallery: React.FC = () => {
                     </div>
                 </div>
             </section>
+
+            <Lightbox
+                open={isLightboxOpen}
+                close={() => setIsLightboxOpen(false)}
+                index={activeIndex}
+                slides={GALLERY_ITEMS.map((item) => ({ src: item.image, alt: item.title }))}
+            />
 
             <PublicFooter />
         </div>
