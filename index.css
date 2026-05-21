@@ -23,6 +23,10 @@ body::-webkit-scrollbar {
   --description-font-family: "SN Pro", "SN Pro Variable", "Work Sans", sans-serif;
 }
 
+p {
+  font-family: var(--description-font-family);
+}
+
 .site-footer__description,
 .services-description,
 .services-card__description,
@@ -30,6 +34,7 @@ body::-webkit-scrollbar {
 .gallery-card__description,
 .contact-description,
 .contact-info__description,
+.contact-offer-description,
 .home-hero__description,
 .home-benefit-description,
 .home-company-description,
@@ -37,6 +42,7 @@ body::-webkit-scrollbar {
 .home-why-card__description,
 .home-inquiry-description,
 .home-inquiry-card__description,
+.home-cta-description,
 .about-profile-copy,
 .about-profile-copy p,
 .about-profile-highlight p {

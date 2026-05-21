@@ -26,8 +26,8 @@ const CONTACT_INFO: ContactInfoItem[] = [
     {
         icon: Mail,
         label: 'Email',
-        value: 'info@bestpellet.com',
-        href: 'mailto:info@bestpellet.com',
+        value: 'info@best-pellet.com',
+        href: 'mailto:info@best-pellet.com',
     },
     {
         icon: MapPin,
@@ -231,22 +231,26 @@ const Contact: React.FC = () => {
 
             <section className="contact-offer-section scroll-reveal opacity-0" aria-label="Minta penawaran">
                 <div className="contact-offer-shell">
-                    <h2 className="contact-offer-title scroll-reveal opacity-0" data-reveal-delay="100">
-                        Minta Penawaran
-                    </h2>
-                    <p className="contact-offer-description scroll-reveal opacity-0" data-reveal-delay="180">
-                        Tertarik dengan produk wood pellet kami? Kirimkan permintaan dan pertanyaan Anda melalui email
-                        kami di info@bestpellet.com dan tim kami akan segera merespons dengan penawaran harga terbaik
-                        sesuai kebutuhan bisnis Anda.
-                    </p>
-                    <a
-                        href="mailto:info@bestpellet.com"
-                        className="contact-offer-button scroll-reveal opacity-0"
-                        data-reveal-delay="260"
-                    >
-                        <Mail className="app-button-icon" aria-hidden="true" />
-                        <span className="app-button-label">Kirim Email Penawaran</span>
-                    </a>
+                    <div className="contact-offer-copy">
+                        <h2 className="contact-offer-title scroll-reveal opacity-0" data-reveal-delay="100">
+                            Minta Penawaran
+                        </h2>
+                        <p className="contact-offer-description scroll-reveal opacity-0" data-reveal-delay="180">
+                            Tertarik dengan produk wood pellet kami? Kirimkan permintaan dan pertanyaan Anda melalui email
+                            kami di info@best-pellet.com dan tim kami akan segera merespons dengan penawaran harga terbaik
+                            sesuai kebutuhan bisnis Anda.
+                        </p>
+                    </div>
+                    <div className="contact-offer-actions">
+                        <a
+                            href="mailto:info@best-pellet.com"
+                            className="contact-offer-button scroll-reveal opacity-0"
+                            data-reveal-delay="260"
+                        >
+                            <Mail className="app-button-icon" aria-hidden="true" />
+                            <span className="app-button-label">Kirim Email Penawaran</span>
+                        </a>
+                    </div>
                 </div>
             </section>
 

@@ -30,7 +30,7 @@ const PublicFooter: React.FC = () => {
                             <strong>Telp</strong> : <a href="tel:+628115585490" className="site-footer__contact-link">+62 811-5585-490</a>
                         </p>
                         <p className="site-footer__line">
-                            <strong>Email</strong> : <a href="mailto:info@bestpellet.com" className="site-footer__contact-link">info@bestpellet.com</a>
+                            <strong>Email</strong> : <a href="mailto:info@best-pellet.com" className="site-footer__contact-link">info@best-pellet.com</a>
                         </p>
                     </div>
 
@@ -66,7 +66,7 @@ const PublicFooter: React.FC = () => {
                         </form>
                         <p className="site-footer__offer-text">
                             Tertarik dengan produk wood pellet kami? Kirimkan permintaan dan pertanyaan Anda melalui email kami di{' '}
-                            <a href="mailto:info@bestpellet.com" className="site-footer__offer-email">info@bestpellet.com</a>{' '}
+                            <a href="mailto:info@best-pellet.com" className="site-footer__offer-email">info@best-pellet.com</a>{' '}
                             dan tim kami akan segera merespons dengan penawaran harga terbaik sesuai kebutuhan bisnis Anda.
                         </p>
                     </div>
