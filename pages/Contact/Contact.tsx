@@ -32,7 +32,7 @@ const CONTACT_INFO: ContactInfoItem[] = [
 ];
 
 const Contact: React.FC = () => {
-    const handleSubmitToWhatsApp = (event: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmitToEmail = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
         const formData = new FormData(event.currentTarget);
@@ -41,18 +41,20 @@ const Contact: React.FC = () => {
         const subject = String(formData.get('subject') || '').trim();
         const message = String(formData.get('message') || '').trim();
 
-        const text = [
+        const emailSubject = subject || 'Permintaan Informasi Wood Pellet';
+        const emailBody = [
             'Halo PT. Bio Energy Semesta Tama (BEST),',
             '',
             'Saya ingin mengajukan kebutuhan wood pellet:',
             `Nama: ${name || '-'}`,
             `Email: ${email || '-'}`,
-            `Subjek: ${subject || '-'}`,
-            `Pesan: ${message || '-'}`,
+            '',
+            'Pesan:',
+            message || '-',
         ].join('\n');
 
-        const whatsappUrl = `https://wa.me/628115585490?text=${encodeURIComponent(text)}`;
-        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+        const mailtoUrl = `mailto:info@best-pellet.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+        window.location.href = mailtoUrl;
     };
 
     return (
@@ -114,7 +116,7 @@ const Contact: React.FC = () => {
                         </Reveal>
 
                         <Reveal delay={0.26} className="contact-form">
-                            <form onSubmit={handleSubmitToWhatsApp}>
+                            <form onSubmit={handleSubmitToEmail}>
                                 <Reveal delay={0.28} className="contact-form__group">
                                     <label htmlFor="name" className="contact-form__label">
                                         Nama Lengkap

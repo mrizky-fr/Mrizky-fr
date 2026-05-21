@@ -16,7 +16,7 @@ import PublicHeader from '../../components/Header/PublicHeader';
 import PublicFooter from '../../components/Footer/PublicFooter';
 import logoNucare from '../../assets/logo best.png';
 import heroCoverImage from '../../assets/Wood-Pellet-cover-q4vtiu315mplmf2d3s09jzctdfky9ni6y5fe4tuyrs.webp';
-import homeSectionFourImage from '../../assets/WhatsApp Image 2026-05-21 at 15.44.03.jpeg';
+import homeSectionFourImage from '../../assets/WhatsApp Image 2026-05-21 at 15.40.16.jpeg';
 import Reveal from '../../components/Reveal/Reveal';
 import './Landing.css';
 
