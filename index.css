@@ -27,6 +27,11 @@ p {
   font-family: var(--description-font-family);
 }
 
+input::placeholder,
+textarea::placeholder {
+  font-family: var(--description-font-family);
+}
+
 .site-footer__description,
 .services-description,
 .services-card__description,
