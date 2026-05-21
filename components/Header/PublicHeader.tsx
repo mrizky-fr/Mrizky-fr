@@ -109,10 +109,10 @@ const PublicHeader: React.FC = () => {
       <div className="hero-header">
         <header ref={headerInnerRef} className="main-header">
           <div className="main-header__inner">
-            <a className="header-logo" href="/" aria-label="Bio Energy Semesta Tama logo">
+            <a className="header-logo" href="/" aria-label="PT BioEnergySemestaTama logo">
               <img
                 src={logoNucare}
-                alt="Bio Energy Semesta Tama"
+                alt="PT BioEnergySemestaTama"
               />
             </a>
 
@@ -179,10 +179,10 @@ const PublicHeader: React.FC = () => {
 
           <aside className="header-drawer__content" aria-label="Mobile navigation">
             <div className="header-drawer__head">
-              <a className="header-logo" href="/" aria-label="Bio Energy Semesta Tama logo">
+              <a className="header-logo" href="/" aria-label="PT BioEnergySemestaTama logo">
                 <img
                   src={logoNucare}
-                  alt="Bio Energy Semesta Tama"
+                  alt="PT BioEnergySemestaTama"
                 />
               </a>
               <button

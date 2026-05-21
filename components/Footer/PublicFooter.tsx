@@ -10,7 +10,7 @@ const PublicFooter: React.FC = () => {
         if (!email) return;
         // Static UI, no actual submission
         setEmail('');
-        alert('Terima kasih telah berlangganan info Bio Energy Semesta Tama.');
+        alert('Terima kasih telah berlangganan info PT BioEnergySemestaTama.');
     };
 
     return (
@@ -22,7 +22,7 @@ const PublicFooter: React.FC = () => {
                     <div className="site-footer__col site-footer__col--contact">
                         <h3 className="site-footer__title">Hubungi Kami</h3>
                         <p className="site-footer__description">
-                            Bio Energy Semesta Tama. Kami hadir sebagai mitra profesional untuk mendukung kebutuhan bisnis Anda dengan layanan yang adaptif dan berkualitas.
+                            PT BioEnergySemestaTama. Kami hadir sebagai mitra profesional untuk mendukung kebutuhan bisnis Anda dengan layanan yang adaptif dan berkualitas.
                         </p>
                         <p className="site-footer__line">
                             <strong>Alamat</strong> : Indonesia
@@ -72,7 +72,7 @@ const PublicFooter: React.FC = () => {
                             </p>
                         </div>
 
-                        <div className="site-footer__socials" aria-label="Media Sosial Bio Energy Semesta Tama">
+                        <div className="site-footer__socials" aria-label="Media Sosial PT BioEnergySemestaTama">
                             <a href="#" target="_blank" rel="noreferrer" className="site-footer__social-link" aria-label="Instagram">
                                 <FaInstagram size={15} />
                             </a>
@@ -101,7 +101,7 @@ const PublicFooter: React.FC = () => {
 
                 {/* Bottom Bar */}
                 <div className="site-footer__bottom">
-                    <p>Bio Energy Semesta Tama &copy; {new Date().getFullYear()} | Hak Cipta Dilindungi Undang-Undang.</p>
+                    <p>PT BioEnergySemestaTama &copy; {new Date().getFullYear()} | Hak Cipta Dilindungi Undang-Undang.</p>
                 </div>
             </div>
         </footer>

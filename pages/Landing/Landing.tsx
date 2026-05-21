@@ -45,7 +45,7 @@ const FAQ_ITEMS: FaqItem[] = [
         icon: ScanEye,
     },
     {
-        question: 'Apakah Bio Energy Semesta Tama melayani kerja sama jangka panjang?',
+        question: 'Apakah PT BioEnergySemestaTama melayani kerja sama jangka panjang?',
         answer:
             'Ya, kami terbuka untuk kerja sama pasokan wood pellet secara berkelanjutan dengan perusahaan, industri, distributor, maupun mitra bisnis yang membutuhkan sumber energi biomassa terpercaya.',
         icon: Users,
@@ -115,7 +115,7 @@ const Landing: React.FC = () => {
 
                         <h1
                             className="home-hero__title"
-                            aria-label="Bio Energy Semesta Tama Mitra Energi Biomassa Terpercaya untuk Industri Berkelanjutan"
+                            aria-label="PT BioEnergySemestaTama Mitra Energi Biomassa Terpercaya untuk Industri Berkelanjutan"
                         >
                             {HERO_TITLE_LINES.map((line, lineIndex) => (
                                 <React.Fragment key={`line-${lineIndex}`}>
@@ -165,7 +165,7 @@ const Landing: React.FC = () => {
                 </div>
             </section>
 
-            <section id="about" className="home-benefits-section scroll-reveal opacity-0" aria-label="Keunggulan Bio Energy Semesta Tama">
+            <section id="about" className="home-benefits-section scroll-reveal opacity-0" aria-label="Keunggulan PT BioEnergySemestaTama">
                     <div className="home-benefits-strip">
                         <div className="home-benefit-item scroll-reveal opacity-0" data-reveal-delay="120">
                             <div className="home-benefit-icon">
@@ -205,23 +205,23 @@ const Landing: React.FC = () => {
                 </div>
             </section>
 
-            <section id="company" className="home-company-section scroll-reveal opacity-0" aria-label="Profil Bio Energy Semesta Tama">
+            <section id="company" className="home-company-section scroll-reveal opacity-0" aria-label="Profil PT BioEnergySemestaTama">
                 <div className="home-company-shell">
                     <div className="home-company-logo-wrap scroll-reveal opacity-0" data-reveal-delay="100">
                         <img
                             src={logoNucare}
-                            alt="Bio Energy Semesta Tama"
+                            alt="PT BioEnergySemestaTama"
                             className="home-company-logo"
                         />
                     </div>
 
                     <h2 className="home-company-title scroll-reveal opacity-0" data-reveal-delay="180">
-                        Bio Energy Semesta Tama
+                        PT BioEnergySemestaTama
                     </h2>
 
                     <div className="home-company-description scroll-reveal opacity-0" data-reveal-delay="260">
                         <p>
-                            Bio Energy Semesta Tama merupakan perusahaan yang berdedikasi menghadirkan solusi energi terbarukan
+                            PT BioEnergySemestaTama merupakan perusahaan yang berdedikasi menghadirkan solusi energi terbarukan
                             berkualitas melalui produksi wood pellet. Dengan fokus pada energi biomassa, kami berkomitmen menyediakan
                             produk yang efisien, stabil, dan sesuai kebutuhan pelanggan di berbagai sektor industri. Kami juga
                             menempatkan konsistensi mutu sebagai prioritas utama agar setiap pengiriman wood pellet mampu
@@ -231,7 +231,7 @@ const Landing: React.FC = () => {
 
                         <p>
                             Didukung oleh proses produksi yang terkontrol, pemilihan bahan baku yang tepat, serta komitmen terhadap
-                            kualitas, wood pellet dari Bio Energy Semesta Tama dirancang untuk menjadi pilihan energi alternatif yang
+                            kualitas, wood pellet dari PT BioEnergySemestaTama dirancang untuk menjadi pilihan energi alternatif yang
                             dapat diandalkan bagi kebutuhan boiler, pemanas, pembangkit biomassa, maupun proses produksi industri.
                             Setiap tahapan, mulai dari seleksi material, pengeringan, pemadatan, hingga pengujian akhir, dilakukan
                             dengan standar kerja yang disiplin untuk menjaga kadar air, densitas, dan nilai kalor tetap konsisten
@@ -240,7 +240,7 @@ const Landing: React.FC = () => {
 
                         <p>
                             Dengan kualitas unggul, kepedulian terhadap lingkungan, dan layanan kerja sama yang profesional,
-                            Bio Energy Semesta Tama siap menjadi mitra terpercaya dalam penyediaan wood pellet di Indonesia serta
+                            PT BioEnergySemestaTama siap menjadi mitra terpercaya dalam penyediaan wood pellet di Indonesia serta
                             mendukung terciptanya masa depan energi yang lebih hijau dan berkelanjutan. Kami percaya kemitraan yang
                             baik tidak hanya berfokus pada pasokan produk, tetapi juga pada kecepatan respons, kejelasan komunikasi,
                             serta kemampuan menyesuaikan layanan terhadap kebutuhan spesifik setiap pelanggan agar kerja sama jangka
@@ -288,11 +288,11 @@ const Landing: React.FC = () => {
                 </div>
             </section>
 
-            <section id="faq" className="home-inquiry-section scroll-reveal opacity-0" aria-label="Pertanyaan Umum Bio Energy Semesta Tama">
+            <section id="faq" className="home-inquiry-section scroll-reveal opacity-0" aria-label="Pertanyaan Umum PT BioEnergySemestaTama">
                 <div className="home-inquiry-shell">
                     <h2 className="home-inquiry-title scroll-reveal opacity-0" data-reveal-delay="100">Pertanyaan Umum Tentang Wood Pellet</h2>
                     <p className="home-inquiry-description scroll-reveal opacity-0" data-reveal-delay="180">
-                        Informasi singkat mengenai produk wood pellet, kualitas produksi, dan peluang kerja sama bersama Bio Energy Semesta Tama.
+                        Informasi singkat mengenai produk wood pellet, kualitas produksi, dan peluang kerja sama bersama PT BioEnergySemestaTama.
                     </p>
 
                     <div className="home-inquiry-grid">
@@ -319,7 +319,7 @@ const Landing: React.FC = () => {
                 </div>
             </section>
 
-            <section id="contact" className="home-cta-section scroll-reveal opacity-0" aria-label="Ajakan kerja sama Bio Energy Semesta Tama">
+            <section id="contact" className="home-cta-section scroll-reveal opacity-0" aria-label="Ajakan kerja sama PT BioEnergySemestaTama">
                 <div className="home-cta-shell">
                     <h2 className="home-cta-title scroll-reveal opacity-0" data-reveal-delay="100">Tertarik bekerja sama dengan kami</h2>
 

@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
             <section id="contact" className="contact-section scroll-reveal opacity-0">
                 <div className="contact-shell">
                     <div className="contact-heading scroll-reveal opacity-0" data-reveal-delay="100">
-                        <h2 className="contact-title">Hubungi PT. Alam Kencana Indonesia</h2>
+                        <h2 className="contact-title">Hubungi PT BioEnergySemestaTama</h2>
                         <p className="contact-description">
                             Kami siap membantu kebutuhan informasi, kerja sama, dan pemesanan wood pellet
                             berkualitas untuk kebutuhan industri maupun distribusi.
