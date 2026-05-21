@@ -1,30 +1,39 @@
 import React, { useEffect } from 'react';
-import { Send } from 'lucide-react';
+import { Mail, MapPin, Phone, Send } from 'lucide-react';
 import PublicHeader from '../../components/Header/PublicHeader';
 import PublicFooter from '../../components/Footer/PublicFooter';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import './Contact.css';
 
 type ContactInfoItem = {
+    icon: React.ElementType;
     label: string;
     value: string;
     href?: string;
 };
 
+const CONTACT_PERSON = {
+    name: 'MICHAEL KENT CAHYADI',
+    role: 'Direktur Utama',
+};
+
 const CONTACT_INFO: ContactInfoItem[] = [
     {
-        label: 'Alamat',
-        value: 'Jawa Timur, Indonesia',
-    },
-    {
-        label: 'Email',
-        value: 'info@alamkencanaindonesia.com',
-        href: 'mailto:info@alamkencanaindonesia.com',
-    },
-    {
+        icon: Phone,
         label: 'No. HP',
-        value: '+62 812-3456-7890',
-        href: 'tel:+6281234567890',
+        value: '+62 811-5585-490',
+        href: 'tel:+628115585490',
+    },
+    {
+        icon: Mail,
+        label: 'Email',
+        value: 'm.kent.cahyadi@gmail.com',
+        href: 'mailto:m.kent.cahyadi@gmail.com',
+    },
+    {
+        icon: MapPin,
+        label: 'Alamat',
+        value: 'Jalan Raya Solo Sukoharjo Kilometer 7, Dusun Telukan RT 003, RW 005',
     },
 ];
 
@@ -77,20 +86,37 @@ const Contact: React.FC = () => {
                                 Tim kami akan merespons kebutuhan Anda dengan profesional.
                             </p>
 
-                            <div className="contact-info__list">
-                                {CONTACT_INFO.map((item) => (
-                                    <div key={item.label} className="contact-info__item">
-                                        <span className="contact-info__label">{item.label}</span>
+                            <div className="contact-info__person">
+                                <h4 className="contact-info__person-name">{CONTACT_PERSON.name}</h4>
+                                <p className="contact-info__person-role">{CONTACT_PERSON.role}</p>
+                            </div>
 
-                                        {item.href ? (
-                                            <a href={item.href} className="contact-info__value">
-                                                {item.value}
-                                            </a>
-                                        ) : (
-                                            <span className="contact-info__value">{item.value}</span>
-                                        )}
+                            <div className="contact-info__list">
+                                {CONTACT_INFO.map((item, index) => {
+                                    const ItemIcon = item.icon;
+
+                                    return (
+                                    <div
+                                        key={item.label}
+                                        className={`contact-info__item${index === 0 ? ' is-highlighted' : ''}`}
+                                    >
+                                        <span className="contact-info__icon-wrap" aria-hidden="true">
+                                            <ItemIcon className="contact-info__icon" />
+                                        </span>
+
+                                        <div className="contact-info__copy">
+                                            <span className="contact-info__label">{item.label}</span>
+                                            {item.href ? (
+                                                <a href={item.href} className="contact-info__value">
+                                                    {item.value}
+                                                </a>
+                                            ) : (
+                                                <span className="contact-info__value">{item.value}</span>
+                                            )}
+                                        </div>
                                     </div>
-                                ))}
+                                );
+                                })}
                             </div>
                         </div>
 

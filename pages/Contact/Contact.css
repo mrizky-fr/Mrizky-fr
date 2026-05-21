@@ -74,38 +74,104 @@
   line-height: 1.4;
 }
 
+.contact-info__person {
+  margin-top: 18px;
+  border-radius: 4px;
+  border: 1px solid rgba(22, 33, 51, 0.16);
+  background: #f8fafc;
+  padding: 14px 16px;
+}
+
+.contact-info__person-name {
+  margin: 0;
+  color: #111827;
+  font-size: 1rem;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.contact-info__person-role {
+  margin: 4px 0 0;
+  color: #334155;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 .contact-info__list {
-  margin-top: 24px;
+  margin-top: 16px;
   display: grid;
   gap: 14px;
 }
 
 .contact-info__item {
-  padding: 18px 20px;
+  padding: 14px 16px;
   border-radius: 4px;
-  background: #f7f7f7;
-  border: 1px solid rgba(12, 102, 80, 0.1);
+  background: #f5f5f5;
+  border: 1px solid #d4d4d8;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-info__item.is-highlighted {
+  border-color: #111827;
+  box-shadow: 0 1px 0 rgba(17, 24, 39, 0.08);
+}
+
+.contact-info__icon-wrap {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #9a7422;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-info__item.is-highlighted .contact-info__icon-wrap {
+  border-color: #0f172a;
+  background: #0f172a;
+  color: #f4d061;
+}
+
+.contact-info__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-info__copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .contact-info__label {
-  display: block;
-  margin-bottom: 6px;
-  color: #214132;
-  font-size: 0.84rem;
-  line-height: 1.2;
+  display: inline-flex;
+  color: #111827;
+  font-size: 0.82rem;
+  line-height: 1.3;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
 }
 
 .contact-info__value {
-  display: inline-block;
-  color: #1f2937;
-  font-size: 0.98rem;
-  line-height: 1.5;
+  display: inline-flex;
+  color: #334155;
+  font-size: 1.05rem;
+  line-height: 1.35;
   font-weight: 500;
   text-decoration: none;
   transition: color 0.2s ease;
+  word-break: break-word;
 }
 
 a.contact-info__value:hover {
@@ -141,15 +207,19 @@ a.contact-info__value:hover {
   border-radius: 4px;
   border: 1px solid rgba(12, 102, 80, 0.18);
   background: #ffffff;
-  padding: 12px 14px;
+  padding: 0 12px;
   color: #1f2937;
   font-size: 0.94rem;
-  line-height: 1.5;
+  line-height: 1;
   outline: none;
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease,
     background-color 0.2s ease;
+}
+
+.contact-form__input {
+  height: 36px;
 }
 
 .contact-form__input::placeholder,
@@ -166,6 +236,8 @@ a.contact-info__value:hover {
 .contact-form__textarea {
   resize: vertical;
   min-height: 150px;
+  padding: 10px 12px;
+  line-height: 1.4;
 }
 
 .contact-form__button {
@@ -293,6 +365,38 @@ a.contact-info__value:hover {
   .contact-info__description {
     font-size: 0.94rem;
     line-height: 1.4;
+  }
+
+  .contact-info__person {
+    margin-top: 14px;
+    padding: 12px;
+  }
+
+  .contact-info__person-name {
+    font-size: 0.94rem;
+  }
+
+  .contact-info__person-role {
+    font-size: 0.84rem;
+  }
+
+  .contact-info__item {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .contact-info__icon-wrap {
+    width: 42px;
+    height: 42px;
+  }
+
+  .contact-info__icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .contact-info__value {
+    font-size: 0.96rem;
   }
 
   .contact-form__row {
