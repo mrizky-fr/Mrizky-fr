@@ -18,7 +18,10 @@ const PublicHeader: React.FC = () => {
   const headerMenuItems: HeaderMenuItem[] = [
     { label: 'Home', href: '/#home' },
     { label: 'About', href: '/about' },
-    { label: 'Faq', href: '/#faq' },
+    { label: 'Services', href: '/services' },
+    { label: 'Gallery', href: '/gallery' },
+    { label: 'Contact', href: '/contact' },
+    { label: 'FAQ', href: '/#faq' },
   ];
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [headerHeight, setHeaderHeight] = useState(0);
@@ -81,17 +84,18 @@ const PublicHeader: React.FC = () => {
     }
 
     const { pathname, hash } = locationState;
+    const href = item.href.toLowerCase();
 
-    if (item.href === '/about') {
-      return pathname === '/about';
+    if (href === '/#home') {
+      return pathname === '/' && (hash === '' || hash === '#home');
     }
 
-    if (item.href === '/#faq') {
+    if (href === '/#faq') {
       return pathname === '/' && hash === '#faq';
     }
 
-    if (item.href === '/#home') {
-      return pathname === '/' && (hash === '' || hash === '#home');
+    if (href.startsWith('/')) {
+      return pathname === href;
     }
 
     return false;

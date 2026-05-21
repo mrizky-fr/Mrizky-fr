@@ -37,13 +37,14 @@ const PublicFooter: React.FC = () => {
 
                     {/* Column 2: About / Menu */}
                     <div className="site-footer__col site-footer__col--about">
-                        <h3 className="site-footer__title">Tentang Kami</h3>
-                        <nav className="site-footer__menu" aria-label="Tentang Kami">
-                            <a href="#home" className="site-footer__menu-link">Beranda</a>
-                            <a href="#about" className="site-footer__menu-link">Tentang</a>
-                            <a href="#faq" className="site-footer__menu-link">Pertanyaan Umum (FAQ)</a>
-                            <a href="#" className="site-footer__menu-link">Layanan</a>
-                            <a href="#" className="site-footer__menu-link">Kebijakan Privasi</a>
+                        <h3 className="site-footer__title">Navigasi</h3>
+                        <nav className="site-footer__menu" aria-label="Navigasi halaman">
+                            <a href="/#home" className="site-footer__menu-link">Beranda</a>
+                            <a href="/about" className="site-footer__menu-link">Tentang</a>
+                            <a href="/services" className="site-footer__menu-link">Layanan</a>
+                            <a href="/gallery" className="site-footer__menu-link">Galeri</a>
+                            <a href="/contact" className="site-footer__menu-link">Kontak</a>
+                            <a href="/#faq" className="site-footer__menu-link">Pertanyaan Umum (FAQ)</a>
                         </nav>
                     </div>
 
