@@ -142,12 +142,12 @@ const PublicHeader: React.FC = () => {
             <div className="header-right">
               <div className="header-cta-group">
                 <a
-                  href="tel:+62123456789"
+                  href="tel:+628115585490"
                   className="header-cta header-cta--secondary"
-                  aria-label="Call +62 123456789"
+                  aria-label="Call +62 811-5585-490"
                 >
                   <Phone className="header-cta__icon" aria-hidden="true" />
-                  <span>+62 123456789</span>
+                  <span>+62 811-5585-490</span>
                 </a>
                 <button
                   type="button"
@@ -224,13 +224,13 @@ const PublicHeader: React.FC = () => {
 
             <div className="header-drawer__cta-group">
               <a
-                href="tel:+62123456789"
+                href="tel:+628115585490"
                 className="header-cta header-cta--secondary"
-                aria-label="Call +62 123456789"
+                aria-label="Call +62 811-5585-490"
                 onClick={closeDrawer}
               >
                 <Phone className="header-cta__icon" aria-hidden="true" />
-                <span>+62 123456789</span>
+                <span>+62 811-5585-490</span>
               </a>
               <button
                 type="button"

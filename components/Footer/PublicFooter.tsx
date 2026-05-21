@@ -26,13 +26,13 @@ const PublicFooter: React.FC = () => {
                             PT Bio Energy Semesta Tama. Kami hadir sebagai mitra profesional untuk mendukung kebutuhan bisnis Anda dengan layanan yang adaptif dan berkualitas.
                         </p>
                         <p className="site-footer__line">
-                            <strong>Alamat</strong> : Indonesia
+                            <strong>Alamat</strong> : Jalan Raya Solo Sukoharjo Kilometer 7, Dusun Telukan RT 003, RW 005
                         </p>
                         <p className="site-footer__line">
-                            <strong>Telp</strong> : <a href="tel:03410000000" className="site-footer__contact-link">0341-XXXXXXX</a>
+                            <strong>Telp</strong> : <a href="tel:+628115585490" className="site-footer__contact-link">+62 811-5585-490</a>
                         </p>
                         <p className="site-footer__line">
-                            <strong>Email</strong> : <a href="mailto:info@bioenergysemestatama.com" className="site-footer__contact-link">info@bioenergysemestatama.com</a>
+                            <strong>Email</strong> : <a href="mailto:m.kent.cahyadi@gmail.com" className="site-footer__contact-link">m.kent.cahyadi@gmail.com</a>
                         </p>
                     </div>
 
@@ -93,7 +93,7 @@ const PublicFooter: React.FC = () => {
                             <a href="#" target="_blank" rel="noreferrer" className="site-footer__social-link" aria-label="Facebook">
                                 <FaFacebook size={15} />
                             </a>
-                            <a href="mailto:info@bioenergysemestatama.com" target="_blank" rel="noreferrer" className="site-footer__social-link" aria-label="Email">
+                            <a href="mailto:m.kent.cahyadi@gmail.com" target="_blank" rel="noreferrer" className="site-footer__social-link" aria-label="Email">
                                 <FaEnvelope size={15} />
                             </a>
                         </div>
