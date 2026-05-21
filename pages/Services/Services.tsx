@@ -98,7 +98,7 @@ const Services: React.FC = () => {
 
                     <div className="services-cta-actions">
                         <a
-                            href="#contact"
+                            href="/contact"
                             className="services-cta-button services-cta-button--contact scroll-reveal opacity-0"
                             data-reveal-delay="180"
                         >
@@ -107,7 +107,7 @@ const Services: React.FC = () => {
                         </a>
 
                         <a
-                            href="#services"
+                            href="/about"
                             className="services-cta-button services-cta-button--profile scroll-reveal opacity-0"
                             data-reveal-delay="260"
                         >

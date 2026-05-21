@@ -97,7 +97,7 @@ const About: React.FC = () => {
 
                     <div className="about-cta-actions">
                         <a
-                            href="#contact"
+                            href="/contact"
                             className="about-cta-button about-cta-button--contact scroll-reveal opacity-0"
                             data-reveal-delay="180"
                         >
@@ -106,7 +106,7 @@ const About: React.FC = () => {
                         </a>
 
                         <a
-                            href="#about-company"
+                            href="/about"
                             className="about-cta-button about-cta-button--profile scroll-reveal opacity-0"
                             data-reveal-delay="260"
                         >

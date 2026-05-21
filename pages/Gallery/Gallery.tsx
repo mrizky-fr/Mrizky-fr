@@ -124,7 +124,7 @@ const Gallery: React.FC = () => {
 
                     <div className="gallery-cta-actions">
                         <a
-                            href="#contact"
+                            href="/contact"
                             className="gallery-cta-button gallery-cta-button--contact scroll-reveal opacity-0"
                             data-reveal-delay="180"
                         >
@@ -133,7 +133,7 @@ const Gallery: React.FC = () => {
                         </a>
 
                         <a
-                            href="#gallery"
+                            href="/about"
                             className="gallery-cta-button gallery-cta-button--profile scroll-reveal opacity-0"
                             data-reveal-delay="260"
                         >

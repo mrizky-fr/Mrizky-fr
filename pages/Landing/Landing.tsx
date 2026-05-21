@@ -254,7 +254,7 @@ const Landing: React.FC = () => {
                     </div>
 
                     <div className="home-company-action scroll-reveal opacity-0" data-reveal-delay="340">
-                        <a href="#faq" className="home-company-button">
+                        <a href="/about" className="home-company-button">
                             <ArrowRight className="app-button-icon" aria-hidden="true" />
                             <span className="app-button-label">Lihat Lebih Lengkap</span>
                         </a>
@@ -331,7 +331,7 @@ const Landing: React.FC = () => {
 
                     <div className="home-cta-actions">
                         <a
-                            href="#contact"
+                            href="/contact"
                             className="home-cta-button home-cta-button--contact scroll-reveal opacity-0"
                             data-reveal-delay="180"
                         >
@@ -340,7 +340,7 @@ const Landing: React.FC = () => {
                         </a>
 
                         <a
-                            href="#company"
+                            href="/about"
                             className="home-cta-button home-cta-button--profile scroll-reveal opacity-0"
                             data-reveal-delay="260"
                         >

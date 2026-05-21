@@ -149,13 +149,14 @@ const PublicHeader: React.FC = () => {
                   <Phone className="header-cta__icon" aria-hidden="true" />
                   <span>+62 811-5585-490</span>
                 </a>
-                <button
-                  type="button"
+                <a
+                  href="/contact"
                   className="header-cta header-cta--primary"
+                  aria-label="Open contact page"
                 >
                   <Headset size={18} aria-hidden="true" />
                   <span>Pusat Bantuan!</span>
-                </button>
+                </a>
               </div>
               <button
                 type="button"
@@ -232,16 +233,15 @@ const PublicHeader: React.FC = () => {
                 <Phone className="header-cta__icon" aria-hidden="true" />
                 <span>+62 811-5585-490</span>
               </a>
-              <button
-                type="button"
+              <a
+                href="/contact"
                 className="header-cta header-cta--primary"
-                onClick={() => {
-                  closeDrawer();
-                }}
+                aria-label="Open contact page"
+                onClick={closeDrawer}
               >
                 <Headset size={18} aria-hidden="true" />
                 <span>Pusat Bantuan!</span>
-              </button>
+              </a>
             </div>
           </aside>
         </div>
