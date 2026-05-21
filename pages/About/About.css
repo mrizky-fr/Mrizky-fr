@@ -55,7 +55,8 @@
 .about-profile-copy {
   color: #1f2937;
   font-size: clamp(0.95rem, 1.4vw, 1.05rem);
-  line-height: 1.75;
+  line-height: 1.4;
+
 }
 
 .about-profile-copy p {
@@ -316,7 +317,7 @@
 
   .about-profile-copy {
     font-size: 0.94rem;
-    line-height: 1.7;
+    line-height: 1.4;
   }
 
   .about-profile-highlight {
