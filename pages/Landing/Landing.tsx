@@ -15,6 +15,8 @@ import {
 import PublicHeader from '../../components/Header/PublicHeader';
 import PublicFooter from '../../components/Footer/PublicFooter';
 import logoNucare from '../../assets/logo best.png';
+import heroCoverImage from '../../assets/Wood-Pellet-cover-q4vtiu315mplmf2d3s09jzctdfky9ni6y5fe4tuyrs.webp';
+import homeSectionFourImage from '../../assets/WhatsApp Image 2026-05-21 at 15.44.03.jpeg';
 import Reveal from '../../components/Reveal/Reveal';
 import './Landing.css';
 
@@ -91,13 +93,17 @@ const HERO_TITLE_LINES = [
 
 const Landing: React.FC = () => {
     let wordIndex = 0;
+    const heroBackgroundStyle = {
+        '--home-hero-image': `url(${heroCoverImage})`,
+        '--home-hero-overlay-image': "url('https://i.ibb.co.com/Gv0x0Fk2/cover-hero-section-5.png')",
+    } as React.CSSProperties;
 
     return (
         <div className="min-h-screen bg-white overflow-x-hidden">
             <PublicHeader />
 
             <section id="home" className="home-hero-section">
-                <div className="home-hero">
+                <div className="home-hero" style={heroBackgroundStyle}>
                     <div className="home-hero__content">
                         <Reveal>
                         <div>
@@ -261,7 +267,7 @@ const Landing: React.FC = () => {
                     <Reveal delay={0.1} className="home-why-visual">
                         <div className="home-why-frame" aria-hidden="true" />
                         <img
-                            src="https://i.ibb.co.com/qYRHs669/high-quality-professional-product-photography-of-fish-feed-pellets-a-heap-of.png"
+                            src={homeSectionFourImage}
                             alt="Produk wood pellet berkualitas"
                             className="home-why-image"
                         />

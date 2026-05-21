@@ -4,10 +4,10 @@ import PublicHeader from '../../components/Header/PublicHeader';
 import PublicFooter from '../../components/Footer/PublicFooter';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import Reveal from '../../components/Reveal/Reveal';
+import aboutProfileImage from '../../assets/WhatsApp Image 2026-05-21 at 15.40.46.jpeg';
 import './About.css';
 
-const ABOUT_IMAGE =
-    'https://i.ibb.co.com/qYRHs669/high-quality-professional-product-photography-of-fish-feed-pellets-a-heap-of.png';
+const ABOUT_IMAGE = aboutProfileImage;
 
 const About: React.FC = () => {
     return (

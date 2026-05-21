@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { AlignRight, X, Headset, Phone } from 'lucide-react';
+import { AlignRight, X, Headset, Mail } from 'lucide-react';
 import logoNucare from '../../assets/logo best.png';
 import './PublicHeader.css';
 
@@ -137,12 +137,12 @@ const PublicHeader: React.FC = () => {
             <div className="header-right">
               <div className="header-cta-group">
                 <a
-                  href="tel:+628115585490"
+                  href="mailto:info@best-pellet.com"
                   className="header-cta header-cta--secondary"
-                  aria-label="Call +62 811-5585-490"
+                  aria-label="Send email to info@best-pellet.com"
                 >
-                  <Phone className="header-cta__icon" aria-hidden="true" />
-                  <span>+62 811-5585-490</span>
+                  <Mail className="header-cta__icon" aria-hidden="true" />
+                  <span>Kirim Email</span>
                 </a>
                 <a
                   href="/contact"
@@ -220,13 +220,13 @@ const PublicHeader: React.FC = () => {
 
             <div className="header-drawer__cta-group">
               <a
-                href="tel:+628115585490"
+                href="mailto:info@best-pellet.com"
                 className="header-cta header-cta--secondary"
-                aria-label="Call +62 811-5585-490"
+                aria-label="Send email to info@best-pellet.com"
                 onClick={closeDrawer}
               >
-                <Phone className="header-cta__icon" aria-hidden="true" />
-                <span>+62 811-5585-490</span>
+                <Mail className="header-cta__icon" aria-hidden="true" />
+                <span>Kirim Email</span>
               </a>
               <a
                 href="/contact"

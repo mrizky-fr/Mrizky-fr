@@ -27,9 +27,6 @@ const PublicFooter: React.FC = () => {
                             <strong>Alamat</strong> : Jalan Raya Solo Sukoharjo KM 7, Dusun Telukan, RT 003/RW 005, Solo, Jawa Tengah
                         </p>
                         <p className="site-footer__line">
-                            <strong>Telp</strong> : <a href="tel:+628115585490" className="site-footer__contact-link">+62 811-5585-490</a>
-                        </p>
-                        <p className="site-footer__line">
                             <strong>Email</strong> : <a href="mailto:info@best-pellet.com" className="site-footer__contact-link">info@best-pellet.com</a>
                         </p>
                     </div>

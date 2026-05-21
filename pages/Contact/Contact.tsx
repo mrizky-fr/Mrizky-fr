@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import { Mail, MapPin, Send } from 'lucide-react';
 import PublicHeader from '../../components/Header/PublicHeader';
 import PublicFooter from '../../components/Footer/PublicFooter';
 import PageHeader from '../../components/PageHeader/PageHeader';
@@ -19,12 +19,6 @@ const CONTACT_PERSON = {
 
 const CONTACT_INFO: ContactInfoItem[] = [
     {
-        icon: Phone,
-        label: 'No. HP',
-        value: '+62 811-5585-490',
-        href: 'tel:+628115585490',
-    },
-    {
         icon: Mail,
         label: 'Email',
         value: 'info@best-pellet.com',
@@ -43,7 +37,6 @@ const Contact: React.FC = () => {
 
         const formData = new FormData(event.currentTarget);
         const name = String(formData.get('name') || '').trim();
-        const phone = String(formData.get('phone') || '').trim();
         const email = String(formData.get('email') || '').trim();
         const subject = String(formData.get('subject') || '').trim();
         const message = String(formData.get('message') || '').trim();
@@ -53,7 +46,6 @@ const Contact: React.FC = () => {
             '',
             'Saya ingin mengajukan kebutuhan wood pellet:',
             `Nama: ${name || '-'}`,
-            `No. HP: ${phone || '-'}`,
             `Email: ${email || '-'}`,
             `Subjek: ${subject || '-'}`,
             `Pesan: ${message || '-'}`,
@@ -123,35 +115,19 @@ const Contact: React.FC = () => {
 
                         <Reveal delay={0.26} className="contact-form">
                             <form onSubmit={handleSubmitToWhatsApp}>
-                                <div className="contact-form__row">
-                                    <Reveal delay={0.28} className="contact-form__group">
-                                        <label htmlFor="name" className="contact-form__label">
-                                            Nama Lengkap
-                                        </label>
-                                        <input
-                                            id="name"
-                                            name="name"
-                                            type="text"
-                                            className="contact-form__input"
-                                            placeholder="Masukkan nama lengkap"
-                                            required
-                                        />
-                                    </Reveal>
-
-                                    <Reveal delay={0.32} className="contact-form__group">
-                                        <label htmlFor="phone" className="contact-form__label">
-                                            No. HP
-                                        </label>
-                                        <input
-                                            id="phone"
-                                            name="phone"
-                                            type="tel"
-                                            className="contact-form__input"
-                                            placeholder="Masukkan nomor HP"
-                                            required
-                                        />
-                                    </Reveal>
-                                </div>
+                                <Reveal delay={0.28} className="contact-form__group">
+                                    <label htmlFor="name" className="contact-form__label">
+                                        Nama Lengkap
+                                    </label>
+                                    <input
+                                        id="name"
+                                        name="name"
+                                        type="text"
+                                        className="contact-form__input"
+                                        placeholder="Masukkan nama lengkap"
+                                        required
+                                    />
+                                </Reveal>
 
                                 <Reveal delay={0.36} className="contact-form__group">
                                     <label htmlFor="email" className="contact-form__label">

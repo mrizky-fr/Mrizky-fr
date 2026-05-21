@@ -6,6 +6,11 @@ import PublicHeader from '../../components/Header/PublicHeader';
 import PublicFooter from '../../components/Footer/PublicFooter';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import Reveal from '../../components/Reveal/Reveal';
+import galleryImage1 from '../../assets/WhatsApp Image 2026-05-21 at 15.40.16.jpeg';
+import galleryImage2 from '../../assets/WhatsApp Image 2026-05-21 at 15.40.46.jpeg';
+import galleryImage3 from '../../assets/WhatsApp Image 2026-05-21 at 15.43.15.jpeg';
+import galleryImage4 from '../../assets/WhatsApp Image 2026-05-21 at 15.44.03.jpeg';
+import galleryImage5 from '../../assets/Wood-Pellet-cover-q4vtiu315mplmf2d3s09jzctdfky9ni6y5fe4tuyrs.webp';
 import './Gallery.css';
 
 type GalleryItem = {
@@ -15,27 +20,27 @@ type GalleryItem = {
 
 const GALLERY_ITEMS: GalleryItem[] = [
     {
-        image: 'https://i.ibb.co.com/qYRHs669/high-quality-professional-product-photography-of-fish-feed-pellets-a-heap-of.png',
+        image: galleryImage1,
         title: 'Produk Wood Pellet',
     },
     {
-        image: 'https://i.ibb.co.com/qYRHs669/high-quality-professional-product-photography-of-fish-feed-pellets-a-heap-of.png',
+        image: galleryImage2,
         title: 'Bahan Baku Terpilih',
     },
     {
-        image: 'https://i.ibb.co.com/qYRHs669/high-quality-professional-product-photography-of-fish-feed-pellets-a-heap-of.png',
+        image: galleryImage3,
         title: 'Kualitas Terstandar',
     },
     {
-        image: 'https://i.ibb.co.com/qYRHs669/high-quality-professional-product-photography-of-fish-feed-pellets-a-heap-of.png',
+        image: galleryImage4,
         title: 'Pasokan Industri',
     },
     {
-        image: 'https://i.ibb.co.com/qYRHs669/high-quality-professional-product-photography-of-fish-feed-pellets-a-heap-of.png',
+        image: galleryImage5,
         title: 'Energi Biomassa',
     },
     {
-        image: 'https://i.ibb.co.com/qYRHs669/high-quality-professional-product-photography-of-fish-feed-pellets-a-heap-of.png',
+        image: galleryImage2,
         title: 'Mitra Berkelanjutan',
     },
 ];
