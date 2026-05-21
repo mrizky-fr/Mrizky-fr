@@ -60,7 +60,7 @@ const About: React.FC = () => {
                             </p>
 
                             <p>
-                                PT BioEnergySemestaTama hadir sebagai produsen Wood Pellet yang berkomitmen
+                                PT Bio Energy Semesta Tama hadir sebagai produsen Wood Pellet yang berkomitmen
                                 menghadirkan produk berkualitas tinggi, ramah lingkungan, dan berkelanjutan.
                                 Kami berfokus pada penyediaan energi biomassa yang dapat mendukung kebutuhan
                                 industri secara konsisten dan profesional.
@@ -69,7 +69,7 @@ const About: React.FC = () => {
 
                         <div className="about-profile-highlight scroll-reveal opacity-0" data-reveal-delay="260">
                             <p>
-                                PT BioEnergySemestaTama hadir untuk memenuhi permintaan pasar akan ketersediaan
+                                PT Bio Energy Semesta Tama hadir untuk memenuhi permintaan pasar akan ketersediaan
                                 pelet kayu. Kami dapat memproduksi pelet kayu dengan kapasitas hingga 1.500 Ton
                                 per Bulannya.
                             </p>
@@ -78,9 +78,9 @@ const About: React.FC = () => {
                         <div className="about-profile-copy scroll-reveal opacity-0" data-reveal-delay="340">
                             <p>
                                 Dengan kualitas unggul, komitmen terhadap lingkungan, dan layanan pelanggan yang
-                                terbaik, PT BioEnergySemestaTama siap menjadi mitra industri wood pellet di
+                                terbaik, PT Bio Energy Semesta Tama siap menjadi mitra industri wood pellet di
                                 Indonesia dan mengekspansi ke pasar global. Dapatkan wood pellet berkualitas tinggi
-                                dari PT BioEnergySemestaTama dan bergabunglah dalam upaya untuk menciptakan masa
+                                dari PT Bio Energy Semesta Tama dan bergabunglah dalam upaya untuk menciptakan masa
                                 depan yang lebih hijau dan berkelanjutan.
                             </p>
                         </div>
