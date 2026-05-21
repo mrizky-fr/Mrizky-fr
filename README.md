@@ -253,6 +253,26 @@ Website dapat di-deploy menggunakan:
 - Vercel
 - Netlify
 - Cloudflare Pages
+- Coolify (Dockerfile)
+
+### Deployment ke Coolify
+
+Project ini sudah disiapkan untuk Coolify menggunakan:
+
+- `Dockerfile` multi-stage (build Vite + serve Nginx)
+- `nginx.conf` untuk SPA fallback (`/index.html`)
+- endpoint health check: `GET /health`
+
+Langkah setup resource di Coolify:
+
+1. Buat resource baru: **Application** (Dockerfile / Build Pack Dockerfile).
+2. Hubungkan repository ini.
+3. Build context: root project.
+4. Exposed port / internal port: `80`.
+5. Health check path: `/health`.
+6. Tambahkan environment variables jika dibutuhkan di menu **Environment Variables** (jangan commit `.env` ke git).
+
+Setelah deploy sukses, Coolify akan melakukan health check otomatis ke endpoint `/health`.
 
 ## Development Notes
 
