@@ -21,7 +21,6 @@ const PublicHeader: React.FC = () => {
     { label: 'Produk', href: '/services' },
     { label: 'Gallery', href: '/gallery' },
     { label: 'Contact', href: '/contact' },
-    { label: 'FAQ', href: '/#faq' },
   ];
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [headerHeight, setHeaderHeight] = useState(0);
@@ -88,10 +87,6 @@ const PublicHeader: React.FC = () => {
 
     if (href === '/#home') {
       return pathname === '/' && (hash === '' || hash === '#home');
-    }
-
-    if (href === '/#faq') {
-      return pathname === '/' && hash === '#faq';
     }
 
     if (href.startsWith('/')) {

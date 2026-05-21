@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { FaInstagram, FaTiktok, FaYoutube, FaFacebook, FaEnvelope, FaThreads, FaXTwitter } from 'react-icons/fa6';
 import { Bell } from 'lucide-react';
 import './PublicFooter.css';
 
@@ -9,7 +8,6 @@ const PublicFooter: React.FC = () => {
     const handleSubscribe = (e: React.FormEvent) => {
         e.preventDefault();
         if (!email) return;
-        // Static UI, no actual submission
         setEmail('');
         alert('Terima kasih telah berlangganan info PT Bio Energy Semesta Tama.');
     };
@@ -26,13 +24,13 @@ const PublicFooter: React.FC = () => {
                             PT Bio Energy Semesta Tama. Kami hadir sebagai mitra profesional untuk mendukung kebutuhan bisnis Anda dengan layanan yang adaptif dan berkualitas.
                         </p>
                         <p className="site-footer__line">
-                            <strong>Alamat</strong> : Jalan Raya Solo Sukoharjo Kilometer 7, Dusun Telukan RT 003, RW 005
+                            <strong>Alamat</strong> : Jalan Raya Solo Sukoharjo KM 7, Dusun Telukan, RT 003/RW 005, Solo, Jawa Tengah
                         </p>
                         <p className="site-footer__line">
                             <strong>Telp</strong> : <a href="tel:+628115585490" className="site-footer__contact-link">+62 811-5585-490</a>
                         </p>
                         <p className="site-footer__line">
-                            <strong>Email</strong> : <a href="mailto:m.kent.cahyadi@gmail.com" className="site-footer__contact-link">m.kent.cahyadi@gmail.com</a>
+                            <strong>Email</strong> : <a href="mailto:info@bestpellet.com" className="site-footer__contact-link">info@bestpellet.com</a>
                         </p>
                     </div>
 
@@ -45,11 +43,10 @@ const PublicFooter: React.FC = () => {
                             <a href="/services" className="site-footer__menu-link">Produk</a>
                             <a href="/gallery" className="site-footer__menu-link">Galeri</a>
                             <a href="/contact" className="site-footer__menu-link">Kontak</a>
-                            <a href="/#faq" className="site-footer__menu-link">Pertanyaan Umum (FAQ)</a>
                         </nav>
                     </div>
 
-                    {/* Column 3: Subscribe & Socials */}
+                    {/* Column 3: Subscribe + CTA */}
                     <div className="site-footer__col site-footer__col--subscribe">
                         <h3 className="site-footer__title">Dapatkan Info Terbaru</h3>
                         <form className="site-footer__subscribe-form" onSubmit={handleSubscribe}>
@@ -67,36 +64,11 @@ const PublicFooter: React.FC = () => {
                                 <span className="app-button-label">Berlangganan</span>
                             </button>
                         </form>
-
-                        <div style={{ marginTop: '24px', marginBottom: '12px' }}>
-                            <p className="site-footer__description" style={{ fontSize: '0.92rem', fontWeight: 600, color: '#111827', margin: 0 }}>
-                                Ikuti Media Sosial Resmi Kami:
-                            </p>
-                        </div>
-
-                        <div className="site-footer__socials" aria-label="Media Sosial PT Bio Energy Semesta Tama">
-                            <a href="#" target="_blank" rel="noreferrer" className="site-footer__social-link" aria-label="Instagram">
-                                <FaInstagram size={15} />
-                            </a>
-                            <a href="#" target="_blank" rel="noreferrer" className="site-footer__social-link" aria-label="TikTok">
-                                <FaTiktok size={14} />
-                            </a>
-                            <a href="#" target="_blank" rel="noreferrer" className="site-footer__social-link" aria-label="YouTube">
-                                <FaYoutube size={15} />
-                            </a>
-                            <a href="#" target="_blank" rel="noreferrer" className="site-footer__social-link" aria-label="X (Twitter)">
-                                <FaXTwitter size={14} />
-                            </a>
-                            <a href="#" target="_blank" rel="noreferrer" className="site-footer__social-link" aria-label="Threads">
-                                <FaThreads size={15} />
-                            </a>
-                            <a href="#" target="_blank" rel="noreferrer" className="site-footer__social-link" aria-label="Facebook">
-                                <FaFacebook size={15} />
-                            </a>
-                            <a href="mailto:m.kent.cahyadi@gmail.com" target="_blank" rel="noreferrer" className="site-footer__social-link" aria-label="Email">
-                                <FaEnvelope size={15} />
-                            </a>
-                        </div>
+                        <p className="site-footer__offer-text">
+                            Tertarik dengan produk wood pellet kami? Kirimkan permintaan dan pertanyaan Anda melalui email kami di{' '}
+                            <a href="mailto:info@bestpellet.com" className="site-footer__offer-email">info@bestpellet.com</a>{' '}
+                            dan tim kami akan segera merespons dengan penawaran harga terbaik sesuai kebutuhan bisnis Anda.
+                        </p>
                     </div>
 
                 </div>

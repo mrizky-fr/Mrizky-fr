@@ -308,6 +308,102 @@ a.contact-info__value:hover {
   color: #214132;
 }
 
+.contact-offer-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 8px 0 72px;
+  background: #ffffff;
+}
+
+.contact-offer-shell {
+  width: min(1200px, 100%);
+  margin: 0 22px;
+  border-radius: 4px;
+  border: 1px solid rgba(12, 102, 80, 0.12);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+  background: #ffffff;
+  padding: 24px;
+}
+
+.contact-offer-title {
+  margin: 0;
+  color: #214132;
+  font-size: clamp(1.3rem, 2.6vw, 1.9rem);
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.contact-offer-description {
+  margin: 12px 0 0;
+  color: #365166;
+  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+  line-height: 1.4;
+  max-width: 920px;
+}
+
+.contact-offer-button {
+  position: relative;
+  margin-top: 18px;
+  min-width: 220px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  overflow: hidden;
+  border-radius: 4px;
+  padding: 0 18px;
+  border: 1px solid #214132;
+  background: #214132;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+  isolation: isolate;
+}
+
+.contact-offer-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -82%;
+  width: 44%;
+  height: 200%;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.12) 24%,
+    rgba(255, 255, 255, 0.8) 48%,
+    rgba(229, 220, 107, 0.75) 58%,
+    rgba(255, 255, 255, 0.1) 76%,
+    transparent 100%
+  );
+  transform: skewX(-20deg);
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.contact-offer-button:hover::before {
+  animation: contact-button-flash-right 0.72s ease-out forwards;
+}
+
+.contact-offer-button:hover {
+  transform: translateY(-2px);
+  border-color: #214132;
+  background: #E5DC6B;
+  color: #214132;
+}
+
 @keyframes contact-button-flash-right {
   0% {
     left: -80%;
@@ -331,6 +427,14 @@ a.contact-info__value:hover {
 
   .contact-layout {
     grid-template-columns: 1fr;
+  }
+
+  .contact-offer-section {
+    padding: 4px 0 56px;
+  }
+
+  .contact-offer-shell {
+    padding: 20px;
   }
 }
 
@@ -410,5 +514,26 @@ a.contact-info__value:hover {
     height: 40px;
     min-height: 40px;
     padding: 0 18px;
+  }
+
+  .contact-offer-section {
+    padding: 0 0 44px;
+  }
+
+  .contact-offer-shell {
+    padding: 18px;
+  }
+
+  .contact-offer-title {
+    font-size: clamp(1.2rem, 6vw, 1.5rem);
+  }
+
+  .contact-offer-description {
+    font-size: 0.92rem;
+  }
+
+  .contact-offer-button {
+    width: 100%;
+    min-width: 0;
   }
 }

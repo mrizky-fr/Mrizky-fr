@@ -13,8 +13,7 @@ type ContactInfoItem = {
 };
 
 const CONTACT_PERSON = {
-    name: 'MICHAEL KENT CAHYADI',
-    role: 'Direktur Utama',
+    name: 'PT. Bio Energy Semesta Tama (BEST)',
 };
 
 const CONTACT_INFO: ContactInfoItem[] = [
@@ -27,13 +26,13 @@ const CONTACT_INFO: ContactInfoItem[] = [
     {
         icon: Mail,
         label: 'Email',
-        value: 'm.kent.cahyadi@gmail.com',
-        href: 'mailto:m.kent.cahyadi@gmail.com',
+        value: 'info@bestpellet.com',
+        href: 'mailto:info@bestpellet.com',
     },
     {
         icon: MapPin,
         label: 'Alamat',
-        value: 'Jalan Raya Solo Sukoharjo Kilometer 7, Dusun Telukan RT 003, RW 005',
+        value: 'Jalan Raya Solo Sukoharjo KM 7, Dusun Telukan, RT 003/RW 005, Solo, Jawa Tengah',
     },
 ];
 
@@ -62,6 +61,31 @@ const Contact: React.FC = () => {
         return () => observer.disconnect();
     }, []);
 
+    const handleSubmitToWhatsApp = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+
+        const formData = new FormData(event.currentTarget);
+        const name = String(formData.get('name') || '').trim();
+        const phone = String(formData.get('phone') || '').trim();
+        const email = String(formData.get('email') || '').trim();
+        const subject = String(formData.get('subject') || '').trim();
+        const message = String(formData.get('message') || '').trim();
+
+        const text = [
+            'Halo PT. Bio Energy Semesta Tama (BEST),',
+            '',
+            'Saya ingin mengajukan kebutuhan wood pellet:',
+            `Nama: ${name || '-'}`,
+            `No. HP: ${phone || '-'}`,
+            `Email: ${email || '-'}`,
+            `Subjek: ${subject || '-'}`,
+            `Pesan: ${message || '-'}`,
+        ].join('\n');
+
+        const whatsappUrl = `https://wa.me/628115585490?text=${encodeURIComponent(text)}`;
+        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    };
+
     return (
         <div className="min-h-screen bg-white overflow-x-hidden">
             <PublicHeader />
@@ -88,7 +112,6 @@ const Contact: React.FC = () => {
 
                             <div className="contact-info__person">
                                 <h4 className="contact-info__person-name">{CONTACT_PERSON.name}</h4>
-                                <p className="contact-info__person-role">{CONTACT_PERSON.role}</p>
                             </div>
 
                             <div className="contact-info__list">
@@ -120,7 +143,11 @@ const Contact: React.FC = () => {
                             </div>
                         </div>
 
-                        <form className="contact-form scroll-reveal opacity-0" data-reveal-delay="260">
+                        <form
+                            className="contact-form scroll-reveal opacity-0"
+                            data-reveal-delay="260"
+                            onSubmit={handleSubmitToWhatsApp}
+                        >
                             <div className="contact-form__row">
                                 <div className="contact-form__group">
                                     <label htmlFor="name" className="contact-form__label">
@@ -132,6 +159,7 @@ const Contact: React.FC = () => {
                                         type="text"
                                         className="contact-form__input"
                                         placeholder="Masukkan nama lengkap"
+                                        required
                                     />
                                 </div>
 
@@ -145,6 +173,7 @@ const Contact: React.FC = () => {
                                         type="tel"
                                         className="contact-form__input"
                                         placeholder="Masukkan nomor HP"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -159,6 +188,7 @@ const Contact: React.FC = () => {
                                     type="email"
                                     className="contact-form__input"
                                     placeholder="Masukkan alamat email"
+                                    required
                                 />
                             </div>
 
@@ -172,6 +202,7 @@ const Contact: React.FC = () => {
                                     type="text"
                                     className="contact-form__input"
                                     placeholder="Contoh: Permintaan kerja sama wood pellet"
+                                    required
                                 />
                             </div>
 
@@ -185,6 +216,7 @@ const Contact: React.FC = () => {
                                     className="contact-form__textarea"
                                     placeholder="Tulis pesan atau kebutuhan Anda"
                                     rows={6}
+                                    required
                                 />
                             </div>
 
@@ -194,6 +226,27 @@ const Contact: React.FC = () => {
                             </button>
                         </form>
                     </div>
+                </div>
+            </section>
+
+            <section className="contact-offer-section scroll-reveal opacity-0" aria-label="Minta penawaran">
+                <div className="contact-offer-shell">
+                    <h2 className="contact-offer-title scroll-reveal opacity-0" data-reveal-delay="100">
+                        Minta Penawaran
+                    </h2>
+                    <p className="contact-offer-description scroll-reveal opacity-0" data-reveal-delay="180">
+                        Tertarik dengan produk wood pellet kami? Kirimkan permintaan dan pertanyaan Anda melalui email
+                        kami di info@bestpellet.com dan tim kami akan segera merespons dengan penawaran harga terbaik
+                        sesuai kebutuhan bisnis Anda.
+                    </p>
+                    <a
+                        href="mailto:info@bestpellet.com"
+                        className="contact-offer-button scroll-reveal opacity-0"
+                        data-reveal-delay="260"
+                    >
+                        <Mail className="app-button-icon" aria-hidden="true" />
+                        <span className="app-button-label">Kirim Email Penawaran</span>
+                    </a>
                 </div>
             </section>
 
