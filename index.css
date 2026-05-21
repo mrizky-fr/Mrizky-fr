@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
 }
 
 :root {
-  --description-font-family: "SN Pro", "Work Sans", sans-serif;
+  --description-font-family: "SN Pro", "SN Pro Variable", "Work Sans", sans-serif;
 }
 
 .site-footer__description,
