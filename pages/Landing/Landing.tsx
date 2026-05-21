@@ -57,25 +57,35 @@ const FAQ_ITEMS: FaqItem[] = [
 
 const WHY_ITEMS: WhyItem[] = [
     {
-        title: 'Bahan baku kayu berkualitas',
+        title: 'Bahan baku kayu pilihan berkualitas tinggi',
         description:
-            'Kami memilih bahan baku kayu berkualitas tinggi agar wood pellet yang dihasilkan memiliki performa pembakaran yang stabil dan efisien.',
+            'Diproses dari material kayu terpilih untuk menjaga kualitas pembakaran yang stabil.',
     },
     {
-        title: 'Proses produksi modern',
+        title: 'Diameter standar 8 mm, konsisten dan terstandar',
         description:
-            'Produksi dilakukan dengan proses yang modern dan terkontrol untuk menjaga kepadatan, kadar air, serta kualitas produk secara konsisten.',
+            'Setiap batch diproduksi dengan ukuran seragam agar performa penggunaan tetap konsisten.',
     },
     {
-        title: 'Siap menjadi mitra industri anda',
+        title: 'Kalori tinggi, kadar air rendah',
         description:
-            'Tim kami siap mendukung kebutuhan pasokan wood pellet dengan layanan yang profesional, responsif, dan berorientasi pada solusi terbaik.',
+            'Memberikan efisiensi pembakaran lebih baik untuk mendukung kebutuhan operasional industri.',
+    },
+    {
+        title: 'Cocok untuk kebutuhan industri dan boiler',
+        description:
+            'Produk dirancang untuk mendukung berbagai sektor yang membutuhkan energi biomassa andal.',
+    },
+    {
+        title: 'Siap melayani order skala kecil hingga besar',
+        description:
+            'Kami melayani kebutuhan pasokan fleksibel dari volume kecil hingga kebutuhan besar berkelanjutan.',
     },
 ];
 
 const HERO_TITLE_LINES = [
-    ['Bio', 'Energy', 'Semesta', 'Tama'],
-    ['Mitra', 'Energi', 'Biomassa', 'Terpercaya', 'untuk', 'Industri', 'Berkelanjutan'],
+    ['Dari', 'Alam', 'untuk', 'Industri'],
+    ['Wood', 'Pellet', 'Biomassa', 'Bersih,', 'Kuat,', 'dan', 'Berkelanjutan'],
 ];
 
 const Landing: React.FC = () => {
@@ -118,7 +128,7 @@ const Landing: React.FC = () => {
 
                         <h1
                             className="home-hero__title"
-                            aria-label="PT Bio Energy Semesta Tama Mitra Energi Biomassa Terpercaya untuk Industri Berkelanjutan"
+                            aria-label="Dari Alam untuk Industri Wood Pellet Biomassa Bersih, Kuat, dan Berkelanjutan"
                         >
                             {HERO_TITLE_LINES.map((line, lineIndex) => (
                                 <React.Fragment key={`line-${lineIndex}`}>
@@ -327,7 +337,13 @@ const Landing: React.FC = () => {
 
             <section id="contact" className="home-cta-section scroll-reveal opacity-0" aria-label="Ajakan kerja sama PT Bio Energy Semesta Tama">
                 <div className="home-cta-shell">
-                    <h2 className="home-cta-title scroll-reveal opacity-0" data-reveal-delay="100">Tertarik bekerja sama dengan kami</h2>
+                    <div className="home-cta-copy">
+                        <h2 className="home-cta-title scroll-reveal opacity-0" data-reveal-delay="100">Tertarik bekerja sama dengan kami</h2>
+                        <p className="home-cta-description scroll-reveal opacity-0" data-reveal-delay="160">
+                            Butuh pasokan wood pellet yang stabil, bersih, dan berkualitas?
+                            Jangan tunda lagi, hubungi kami sekarang dan dapatkan penawaran terbaik sesuai kebutuhan bisnis Anda.
+                        </p>
+                    </div>
 
                     <div className="home-cta-actions">
                         <a
