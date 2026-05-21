@@ -261,20 +261,6 @@ const Landing: React.FC = () => {
                             yang terbaik, PT. Bio Energy Semesta Tama siap menjadi bagian dari solusi energi bersih Indonesia.
                             Bergabunglah bersama kami dalam menciptakan masa depan yang lebih hijau, lebih sehat, dan lebih berkelanjutan.
                         </p>
-
-                        <p>
-                            <strong>Visi:</strong> "Menjadi produsen wood pellet biomassa terpercaya yang berkontribusi nyata pada
-                            kemandirian energi bersih Indonesia, demi generasi yang lebih sehat dan bumi yang lebih lestari."
-                        </p>
-
-                        <p><strong>Misi:</strong></p>
-                        <ol className="home-company-mission-list">
-                            <li>Memproduksi wood pellet berkualitas tinggi dari bahan baku kayu pilihan secara konsisten dan terstandar</li>
-                            <li>Mendukung peralihan dari bahan bakar fosil ke energi biomassa yang lebih ramah lingkungan</li>
-                            <li>Memberikan solusi energi alternatif yang terjangkau dan berkelanjutan bagi industri Indonesia</li>
-                            <li>Menjalankan proses produksi yang bertanggung jawab terhadap alam dan masyarakat sekitar</li>
-                            <li>Turut serta menjaga kelestarian lingkungan melalui pemanfaatan sumber daya kayu secara bijak</li>
-                        </ol>
                     </div>
 
                     <div className="home-company-action scroll-reveal opacity-0" data-reveal-delay="340">

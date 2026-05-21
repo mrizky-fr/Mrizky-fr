@@ -287,19 +287,6 @@
   margin-top: 16px;
 }
 
-.home-company-mission-list {
-  margin: 8px auto 0;
-  max-width: 980px;
-  padding-left: 20px;
-  text-align: left;
-  color: #365166;
-  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
-  line-height: 1.4;
-}
-
-.home-company-mission-list li + li {
-  margin-top: 6px;
-}
 
 .home-company-action {
   display: flex;
@@ -873,10 +860,6 @@
     font-size: 0.94rem;
   }
 
-  .home-company-mission-list {
-    font-size: 0.94rem;
-    padding-left: 18px;
-  }
 
   .home-why-section {
     padding: 44px 0;
