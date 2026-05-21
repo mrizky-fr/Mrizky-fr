@@ -52,7 +52,8 @@
 
 .site-footer__contact-link {
   color: #214132; /* green */
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 2px;
   transition: opacity 0.2s ease;
 }
 
@@ -187,7 +188,8 @@
 .site-footer__offer-email {
   color: #214132;
   font-weight: 800;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .site-footer__offer-email:hover {

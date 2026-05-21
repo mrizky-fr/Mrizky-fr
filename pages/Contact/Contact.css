@@ -180,6 +180,11 @@ a.contact-info__value:hover {
   color: #214132;
 }
 
+a.contact-info__value {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .contact-form {
   padding: 28px;
 }
