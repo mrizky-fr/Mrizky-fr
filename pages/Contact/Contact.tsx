@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Send } from 'lucide-react';
 import PublicHeader from '../../components/Header/PublicHeader';
 import PublicFooter from '../../components/Footer/PublicFooter';
 import PageHeader from '../../components/PageHeader/PageHeader';
@@ -162,7 +163,8 @@ const Contact: React.FC = () => {
                             </div>
 
                             <button type="submit" className="contact-form__button">
-                                <span>Kirim Pesan</span>
+                                <Send className="app-button-icon" aria-hidden="true" />
+                                <span className="app-button-label">Kirim Pesan</span>
                             </button>
                         </form>
                     </div>

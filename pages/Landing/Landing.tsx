@@ -1,10 +1,13 @@
 import React, { useEffect } from 'react';
 import {
+    ArrowRight,
     Check,
     CircleHelp,
     Factory,
+    FileText,
     Flame,
     Leaf,
+    PhoneCall,
     ScanEye,
     Truck,
     Users,
@@ -153,10 +156,12 @@ const Landing: React.FC = () => {
                             style={{ animationDelay: '1600ms' }}
                         >
                             <a href="#about" className="home-hero__button home-hero__button--primary">
-                                <span>Tentang Kami</span>
+                                <FileText className="app-button-icon" aria-hidden="true" />
+                                <span className="app-button-label">Tentang Kami</span>
                             </a>
                             <a href="#faq" className="home-hero__button home-hero__button--secondary">
-                                <span>Pertanyaan Umum</span>
+                                <CircleHelp className="app-button-icon" aria-hidden="true" />
+                                <span className="app-button-label">Pertanyaan Umum</span>
                             </a>
                         </div>
                     </div>
@@ -250,7 +255,8 @@ const Landing: React.FC = () => {
 
                     <div className="home-company-action scroll-reveal opacity-0" data-reveal-delay="340">
                         <a href="#faq" className="home-company-button">
-                            <span>Lihat Lebih Lengkap</span>
+                            <ArrowRight className="app-button-icon" aria-hidden="true" />
+                            <span className="app-button-label">Lihat Lebih Lengkap</span>
                         </a>
                     </div>
                 </div>
@@ -329,7 +335,8 @@ const Landing: React.FC = () => {
                             className="home-cta-button home-cta-button--contact scroll-reveal opacity-0"
                             data-reveal-delay="180"
                         >
-                            <span>Contact</span>
+                            <PhoneCall className="app-button-icon" aria-hidden="true" />
+                            <span className="app-button-label">Contact</span>
                         </a>
 
                         <a
@@ -337,7 +344,8 @@ const Landing: React.FC = () => {
                             className="home-cta-button home-cta-button--profile scroll-reveal opacity-0"
                             data-reveal-delay="260"
                         >
-                            <span>Company Profile</span>
+                            <FileText className="app-button-icon" aria-hidden="true" />
+                            <span className="app-button-label">Company Profile</span>
                         </a>
                     </div>
                 </div>

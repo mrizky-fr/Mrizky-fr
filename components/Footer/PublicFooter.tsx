@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaInstagram, FaTiktok, FaYoutube, FaFacebook, FaEnvelope, FaThreads, FaXTwitter } from 'react-icons/fa6';
+import { Bell } from 'lucide-react';
 import './PublicFooter.css';
 
 const PublicFooter: React.FC = () => {
@@ -62,7 +63,8 @@ const PublicFooter: React.FC = () => {
                                 required
                             />
                             <button type="submit" className="site-footer__subscribe-button">
-                                Berlangganan
+                                <Bell className="app-button-icon" aria-hidden="true" />
+                                <span className="app-button-label">Berlangganan</span>
                             </button>
                         </form>
 

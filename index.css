@@ -43,6 +43,23 @@ body::-webkit-scrollbar {
   font-family: var(--description-font-family);
 }
 
+.app-button-icon,
+.app-button-label {
+  position: relative;
+  z-index: 2;
+}
+
+.app-button-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.app-button-label {
+  display: inline-flex;
+  align-items: center;
+}
+
 /* Global cursor pointer for interactive elements */
 button,
 [type="button"],

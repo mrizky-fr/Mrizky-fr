@@ -107,13 +107,18 @@
   position: relative;
   overflow: hidden;
   isolation: isolate;
-  height: 42px;
+  height: 40px;
   border: 1px solid #214132; /* green */
   background-color: #214132; /* green */
   color: #ffffff;
   border-radius: 4px;
-  padding: 0 16px;
-  font-size: 0.85rem;
+  padding: 0 18px;
+  font-size: 0.875rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
@@ -122,6 +127,11 @@
     background-color 0.2s ease,
     border-color 0.2s ease,
     color 0.2s ease;
+}
+
+.site-footer__subscribe-button > * {
+  position: relative;
+  z-index: 1;
 }
 
 .site-footer__subscribe-button::before {
@@ -235,6 +245,5 @@
     justify-content: flex-start;
   }
 }
-
 
 

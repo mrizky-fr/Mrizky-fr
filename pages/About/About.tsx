@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { FileText, PhoneCall } from 'lucide-react';
 import PublicHeader from '../../components/Header/PublicHeader';
 import PublicFooter from '../../components/Footer/PublicFooter';
 import PageHeader from '../../components/PageHeader/PageHeader';
@@ -100,7 +101,8 @@ const About: React.FC = () => {
                             className="about-cta-button about-cta-button--contact scroll-reveal opacity-0"
                             data-reveal-delay="180"
                         >
-                            <span>Contact</span>
+                            <PhoneCall className="app-button-icon" aria-hidden="true" />
+                            <span className="app-button-label">Contact</span>
                         </a>
 
                         <a
@@ -108,7 +110,8 @@ const About: React.FC = () => {
                             className="about-cta-button about-cta-button--profile scroll-reveal opacity-0"
                             data-reveal-delay="260"
                         >
-                            <span>Company Profile</span>
+                            <FileText className="app-button-icon" aria-hidden="true" />
+                            <span className="app-button-label">Company Profile</span>
                         </a>
                     </div>
                 </div>
