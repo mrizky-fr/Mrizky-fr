@@ -47,6 +47,7 @@
   font-size: 0.92rem;
   line-height: 1.4;
   color: #365166;
+  font-family: 'SN Pro', sans-serif;
 }
 
 .site-footer__contact-link {
@@ -180,6 +181,7 @@
   font-size: 0.92rem;
   line-height: 1.4;
   font-weight: 400;
+  font-family: 'SN Pro', sans-serif;
 }
 
 .site-footer__offer-email {
@@ -222,6 +224,7 @@
   margin: 0;
   font-size: 0.82rem;
   color: #5b6f82;
+  font-family: 'SN Pro', sans-serif;
 }
 
 @keyframes footer-button-flash-right {
