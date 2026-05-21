@@ -236,31 +236,45 @@ const Landing: React.FC = () => {
 
                     <div className="home-company-description scroll-reveal opacity-0" data-reveal-delay="260">
                         <p>
-                            PT Bio Energy Semesta Tama merupakan perusahaan yang berdedikasi menghadirkan solusi energi terbarukan
-                            berkualitas melalui produksi wood pellet. Dengan fokus pada energi biomassa, kami berkomitmen menyediakan
-                            produk yang efisien, stabil, dan sesuai kebutuhan pelanggan di berbagai sektor industri. Kami juga
-                            menempatkan konsistensi mutu sebagai prioritas utama agar setiap pengiriman wood pellet mampu
-                            memberikan performa pembakaran yang optimal, aman digunakan, dan relevan untuk kebutuhan operasional
-                            industri skala kecil hingga besar secara berkelanjutan.
+                            Dalam upaya meminimalisir dampak negatif dari polusi udara dan perubahan iklim yang semakin
+                            mengkhawatirkan, dunia membutuhkan sumber energi yang terbarukan, bersih, dan efisien.
+                            Wood pellet biomassa adalah salah satu solusi paling menjanjikan untuk menggantikan ketergantungan
+                            pada bahan bakar fosil di sektor industri.
                         </p>
 
                         <p>
-                            Didukung oleh proses produksi yang terkontrol, pemilihan bahan baku yang tepat, serta komitmen terhadap
-                            kualitas, wood pellet dari PT Bio Energy Semesta Tama dirancang untuk menjadi pilihan energi alternatif yang
-                            dapat diandalkan bagi kebutuhan boiler, pemanas, pembangkit biomassa, maupun proses produksi industri.
-                            Setiap tahapan, mulai dari seleksi material, pengeringan, pemadatan, hingga pengujian akhir, dilakukan
-                            dengan standar kerja yang disiplin untuk menjaga kadar air, densitas, dan nilai kalor tetap konsisten
-                            sehingga pelanggan memperoleh produk dengan kualitas yang dapat diprediksi pada setiap batch produksi.
+                            PT. Bio Energy Semesta Tama (BEST), sebagai produsen wood pellet yang berbasis di Solo, Jawa Tengah,
+                            hadir dengan komitmen penuh untuk menghadirkan produk biomassa berkualitas tinggi yang ramah lingkungan
+                            dan berkelanjutan. BEST terus membangun reputasi sebagai mitra energi biomassa yang dapat diandalkan
+                            oleh industri di Indonesia.
                         </p>
 
                         <p>
-                            Dengan kualitas unggul, kepedulian terhadap lingkungan, dan layanan kerja sama yang profesional,
-                            PT Bio Energy Semesta Tama siap menjadi mitra terpercaya dalam penyediaan wood pellet di Indonesia serta
-                            mendukung terciptanya masa depan energi yang lebih hijau dan berkelanjutan. Kami percaya kemitraan yang
-                            baik tidak hanya berfokus pada pasokan produk, tetapi juga pada kecepatan respons, kejelasan komunikasi,
-                            serta kemampuan menyesuaikan layanan terhadap kebutuhan spesifik setiap pelanggan agar kerja sama jangka
-                            panjang dapat berjalan lebih efektif, efisien, dan saling menguntungkan.
+                            BEST hadir untuk memenuhi permintaan pasar akan ketersediaan wood pellet yang konsisten, terstandar,
+                            dan terjangkau. Kami memproduksi wood pellet dengan diameter 8 mm dari bahan baku kayu pilihan melalui
+                            proses pengeringan dan pemadatan yang terstandar, menghasilkan pellet dengan nilai kalori tinggi
+                            dan kadar air rendah.
                         </p>
+
+                        <p>
+                            Dengan kualitas produk yang unggul, komitmen terhadap kelestarian lingkungan, dan layanan pelanggan
+                            yang terbaik, PT. Bio Energy Semesta Tama siap menjadi bagian dari solusi energi bersih Indonesia.
+                            Bergabunglah bersama kami dalam menciptakan masa depan yang lebih hijau, lebih sehat, dan lebih berkelanjutan.
+                        </p>
+
+                        <p>
+                            <strong>Visi:</strong> "Menjadi produsen wood pellet biomassa terpercaya yang berkontribusi nyata pada
+                            kemandirian energi bersih Indonesia, demi generasi yang lebih sehat dan bumi yang lebih lestari."
+                        </p>
+
+                        <p><strong>Misi:</strong></p>
+                        <ol className="home-company-mission-list">
+                            <li>Memproduksi wood pellet berkualitas tinggi dari bahan baku kayu pilihan secara konsisten dan terstandar</li>
+                            <li>Mendukung peralihan dari bahan bakar fosil ke energi biomassa yang lebih ramah lingkungan</li>
+                            <li>Memberikan solusi energi alternatif yang terjangkau dan berkelanjutan bagi industri Indonesia</li>
+                            <li>Menjalankan proses produksi yang bertanggung jawab terhadap alam dan masyarakat sekitar</li>
+                            <li>Turut serta menjaga kelestarian lingkungan melalui pemanfaatan sumber daya kayu secara bijak</li>
+                        </ol>
                     </div>
 
                     <div className="home-company-action scroll-reveal opacity-0" data-reveal-delay="340">

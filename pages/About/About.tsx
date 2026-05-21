@@ -54,35 +54,35 @@ const About: React.FC = () => {
                     <div className="about-profile-content">
                         <div className="about-profile-copy scroll-reveal opacity-0" data-reveal-delay="180">
                             <p>
-                                Dalam upaya meminimalisir dampak negatif dari masalah polusi udara yang dapat
-                                menyebabkan perubahan iklim, dibutuhkan sumber energi yang terbarukan dan efisien.
-                                Wood Pellet atau pelet kayu adalah salah satu solusi yang menjanjikan untuk
-                                menggantikan sumber energi bahan bakar fosil.
+                                Dalam upaya meminimalisir dampak negatif dari polusi udara dan perubahan iklim yang
+                                semakin mengkhawatirkan, dunia membutuhkan sumber energi yang terbarukan, bersih,
+                                dan efisien. Wood pellet biomassa adalah salah satu solusi paling menjanjikan untuk
+                                menggantikan ketergantungan pada bahan bakar fosil di sektor industri.
                             </p>
 
                             <p>
-                                PT Bio Energy Semesta Tama hadir sebagai produsen Wood Pellet yang berkomitmen
-                                menghadirkan produk berkualitas tinggi, ramah lingkungan, dan berkelanjutan.
-                                Kami berfokus pada penyediaan energi biomassa yang dapat mendukung kebutuhan
-                                industri secara konsisten dan profesional.
+                                PT. Bio Energy Semesta Tama (BEST), sebagai produsen wood pellet yang berbasis di Solo,
+                                Jawa Tengah, hadir dengan komitmen penuh untuk menghadirkan produk biomassa berkualitas
+                                tinggi yang ramah lingkungan dan berkelanjutan. BEST terus membangun reputasi sebagai
+                                mitra energi biomassa yang dapat diandalkan oleh industri di Indonesia.
                             </p>
                         </div>
 
                         <div className="about-profile-highlight scroll-reveal opacity-0" data-reveal-delay="260">
                             <p>
-                                PT Bio Energy Semesta Tama hadir untuk memenuhi permintaan pasar akan ketersediaan
-                                pelet kayu. Kami dapat memproduksi pelet kayu dengan kapasitas hingga 1.500 Ton
-                                per Bulannya.
+                                BEST hadir untuk memenuhi permintaan pasar akan ketersediaan wood pellet yang konsisten,
+                                terstandar, dan terjangkau. Kami memproduksi wood pellet dengan diameter 8 mm dari bahan
+                                baku kayu pilihan melalui proses pengeringan dan pemadatan yang terstandar, menghasilkan
+                                pellet dengan nilai kalori tinggi dan kadar air rendah.
                             </p>
                         </div>
 
                         <div className="about-profile-copy scroll-reveal opacity-0" data-reveal-delay="340">
                             <p>
-                                Dengan kualitas unggul, komitmen terhadap lingkungan, dan layanan pelanggan yang
-                                terbaik, PT Bio Energy Semesta Tama siap menjadi mitra industri wood pellet di
-                                Indonesia dan mengekspansi ke pasar global. Dapatkan wood pellet berkualitas tinggi
-                                dari PT Bio Energy Semesta Tama dan bergabunglah dalam upaya untuk menciptakan masa
-                                depan yang lebih hijau dan berkelanjutan.
+                                Dengan kualitas produk yang unggul, komitmen terhadap kelestarian lingkungan, dan layanan
+                                pelanggan yang terbaik, PT. Bio Energy Semesta Tama siap menjadi bagian dari solusi energi
+                                bersih Indonesia. Bergabunglah bersama kami dalam menciptakan masa depan yang lebih hijau,
+                                lebih sehat, dan lebih berkelanjutan.
                             </p>
                         </div>
                     </div>
@@ -103,17 +103,20 @@ const About: React.FC = () => {
                         <article className="about-vision-card scroll-reveal opacity-0" data-reveal-delay="180">
                             <h3 className="about-vision-card__title">Visi</h3>
                             <p className="about-vision-card__text">
-                                Menjadi perusahaan energi biomassa terpercaya di Indonesia yang menghadirkan wood pellet
-                                berkualitas tinggi, efisien, dan ramah lingkungan untuk kebutuhan industri berkelanjutan.
+                                "Menjadi produsen wood pellet biomassa terpercaya yang berkontribusi nyata pada
+                                kemandirian energi bersih Indonesia, demi generasi yang lebih sehat dan bumi
+                                yang lebih lestari."
                             </p>
                         </article>
 
                         <article className="about-vision-card scroll-reveal opacity-0" data-reveal-delay="260">
                             <h3 className="about-vision-card__title">Misi</h3>
                             <ul className="about-vision-card__list">
-                                <li>Menyediakan wood pellet dengan kualitas konsisten dan standar produksi terkontrol.</li>
-                                <li>Mendukung kebutuhan pasokan energi biomassa industri secara tepat waktu dan berkelanjutan.</li>
-                                <li>Membangun kemitraan profesional melalui layanan responsif, transparan, dan terpercaya.</li>
+                                <li>Memproduksi wood pellet berkualitas tinggi dari bahan baku kayu pilihan secara konsisten dan terstandar</li>
+                                <li>Mendukung peralihan dari bahan bakar fosil ke energi biomassa yang lebih ramah lingkungan</li>
+                                <li>Memberikan solusi energi alternatif yang terjangkau dan berkelanjutan bagi industri Indonesia</li>
+                                <li>Menjalankan proses produksi yang bertanggung jawab terhadap alam dan masyarakat sekitar</li>
+                                <li>Turut serta menjaga kelestarian lingkungan melalui pemanfaatan sumber daya kayu secara bijak</li>
                             </ul>
                         </article>
                     </div>
