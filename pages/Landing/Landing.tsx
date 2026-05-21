@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {
     ArrowRight,
     Check,
@@ -15,6 +15,7 @@ import {
 import PublicHeader from '../../components/Header/PublicHeader';
 import PublicFooter from '../../components/Footer/PublicFooter';
 import logoNucare from '../../assets/logo best.png';
+import Reveal from '../../components/Reveal/Reveal';
 import './Landing.css';
 
 type FaqItem = {
@@ -89,30 +90,6 @@ const HERO_TITLE_LINES = [
 ];
 
 const Landing: React.FC = () => {
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    const target = entry.target as HTMLElement;
-
-                    if (entry.isIntersecting) {
-                        const revealDelay = target.dataset.revealDelay;
-                        target.style.animationDelay = revealDelay ? `${revealDelay}ms` : '0ms';
-                        target.classList.add('animate-fade-in-up');
-                        target.classList.remove('opacity-0');
-                        observer.unobserve(target);
-                    }
-                });
-            },
-            { threshold: 0.1, rootMargin: '0px 0px -50px 0px' },
-        );
-
-        const hiddenElements = document.querySelectorAll<HTMLElement>('.scroll-reveal');
-        hiddenElements.forEach((el) => observer.observe(el));
-
-        return () => observer.disconnect();
-    }, []);
-
     let wordIndex = 0;
 
     return (
@@ -122,9 +99,11 @@ const Landing: React.FC = () => {
             <section id="home" className="home-hero-section">
                 <div className="home-hero">
                     <div className="home-hero__content">
-                        <div className="scroll-reveal opacity-0">
+                        <Reveal>
+                        <div>
                             <p className="home-hero__subtitle-label">COMPANY PROFILE</p>
                         </div>
+                        </Reveal>
 
                         <h1
                             className="home-hero__title"
@@ -153,18 +132,15 @@ const Landing: React.FC = () => {
                             ))}
                         </h1>
 
-                        <p
-                            className="home-hero__description scroll-reveal opacity-0"
-                            style={{ animationDelay: '1450ms' }}
-                        >
-                            Kami menghadirkan solusi energi biomassa berkualitas melalui produksi wood pellet yang efisien,
-                            konsisten, dan berstandar industri untuk mendukung kebutuhan energi ramah lingkungan di berbagai sektor usaha.
-                        </p>
+                        <Reveal delay={1.45}>
+                            <p className="home-hero__description">
+                                Kami menghadirkan solusi energi biomassa berkualitas melalui produksi wood pellet yang efisien,
+                                konsisten, dan berstandar industri untuk mendukung kebutuhan energi ramah lingkungan di berbagai sektor usaha.
+                            </p>
+                        </Reveal>
 
-                        <div
-                            className="home-hero__actions scroll-reveal opacity-0"
-                            style={{ animationDelay: '1600ms' }}
-                        >
+                        <Reveal delay={1.6}>
+                        <div className="home-hero__actions">
                             <a href="#about" className="home-hero__button home-hero__button--primary">
                                 <FileText className="app-button-icon" aria-hidden="true" />
                                 <span className="app-button-label">Tentang Kami</span>
@@ -174,15 +150,17 @@ const Landing: React.FC = () => {
                                 <span className="app-button-label">Pertanyaan Umum</span>
                             </a>
                         </div>
+                        </Reveal>
                     </div>
 
                     <div className="home-hero__spacer" aria-hidden="true" />
                 </div>
             </section>
 
-            <section id="about" className="home-benefits-section scroll-reveal opacity-0" aria-label="Keunggulan PT Bio Energy Semesta Tama">
+            <Reveal>
+            <section id="about" className="home-benefits-section" aria-label="Keunggulan PT Bio Energy Semesta Tama">
                     <div className="home-benefits-strip">
-                        <div className="home-benefit-item scroll-reveal opacity-0" data-reveal-delay="120">
+                        <Reveal delay={0.12} className="home-benefit-item">
                             <div className="home-benefit-icon">
                                 <Leaf size={28} strokeWidth={1.5} aria-hidden="true" />
                             </div>
@@ -192,9 +170,9 @@ const Landing: React.FC = () => {
                                 Wood pellet menjadi solusi energi biomassa yang mendukung efisiensi bahan bakar dan pengurangan ketergantungan pada energi fosil.
                             </p>
                         </div>
-                    </div>
+                        </Reveal>
 
-                        <div className="home-benefit-item scroll-reveal opacity-0" data-reveal-delay="220">
+                        <Reveal delay={0.22} className="home-benefit-item">
                             <div className="home-benefit-icon">
                                 <Factory size={28} strokeWidth={1.5} aria-hidden="true" />
                             </div>
@@ -204,9 +182,9 @@ const Landing: React.FC = () => {
                                 Proses produksi dilakukan secara terkontrol untuk menjaga kualitas, kepadatan, kadar air, dan performa pembakaran wood pellet.
                             </p>
                         </div>
-                    </div>
+                        </Reveal>
 
-                        <div className="home-benefit-item scroll-reveal opacity-0" data-reveal-delay="320">
+                        <Reveal delay={0.32} className="home-benefit-item">
                             <div className="home-benefit-icon">
                                 <Truck size={28} strokeWidth={1.5} aria-hidden="true" />
                             </div>
@@ -216,25 +194,29 @@ const Landing: React.FC = () => {
                                 Kami mendukung kebutuhan industri dengan pasokan wood pellet yang konsisten, terencana, dan siap untuk kerja sama jangka panjang.
                             </p>
                         </div>
-                    </div>
+                        </Reveal>
                 </div>
             </section>
+            </Reveal>
 
-            <section id="company" className="home-company-section scroll-reveal opacity-0" aria-label="Profil PT Bio Energy Semesta Tama">
+            <Reveal>
+            <section id="company" className="home-company-section" aria-label="Profil PT Bio Energy Semesta Tama">
                 <div className="home-company-shell">
-                    <div className="home-company-logo-wrap scroll-reveal opacity-0" data-reveal-delay="100">
+                    <Reveal delay={0.1} className="home-company-logo-wrap">
                         <img
                             src={logoNucare}
                             alt="PT Bio Energy Semesta Tama"
                             className="home-company-logo"
                         />
-                    </div>
+                    </Reveal>
 
-                    <h2 className="home-company-title scroll-reveal opacity-0" data-reveal-delay="180">
-                        PT Bio Energy Semesta Tama
-                    </h2>
+                    <Reveal delay={0.18}>
+                        <h2 className="home-company-title">
+                            PT Bio Energy Semesta Tama
+                        </h2>
+                    </Reveal>
 
-                    <div className="home-company-description scroll-reveal opacity-0" data-reveal-delay="260">
+                    <Reveal delay={0.26} className="home-company-description">
                         <p>
                             Dalam upaya meminimalisir dampak negatif dari polusi udara dan perubahan iklim yang semakin
                             mengkhawatirkan, dunia membutuhkan sumber energi yang terbarukan, bersih, dan efisien.
@@ -261,34 +243,36 @@ const Landing: React.FC = () => {
                             yang terbaik, PT. Bio Energy Semesta Tama siap menjadi bagian dari solusi energi bersih Indonesia.
                             Bergabunglah bersama kami dalam menciptakan masa depan yang lebih hijau, lebih sehat, dan lebih berkelanjutan.
                         </p>
-                    </div>
+                    </Reveal>
 
-                    <div className="home-company-action scroll-reveal opacity-0" data-reveal-delay="340">
+                    <Reveal delay={0.34} className="home-company-action">
                         <a href="/about" className="home-company-button">
                             <ArrowRight className="app-button-icon" aria-hidden="true" />
                             <span className="app-button-label">Lihat Lebih Lengkap</span>
                         </a>
-                    </div>
+                    </Reveal>
                 </div>
             </section>
+            </Reveal>
 
-            <section id="why-us" className="home-why-section scroll-reveal opacity-0" aria-label="Mengapa harus kami">
+            <Reveal>
+            <section id="why-us" className="home-why-section" aria-label="Mengapa harus kami">
                 <div className="home-why-shell">
-                    <div className="home-why-visual scroll-reveal opacity-0" data-reveal-delay="100">
+                    <Reveal delay={0.1} className="home-why-visual">
                         <div className="home-why-frame" aria-hidden="true" />
                         <img
                             src="https://i.ibb.co.com/qYRHs669/high-quality-professional-product-photography-of-fish-feed-pellets-a-heap-of.png"
                             alt="Produk wood pellet berkualitas"
                             className="home-why-image"
                         />
-                    </div>
+                    </Reveal>
 
                     <div className="home-why-content">
                         {WHY_ITEMS.map((item, index) => (
-                            <article
+                            <Reveal
                                 key={item.title}
-                                className="home-why-card scroll-reveal opacity-0"
-                                data-reveal-delay={180 + index * 120}
+                                className="home-why-card"
+                                delay={(180 + index * 120) / 1000}
                             >
                                 <div className="home-why-card__icon" aria-hidden="true">
                                     <Check size={28} strokeWidth={2.4} />
@@ -298,28 +282,34 @@ const Landing: React.FC = () => {
                                     <h3 className="home-why-card__title">{item.title}</h3>
                                     <p className="home-why-card__description">{item.description}</p>
                                 </div>
-                            </article>
+                            </Reveal>
                         ))}
                     </div>
                 </div>
             </section>
+            </Reveal>
 
-            <section id="faq" className="home-inquiry-section scroll-reveal opacity-0" aria-label="Pertanyaan Umum PT Bio Energy Semesta Tama">
+            <Reveal>
+            <section id="faq" className="home-inquiry-section" aria-label="Pertanyaan Umum PT Bio Energy Semesta Tama">
                 <div className="home-inquiry-shell">
-                    <h2 className="home-inquiry-title scroll-reveal opacity-0" data-reveal-delay="100">Pertanyaan Umum Tentang Wood Pellet</h2>
-                    <p className="home-inquiry-description scroll-reveal opacity-0" data-reveal-delay="180">
-                        Informasi singkat mengenai produk wood pellet, kualitas produksi, dan peluang kerja sama bersama PT Bio Energy Semesta Tama.
-                    </p>
+                    <Reveal delay={0.1}>
+                        <h2 className="home-inquiry-title">Pertanyaan Umum Tentang Wood Pellet</h2>
+                    </Reveal>
+                    <Reveal delay={0.18}>
+                        <p className="home-inquiry-description">
+                            Informasi singkat mengenai produk wood pellet, kualitas produksi, dan peluang kerja sama bersama PT Bio Energy Semesta Tama.
+                        </p>
+                    </Reveal>
 
                     <div className="home-inquiry-grid">
                         {FAQ_ITEMS.map((item, index) => {
                             const Icon = item.icon;
 
                             return (
-                                <article
+                                <Reveal
                                     key={item.question}
-                                    className="home-inquiry-card scroll-reveal opacity-0"
-                                    data-reveal-delay={220 + index * 100}
+                                    className="home-inquiry-card"
+                                    delay={(220 + index * 100) / 1000}
                                 >
                                     <div className="home-inquiry-card__icon" aria-hidden="true">
                                         <Icon size={28} strokeWidth={1.5} />
@@ -328,44 +318,53 @@ const Landing: React.FC = () => {
                                         <h3 className="home-inquiry-card__title">{item.question}</h3>
                                         <p className="home-inquiry-card__description">{item.answer}</p>
                                     </div>
-                                </article>
+                                </Reveal>
                             );
                         })}
                     </div>
                 </div>
             </section>
+            </Reveal>
 
-            <section id="contact" className="home-cta-section scroll-reveal opacity-0" aria-label="Ajakan kerja sama PT Bio Energy Semesta Tama">
+            <Reveal>
+            <section id="contact" className="home-cta-section" aria-label="Ajakan kerja sama PT Bio Energy Semesta Tama">
                 <div className="home-cta-shell">
                     <div className="home-cta-copy">
-                        <h2 className="home-cta-title scroll-reveal opacity-0" data-reveal-delay="100">Tertarik bekerja sama dengan kami</h2>
-                        <p className="home-cta-description scroll-reveal opacity-0" data-reveal-delay="160">
-                            Butuh pasokan wood pellet yang stabil, bersih, dan berkualitas?
-                            Jangan tunda lagi, hubungi kami sekarang dan dapatkan penawaran terbaik sesuai kebutuhan bisnis Anda.
-                        </p>
+                        <Reveal delay={0.1}>
+                            <h2 className="home-cta-title">Tertarik bekerja sama dengan kami</h2>
+                        </Reveal>
+                        <Reveal delay={0.16}>
+                            <p className="home-cta-description">
+                                Butuh pasokan wood pellet yang stabil, bersih, dan berkualitas?
+                                Jangan tunda lagi, hubungi kami sekarang dan dapatkan penawaran terbaik sesuai kebutuhan bisnis Anda.
+                            </p>
+                        </Reveal>
                     </div>
 
                     <div className="home-cta-actions">
-                        <a
-                            href="/contact"
-                            className="home-cta-button home-cta-button--contact scroll-reveal opacity-0"
-                            data-reveal-delay="180"
-                        >
-                            <PhoneCall className="app-button-icon" aria-hidden="true" />
-                            <span className="app-button-label">Contact</span>
-                        </a>
+                        <Reveal delay={0.18}>
+                            <a
+                                href="/contact"
+                                className="home-cta-button home-cta-button--contact"
+                            >
+                                <PhoneCall className="app-button-icon" aria-hidden="true" />
+                                <span className="app-button-label">Contact</span>
+                            </a>
+                        </Reveal>
 
-                        <a
-                            href="/about"
-                            className="home-cta-button home-cta-button--profile scroll-reveal opacity-0"
-                            data-reveal-delay="260"
-                        >
-                            <FileText className="app-button-icon" aria-hidden="true" />
-                            <span className="app-button-label">Company Profile</span>
-                        </a>
+                        <Reveal delay={0.26}>
+                            <a
+                                href="/about"
+                                className="home-cta-button home-cta-button--profile"
+                            >
+                                <FileText className="app-button-icon" aria-hidden="true" />
+                                <span className="app-button-label">Company Profile</span>
+                            </a>
+                        </Reveal>
                     </div>
                 </div>
             </section>
+            </Reveal>
 
             <PublicFooter />
         </div>

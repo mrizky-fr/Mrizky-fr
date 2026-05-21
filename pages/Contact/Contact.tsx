@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
 import PublicHeader from '../../components/Header/PublicHeader';
 import PublicFooter from '../../components/Footer/PublicFooter';
 import PageHeader from '../../components/PageHeader/PageHeader';
+import Reveal from '../../components/Reveal/Reveal';
 import './Contact.css';
 
 type ContactInfoItem = {
@@ -37,30 +38,6 @@ const CONTACT_INFO: ContactInfoItem[] = [
 ];
 
 const Contact: React.FC = () => {
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    const target = entry.target as HTMLElement;
-
-                    if (entry.isIntersecting) {
-                        const revealDelay = target.dataset.revealDelay;
-                        target.style.animationDelay = revealDelay ? `${revealDelay}ms` : '0ms';
-                        target.classList.add('animate-fade-in-up');
-                        target.classList.remove('opacity-0');
-                        observer.unobserve(target);
-                    }
-                });
-            },
-            { threshold: 0.1, rootMargin: '0px 0px -50px 0px' },
-        );
-
-        const hiddenElements = document.querySelectorAll<HTMLElement>('.scroll-reveal');
-        hiddenElements.forEach((el) => observer.observe(el));
-
-        return () => observer.disconnect();
-    }, []);
-
     const handleSubmitToWhatsApp = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
@@ -92,18 +69,19 @@ const Contact: React.FC = () => {
 
             <PageHeader title="Kontak Kami" />
 
-            <section id="contact" className="contact-section scroll-reveal opacity-0">
+            <Reveal>
+            <section id="contact" className="contact-section">
                 <div className="contact-shell">
-                    <div className="contact-heading scroll-reveal opacity-0" data-reveal-delay="100">
+                    <Reveal delay={0.1} className="contact-heading">
                         <h2 className="contact-title">Hubungi PT Bio Energy Semesta Tama</h2>
                         <p className="contact-description">
                             Kami siap membantu kebutuhan informasi, kerja sama, dan pemesanan wood pellet
                             berkualitas untuk kebutuhan industri maupun distribusi.
                         </p>
-                    </div>
+                    </Reveal>
 
                     <div className="contact-layout">
-                        <div className="contact-info scroll-reveal opacity-0" data-reveal-delay="180">
+                        <Reveal delay={0.18} className="contact-info">
                             <h3 className="contact-info__title">Informasi Kontak</h3>
                             <p className="contact-info__description">
                                 Silakan hubungi kami melalui informasi berikut atau isi form kontak yang tersedia.
@@ -141,118 +119,124 @@ const Contact: React.FC = () => {
                                 );
                                 })}
                             </div>
-                        </div>
+                        </Reveal>
 
-                        <form
-                            className="contact-form scroll-reveal opacity-0"
-                            data-reveal-delay="260"
-                            onSubmit={handleSubmitToWhatsApp}
-                        >
-                            <div className="contact-form__row">
-                                <div className="contact-form__group">
-                                    <label htmlFor="name" className="contact-form__label">
-                                        Nama Lengkap
+                        <Reveal delay={0.26} className="contact-form">
+                            <form onSubmit={handleSubmitToWhatsApp}>
+                                <div className="contact-form__row">
+                                    <Reveal delay={0.28} className="contact-form__group">
+                                        <label htmlFor="name" className="contact-form__label">
+                                            Nama Lengkap
+                                        </label>
+                                        <input
+                                            id="name"
+                                            name="name"
+                                            type="text"
+                                            className="contact-form__input"
+                                            placeholder="Masukkan nama lengkap"
+                                            required
+                                        />
+                                    </Reveal>
+
+                                    <Reveal delay={0.32} className="contact-form__group">
+                                        <label htmlFor="phone" className="contact-form__label">
+                                            No. HP
+                                        </label>
+                                        <input
+                                            id="phone"
+                                            name="phone"
+                                            type="tel"
+                                            className="contact-form__input"
+                                            placeholder="Masukkan nomor HP"
+                                            required
+                                        />
+                                    </Reveal>
+                                </div>
+
+                                <Reveal delay={0.36} className="contact-form__group">
+                                    <label htmlFor="email" className="contact-form__label">
+                                        Email
                                     </label>
                                     <input
-                                        id="name"
-                                        name="name"
+                                        id="email"
+                                        name="email"
+                                        type="email"
+                                        className="contact-form__input"
+                                        placeholder="Masukkan alamat email"
+                                        required
+                                    />
+                                </Reveal>
+
+                                <Reveal delay={0.4} className="contact-form__group">
+                                    <label htmlFor="subject" className="contact-form__label">
+                                        Subjek
+                                    </label>
+                                    <input
+                                        id="subject"
+                                        name="subject"
                                         type="text"
                                         className="contact-form__input"
-                                        placeholder="Masukkan nama lengkap"
+                                        placeholder="Contoh: Permintaan kerja sama wood pellet"
                                         required
                                     />
-                                </div>
+                                </Reveal>
 
-                                <div className="contact-form__group">
-                                    <label htmlFor="phone" className="contact-form__label">
-                                        No. HP
+                                <Reveal delay={0.44} className="contact-form__group">
+                                    <label htmlFor="message" className="contact-form__label">
+                                        Pesan
                                     </label>
-                                    <input
-                                        id="phone"
-                                        name="phone"
-                                        type="tel"
-                                        className="contact-form__input"
-                                        placeholder="Masukkan nomor HP"
+                                    <textarea
+                                        id="message"
+                                        name="message"
+                                        className="contact-form__textarea"
+                                        placeholder="Tulis pesan atau kebutuhan Anda"
+                                        rows={6}
                                         required
                                     />
-                                </div>
-                            </div>
+                                </Reveal>
 
-                            <div className="contact-form__group">
-                                <label htmlFor="email" className="contact-form__label">
-                                    Email
-                                </label>
-                                <input
-                                    id="email"
-                                    name="email"
-                                    type="email"
-                                    className="contact-form__input"
-                                    placeholder="Masukkan alamat email"
-                                    required
-                                />
-                            </div>
-
-                            <div className="contact-form__group">
-                                <label htmlFor="subject" className="contact-form__label">
-                                    Subjek
-                                </label>
-                                <input
-                                    id="subject"
-                                    name="subject"
-                                    type="text"
-                                    className="contact-form__input"
-                                    placeholder="Contoh: Permintaan kerja sama wood pellet"
-                                    required
-                                />
-                            </div>
-
-                            <div className="contact-form__group">
-                                <label htmlFor="message" className="contact-form__label">
-                                    Pesan
-                                </label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    className="contact-form__textarea"
-                                    placeholder="Tulis pesan atau kebutuhan Anda"
-                                    rows={6}
-                                    required
-                                />
-                            </div>
-
-                            <button type="submit" className="contact-form__button">
-                                <Send className="app-button-icon" aria-hidden="true" />
-                                <span className="app-button-label">Kirim Pesan</span>
-                            </button>
-                        </form>
+                                <Reveal delay={0.48}>
+                                    <button type="submit" className="contact-form__button">
+                                        <Send className="app-button-icon" aria-hidden="true" />
+                                        <span className="app-button-label">Kirim Pesan</span>
+                                    </button>
+                                </Reveal>
+                            </form>
+                        </Reveal>
                     </div>
                 </div>
             </section>
+            </Reveal>
 
-            <section className="contact-offer-section scroll-reveal opacity-0" aria-label="Minta penawaran">
+            <Reveal>
+            <section className="contact-offer-section" aria-label="Minta penawaran">
                 <div className="contact-offer-shell">
                     <div className="contact-offer-copy">
-                        <h2 className="contact-offer-title scroll-reveal opacity-0" data-reveal-delay="100">
-                            Minta Penawaran
-                        </h2>
-                        <p className="contact-offer-description scroll-reveal opacity-0" data-reveal-delay="180">
-                            Tertarik dengan produk wood pellet kami? Kirimkan permintaan dan pertanyaan Anda melalui email
-                            kami di info@best-pellet.com dan tim kami akan segera merespons dengan penawaran harga terbaik
-                            sesuai kebutuhan bisnis Anda.
-                        </p>
+                        <Reveal delay={0.1}>
+                            <h2 className="contact-offer-title">Minta Penawaran</h2>
+                        </Reveal>
+                        <Reveal delay={0.18}>
+                            <p className="contact-offer-description">
+                                Tertarik dengan produk wood pellet kami? Kirimkan permintaan dan pertanyaan Anda melalui email
+                                kami di info@best-pellet.com dan tim kami akan segera merespons dengan penawaran harga terbaik
+                                sesuai kebutuhan bisnis Anda.
+                            </p>
+                        </Reveal>
                     </div>
                     <div className="contact-offer-actions">
-                        <a
-                            href="mailto:info@best-pellet.com"
-                            className="contact-offer-button scroll-reveal opacity-0"
-                            data-reveal-delay="260"
-                        >
-                            <Mail className="app-button-icon" aria-hidden="true" />
-                            <span className="app-button-label">Kirim Email Penawaran</span>
-                        </a>
+                        <Reveal delay={0.26}>
+                            <a
+                                href="mailto:info@best-pellet.com"
+                                className="contact-offer-button"
+                            >
+                                <Mail className="app-button-icon" aria-hidden="true" />
+                                <span className="app-button-label">Kirim Email Penawaran</span>
+                            </a>
+                        </Reveal>
                     </div>
                 </div>
             </section>
+            </Reveal>
 
             <PublicFooter />
         </div>

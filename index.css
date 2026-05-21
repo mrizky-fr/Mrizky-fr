@@ -92,24 +92,6 @@ select,
   --radius-4xl: 4px;
 }
 
-/* Custom animation classes */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in-up {
-  animation: fadeInUp 0.5s ease forwards;
-  opacity: 0;
-}
-
 .app-section-card {
   @apply overflow-hidden rounded border border-gray-200 bg-white shadow-sm;
 }
