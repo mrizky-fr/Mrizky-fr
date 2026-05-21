@@ -5,32 +5,12 @@ import PublicFooter from '../../components/Footer/PublicFooter';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import './Services.css';
 
-type ServiceItem = {
-    title: string;
-    description: string;
-};
-
-const SERVICES: ServiceItem[] = [
-    {
-        title: 'Penyediaan Wood Pellet',
-        description:
-            'Kami menyediakan wood pellet berkualitas untuk kebutuhan industri, boiler, pemanas, dan berbagai kebutuhan energi biomassa yang membutuhkan pasokan stabil.',
-    },
-    {
-        title: 'Pasokan Industri Berkelanjutan',
-        description:
-            'Kami mendukung kebutuhan kerja sama jangka panjang dengan pasokan pelet kayu yang terencana, konsisten, dan siap menyesuaikan kebutuhan mitra.',
-    },
-    {
-        title: 'Produk Berkualitas Terstandar',
-        description:
-            'Setiap produk diproses dengan kontrol kualitas untuk menjaga kadar air, kepadatan, nilai kalor, serta performa pembakaran yang optimal.',
-    },
-    {
-        title: 'Kerja Sama Distribusi',
-        description:
-            'Kami terbuka untuk peluang kerja sama dengan distributor, perusahaan, maupun mitra bisnis yang ingin mengembangkan energi biomassa ramah lingkungan.',
-    },
+const PRODUCT_SPECS = [
+    'Diameter: 8 mm',
+    'Bahan baku: Kayu pilihan',
+    'Kadar air: Rendah',
+    'Nilai kalori: Tinggi',
+    'Cocok untuk: Boiler industri dan pembangkit energi biomassa',
 ];
 
 const Services: React.FC = () => {
@@ -62,30 +42,34 @@ const Services: React.FC = () => {
         <div className="min-h-screen bg-white overflow-x-hidden">
             <PublicHeader />
 
-            <PageHeader title="Layanan Kami" />
+            <PageHeader title="Produk" />
 
             <section id="services" className="services-section scroll-reveal opacity-0">
                 <div className="services-shell">
                     <div className="services-heading scroll-reveal opacity-0" data-reveal-delay="100">
-                        <h2 className="services-title">Solusi Energi Biomassa untuk Kebutuhan Industri</h2>
+                        <h2 className="services-title">Wood Pellet Biomassa</h2>
                         <p className="services-description">
-                            Kami menghadirkan layanan penyediaan wood pellet yang berfokus pada kualitas,
-                            konsistensi pasokan, dan kerja sama berkelanjutan untuk mendukung kebutuhan energi
-                            ramah lingkungan.
+                            Wood pellet kami diproduksi dari bahan baku kayu pilihan melalui proses pengeringan
+                            dan pemadatan yang terstandar, menghasilkan pellet dengan kualitas pembakaran yang optimal.
                         </p>
                     </div>
 
-                    <div className="services-grid">
-                        {SERVICES.map((service, index) => (
-                            <article
-                                key={service.title}
-                                className="services-card scroll-reveal opacity-0"
-                                data-reveal-delay={180 + index * 100}
-                            >
-                                <h3 className="services-card__title">{service.title}</h3>
-                                <p className="services-card__description">{service.description}</p>
-                            </article>
-                        ))}
+                    <div className="services-product scroll-reveal opacity-0" data-reveal-delay="180">
+                        <h3 className="services-product__title">Spesifikasi</h3>
+                        <ol className="services-product__list">
+                            {PRODUCT_SPECS.map((spec) => (
+                                <li key={spec}>{spec}</li>
+                            ))}
+                        </ol>
+
+                        <p className="services-product__note">
+                            Tersedia dalam pemesanan skala kecil maupun besar, dengan layanan custom sesuai kebutuhan.
+                        </p>
+
+                        <a href="/contact" className="services-product__button">
+                            <PhoneCall className="app-button-icon" aria-hidden="true" />
+                            <span className="app-button-label">Kebutuhan Wood Pellet</span>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -112,7 +96,7 @@ const Services: React.FC = () => {
                             data-reveal-delay="260"
                         >
                             <FileText className="app-button-icon" aria-hidden="true" />
-                            <span className="app-button-label">Company Profile</span>
+                            <span className="app-button-label">Tentang Kami</span>
                         </a>
                     </div>
                 </div>

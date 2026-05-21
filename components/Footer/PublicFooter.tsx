@@ -42,7 +42,7 @@ const PublicFooter: React.FC = () => {
                         <nav className="site-footer__menu" aria-label="Navigasi halaman">
                             <a href="/#home" className="site-footer__menu-link">Beranda</a>
                             <a href="/about" className="site-footer__menu-link">Tentang</a>
-                            <a href="/services" className="site-footer__menu-link">Layanan</a>
+                            <a href="/services" className="site-footer__menu-link">Produk</a>
                             <a href="/gallery" className="site-footer__menu-link">Galeri</a>
                             <a href="/contact" className="site-footer__menu-link">Kontak</a>
                             <a href="/#faq" className="site-footer__menu-link">Pertanyaan Umum (FAQ)</a>

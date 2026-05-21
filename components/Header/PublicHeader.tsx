@@ -18,7 +18,7 @@ const PublicHeader: React.FC = () => {
   const headerMenuItems: HeaderMenuItem[] = [
     { label: 'Home', href: '/#home' },
     { label: 'About', href: '/about' },
-    { label: 'Services', href: '/services' },
+    { label: 'Produk', href: '/services' },
     { label: 'Gallery', href: '/gallery' },
     { label: 'Contact', href: '/contact' },
     { label: 'FAQ', href: '/#faq' },
