@@ -4,6 +4,10 @@ import PublicHeader from '../../components/Header/PublicHeader';
 import PublicFooter from '../../components/Footer/PublicFooter';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import Reveal from '../../components/Reveal/Reveal';
+import productImage1 from '../../assets/WhatsApp Image 2026-05-21 at 15.40.16.jpeg';
+import productImage2 from '../../assets/WhatsApp Image 2026-05-21 at 15.40.46.jpeg';
+import productImage3 from '../../assets/WhatsApp Image 2026-05-21 at 15.43.15.jpeg';
+import productImage4 from '../../assets/WhatsApp Image 2026-05-21 at 15.44.03.jpeg';
 import './Services.css';
 
 const PRODUCT_SPECS = [
@@ -12,6 +16,13 @@ const PRODUCT_SPECS = [
     'Kadar air: Rendah',
     'Nilai kalori: Tinggi',
     'Cocok untuk: Boiler industri dan pembangkit energi biomassa',
+];
+
+const PRODUCT_IMAGES = [
+    { src: productImage1, alt: 'Produk wood pellet 1' },
+    { src: productImage2, alt: 'Produk wood pellet 2' },
+    { src: productImage3, alt: 'Produk wood pellet 3' },
+    { src: productImage4, alt: 'Produk wood pellet 4' },
 ];
 
 const Services: React.FC = () => {
@@ -39,6 +50,14 @@ const Services: React.FC = () => {
                                 <li key={spec}>{spec}</li>
                             ))}
                         </ol>
+
+                        <div className="services-product__gallery" aria-label="Galeri produk wood pellet">
+                            {PRODUCT_IMAGES.map((item) => (
+                                <div key={item.alt} className="services-product__gallery-item">
+                                    <img src={item.src} alt={item.alt} className="services-product__gallery-image" />
+                                </div>
+                            ))}
+                        </div>
 
                         <p className="services-product__note">
                             Tersedia dalam pemesanan skala kecil maupun besar, dengan layanan custom sesuai kebutuhan.

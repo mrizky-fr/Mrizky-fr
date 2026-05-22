@@ -74,6 +74,27 @@
   margin-top: 6px;
 }
 
+.services-product__gallery {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.services-product__gallery-item {
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(12, 102, 80, 0.16);
+  background: #ffffff;
+}
+
+.services-product__gallery-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
 .services-product__note {
   margin: 14px 0 0;
   color: #365166;
@@ -395,6 +416,11 @@
   .services-product__list,
   .services-product__note {
     font-size: 0.92rem;
+  }
+
+  .services-product__gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
   }
 
   .services-product__button {
