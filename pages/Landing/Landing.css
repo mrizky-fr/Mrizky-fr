@@ -329,6 +329,7 @@
   aspect-ratio: 1 / 1;
   justify-self: center;
   overflow: hidden;
+  border-radius: 16px;
 }
 
 .home-why-image {
@@ -870,7 +871,8 @@
   }
 
   .home-why-visual {
-    width: min(100%, 360px);
+    width: 100%;
+    border-radius: 12px;
   }
 
   .home-why-card {
