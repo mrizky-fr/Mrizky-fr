@@ -20,8 +20,6 @@ const About: React.FC = () => {
             <section id="about-company" className="about-profile-section">
                 <div className="about-profile-shell">
                     <Reveal delay={0.1} className="about-profile-visual">
-                        <div className="about-profile-frame" aria-hidden="true" />
-
                         <img
                             src={ABOUT_IMAGE}
                             alt="Produk wood pellet berkualitas"
