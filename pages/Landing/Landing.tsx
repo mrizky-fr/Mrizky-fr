@@ -265,7 +265,6 @@ const Landing: React.FC = () => {
             <section id="why-us" className="home-why-section" aria-label="Mengapa harus kami">
                 <div className="home-why-shell">
                     <Reveal delay={0.1} className="home-why-visual">
-                        <div className="home-why-frame" aria-hidden="true" />
                         <img
                             src={homeSectionFourImage}
                             alt="Produk wood pellet berkualitas"
