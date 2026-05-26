@@ -117,7 +117,7 @@ const PublicHeader: React.FC = () => {
           <div className="main-header__inner">
             <a className="header-logo" href="/" aria-label="M Rizky-fr home">
               <span className="header-logo__typing" aria-label="M Rizky-fr">
-                <span className="header-logo__typing-text">M Rizky-fr</span>
+                <span className="header-logo__typing-text" data-text="M Rizky-fr">M Rizky-fr</span>
               </span>
             </a>
 
@@ -184,7 +184,7 @@ const PublicHeader: React.FC = () => {
             <div className="header-drawer__head">
               <a className="header-logo" href="/" aria-label="M Rizky-fr home">
                 <span className="header-logo__typing" aria-label="M Rizky-fr">
-                  <span className="header-logo__typing-text">M Rizky-fr</span>
+                  <span className="header-logo__typing-text" data-text="M Rizky-fr">M Rizky-fr</span>
                 </span>
               </a>
               <button
