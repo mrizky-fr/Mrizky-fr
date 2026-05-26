@@ -208,9 +208,9 @@
   border-right: 2px solid rgba(234, 242, 255, 0.6);
   padding-right: 2px;
   animation:
-    logo-type-loop 6.4s steps(10, end) infinite,
+    logo-type-loop 8.6s steps(10, end) infinite,
     logo-caret-blink 0.8s steps(1, end) infinite,
-    logo-text-flash-right 6.4s ease-in-out infinite;
+    logo-text-flash-right 8.6s ease-in-out infinite;
 }
 
 @keyframes logo-type-loop {
@@ -218,11 +218,11 @@
     max-width: 0ch;
   }
 
-  32% {
+  28% {
     max-width: 10ch;
   }
 
-  78% {
+  88% {
     max-width: 10ch;
   }
 

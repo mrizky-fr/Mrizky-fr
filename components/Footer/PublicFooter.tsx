@@ -36,7 +36,7 @@ const PublicFooter: React.FC = () => {
                         <h3 className="site-footer__title">Navigasi</h3>
                         <nav className="site-footer__menu" aria-label="Navigasi halaman">
                             <a href="/#home" className="site-footer__menu-link">Home</a>
-                            <a href="/#about-me" className="site-footer__menu-link">About Me</a>
+                            <a href="/#contact" className="site-footer__menu-link">Contact</a>
                             <a
                                 href="https://digtl.web.id/next/"
                                 className="site-footer__menu-link"

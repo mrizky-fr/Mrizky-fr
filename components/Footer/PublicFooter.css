@@ -2,7 +2,7 @@
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  background: var(--app-surface);
+  background: #121212;
   color: var(--app-text);
   padding: 56px 20px 18px;
   font-family: var(--snpro-font-family);

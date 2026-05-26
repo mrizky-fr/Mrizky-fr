@@ -16,7 +16,7 @@ const PublicHeader: React.FC = () => {
 
   const headerMenuItems: HeaderMenuItem[] = [
     { label: 'Home', href: '/#home' },
-    { label: 'About Me', href: '/#about-me' },
+    { label: 'Contact', href: '/#contact' },
     { label: 'Next-FLM', href: 'https://digtl.web.id/next/' },
   ];
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -245,3 +245,4 @@ const PublicHeader: React.FC = () => {
 };
 
 export default PublicHeader;
+
