@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { AlignRight, X, Headset, Mail } from 'lucide-react';
-import logoNucare from '../../assets/logo best.png';
+import { AlignRight, X, Github } from 'lucide-react';
 import './PublicHeader.css';
 
 type HeaderMenuItem = {
@@ -17,10 +16,8 @@ const PublicHeader: React.FC = () => {
 
   const headerMenuItems: HeaderMenuItem[] = [
     { label: 'Home', href: '/#home' },
-    { label: 'About', href: '/about' },
-    { label: 'Produk', href: '/services' },
-    { label: 'Gallery', href: '/gallery' },
-    { label: 'Contact', href: '/contact' },
+    { label: 'About Me', href: '/#about-me' },
+    { label: 'Next-FLM', href: 'https://digtl.web.id/next/' },
   ];
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [headerHeight, setHeaderHeight] = useState(0);
@@ -85,8 +82,22 @@ const PublicHeader: React.FC = () => {
     const { pathname, hash } = locationState;
     const href = item.href.toLowerCase();
 
-    if (href === '/#home') {
-      return pathname === '/' && (hash === '' || hash === '#home');
+    if (href.startsWith('http')) {
+      return false;
+    }
+
+    if (href.startsWith('/#')) {
+      const targetHash = href.slice(1);
+
+      if (pathname !== '/') {
+        return false;
+      }
+
+      if (targetHash === '#home') {
+        return hash === '' || hash === '#home';
+      }
+
+      return hash === targetHash;
     }
 
     if (href.startsWith('/')) {
@@ -104,11 +115,10 @@ const PublicHeader: React.FC = () => {
       <div className="hero-header">
         <header ref={headerInnerRef} className="main-header">
           <div className="main-header__inner">
-            <a className="header-logo" href="/" aria-label="PT Bio Energy Semesta Tama logo">
-              <img
-                src={logoNucare}
-                alt="PT Bio Energy Semesta Tama"
-              />
+            <a className="header-logo" href="/" aria-label="M Rizky-fr home">
+              <span className="header-logo__typing" aria-label="M Rizky-fr">
+                <span className="header-logo__typing-text">M Rizky-fr</span>
+              </span>
             </a>
 
             <nav className="header-menu" aria-label="Main navigation">
@@ -118,6 +128,9 @@ const PublicHeader: React.FC = () => {
                     key={item.label}
                     href={item.href}
                     className={`header-menu__link${isActiveMenu(item) ? ' is-active' : ''}`}
+                    {...(item.href.startsWith('http')
+                      ? { target: '_blank', rel: 'noreferrer noopener' }
+                      : {})}
                   >
                     {item.label}
                   </a>
@@ -137,20 +150,14 @@ const PublicHeader: React.FC = () => {
             <div className="header-right">
               <div className="header-cta-group">
                 <a
-                  href="mailto:info@best-pellet.com"
-                  className="header-cta header-cta--secondary"
-                  aria-label="Send email to info@best-pellet.com"
-                >
-                  <Mail className="header-cta__icon" aria-hidden="true" />
-                  <span>Kirim Email</span>
-                </a>
-                <a
-                  href="/contact"
+                  href="https://github.com/mrizky-fr"
+                  target="_blank"
+                  rel="noreferrer noopener"
                   className="header-cta header-cta--primary"
-                  aria-label="Open contact page"
+                  aria-label="Open GitHub profile"
                 >
-                  <Headset size={18} aria-hidden="true" />
-                  <span>Pusat Bantuan!</span>
+                  <Github className="header-cta__icon" aria-hidden="true" />
+                  <span>Githup Saya</span>
                 </a>
               </div>
               <button
@@ -175,11 +182,10 @@ const PublicHeader: React.FC = () => {
 
           <aside className="header-drawer__content" aria-label="Mobile navigation">
             <div className="header-drawer__head">
-              <a className="header-logo" href="/" aria-label="PT Bio Energy Semesta Tama logo">
-                <img
-                  src={logoNucare}
-                  alt="PT Bio Energy Semesta Tama"
-                />
+              <a className="header-logo" href="/" aria-label="M Rizky-fr home">
+                <span className="header-logo__typing" aria-label="M Rizky-fr">
+                  <span className="header-logo__typing-text">M Rizky-fr</span>
+                </span>
               </a>
               <button
                 type="button"
@@ -220,22 +226,15 @@ const PublicHeader: React.FC = () => {
 
             <div className="header-drawer__cta-group">
               <a
-                href="mailto:info@best-pellet.com"
-                className="header-cta header-cta--secondary"
-                aria-label="Send email to info@best-pellet.com"
-                onClick={closeDrawer}
-              >
-                <Mail className="header-cta__icon" aria-hidden="true" />
-                <span>Kirim Email</span>
-              </a>
-              <a
-                href="/contact"
+                href="https://github.com/mrizky-fr"
+                target="_blank"
+                rel="noreferrer noopener"
                 className="header-cta header-cta--primary"
-                aria-label="Open contact page"
+                aria-label="Open GitHub profile"
                 onClick={closeDrawer}
               >
-                <Headset size={18} aria-hidden="true" />
-                <span>Pusat Bantuan!</span>
+                <Github className="header-cta__icon" aria-hidden="true" />
+                <span>Githup Saya</span>
               </a>
             </div>
           </aside>

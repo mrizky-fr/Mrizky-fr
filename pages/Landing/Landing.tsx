@@ -14,7 +14,6 @@ import {
 } from 'lucide-react';
 import PublicHeader from '../../components/Header/PublicHeader';
 import PublicFooter from '../../components/Footer/PublicFooter';
-import logoNucare from '../../assets/logo best.png';
 import heroCoverImage from '../../assets/Wood-Pellet-cover-q4vtiu315mplmf2d3s09jzctdfky9ni6y5fe4tuyrs.webp';
 import homeSectionFourImage from '../../assets/WhatsApp Image 2026-05-21 at 15.40.16.jpeg';
 import Reveal from '../../components/Reveal/Reveal';
@@ -99,7 +98,7 @@ const Landing: React.FC = () => {
     } as React.CSSProperties;
 
     return (
-        <div className="min-h-screen bg-white overflow-x-hidden">
+        <div className="min-h-screen overflow-x-hidden">
             <PublicHeader />
 
             <section id="home" className="home-hero-section">
@@ -206,14 +205,14 @@ const Landing: React.FC = () => {
             </Reveal>
 
             <Reveal>
-            <section id="company" className="home-company-section" aria-label="Profil PT Bio Energy Semesta Tama">
+            <section id="about-me" className="home-company-section" aria-label="Profil PT Bio Energy Semesta Tama">
                 <div className="home-company-shell">
                     <Reveal delay={0.1} className="home-company-logo-wrap">
-                        <img
-                            src={logoNucare}
-                            alt="PT Bio Energy Semesta Tama"
-                            className="home-company-logo"
-                        />
+                        <span className="home-company-logo-text" aria-label="M Rizky-fr">
+                            <span className="header-logo__typing">
+                                <span className="header-logo__typing-text">M Rizky-fr</span>
+                            </span>
+                        </span>
                     </Reveal>
 
                     <Reveal delay={0.18}>
@@ -252,7 +251,7 @@ const Landing: React.FC = () => {
                     </Reveal>
 
                     <Reveal delay={0.34} className="home-company-action">
-                        <a href="/about" className="home-company-button">
+                        <a href="/#why-us" className="home-company-button">
                             <ArrowRight className="app-button-icon" aria-hidden="true" />
                             <span className="app-button-label">Lihat Lebih Lengkap</span>
                         </a>
@@ -349,21 +348,25 @@ const Landing: React.FC = () => {
                     <div className="home-cta-actions">
                         <Reveal delay={0.18}>
                             <a
-                                href="/contact"
+                                href="https://github.com/mrizky-fr"
+                                target="_blank"
+                                rel="noreferrer noopener"
                                 className="home-cta-button home-cta-button--contact"
                             >
                                 <PhoneCall className="app-button-icon" aria-hidden="true" />
-                                <span className="app-button-label">Contact</span>
+                                <span className="app-button-label">Githup Saya</span>
                             </a>
                         </Reveal>
 
                         <Reveal delay={0.26}>
                             <a
-                                href="/about"
+                                href="https://digtl.web.id/next/"
+                                target="_blank"
+                                rel="noreferrer noopener"
                                 className="home-cta-button home-cta-button--profile"
                             >
                                 <FileText className="app-button-icon" aria-hidden="true" />
-                                <span className="app-button-label">Company Profile</span>
+                                <span className="app-button-label">Next-FLM</span>
                             </a>
                         </Reveal>
                     </div>

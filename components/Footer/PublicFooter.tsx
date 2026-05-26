@@ -35,11 +35,16 @@ const PublicFooter: React.FC = () => {
                     <div className="site-footer__col site-footer__col--about">
                         <h3 className="site-footer__title">Navigasi</h3>
                         <nav className="site-footer__menu" aria-label="Navigasi halaman">
-                            <a href="/#home" className="site-footer__menu-link">Beranda</a>
-                            <a href="/about" className="site-footer__menu-link">Tentang</a>
-                            <a href="/services" className="site-footer__menu-link">Produk</a>
-                            <a href="/gallery" className="site-footer__menu-link">Galeri</a>
-                            <a href="/contact" className="site-footer__menu-link">Kontak</a>
+                            <a href="/#home" className="site-footer__menu-link">Home</a>
+                            <a href="/#about-me" className="site-footer__menu-link">About Me</a>
+                            <a
+                                href="https://digtl.web.id/next/"
+                                className="site-footer__menu-link"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
+                                Next-FLM
+                            </a>
                         </nav>
                     </div>
 

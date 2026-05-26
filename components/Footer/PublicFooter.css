@@ -2,10 +2,10 @@
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  background: #fafafa;
-  color: #214132; /* green */
+  background: var(--app-surface);
+  color: var(--app-text);
   padding: 56px 20px 18px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: var(--snpro-font-family);
 }
 
 .site-footer__container {
@@ -29,7 +29,7 @@
 
 .site-footer__title {
   margin: 0 0 12px;
-  color: #111827;
+  color: var(--app-text);
   font-size: 1.06rem;
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -37,7 +37,7 @@
 
 .site-footer__description {
   margin: 0 0 12px;
-  color: #4b5563;
+  color: var(--app-text-muted);
   font-size: 0.92rem;
   line-height: 1.4;
 }
@@ -46,12 +46,12 @@
   margin: 0 0 8px;
   font-size: 0.92rem;
   line-height: 1.4;
-  color: #365166;
+  color: var(--app-text-muted);
   font-family: 'SN Pro', sans-serif;
 }
 
 .site-footer__contact-link {
-  color: #214132; /* green */
+  color: var(--app-primary);
   text-decoration: underline;
   text-underline-offset: 2px;
   transition: opacity 0.2s ease;
@@ -68,7 +68,7 @@
 }
 
 .site-footer__menu-link {
-  color: #111827;
+  color: var(--app-text);
   text-decoration: none;
   font-size: 0.92rem;
   font-weight: 500;
@@ -77,7 +77,7 @@
 }
 
 .site-footer__menu-link:hover {
-  color: #214132; /* green */
+  color: var(--app-primary);
   opacity: 1;
 }
 
@@ -93,16 +93,16 @@
   min-width: 0;
   height: 42px;
   border-radius: 6px;
-  border: 1px solid rgba(12, 102, 80, 0.28); /* green border */
-  background-color: #ffffff;
-  color: #214132; /* green */
+  border: 1px solid var(--app-border-strong);
+  background-color: var(--app-surface-2);
+  color: var(--app-text);
   padding: 0 12px;
   font-size: 0.92rem;
   outline: none;
 }
 
 .site-footer__input::placeholder {
-  color: #6f8091;
+  color: rgba(234, 242, 255, 0.55);
 }
 
 .site-footer__subscribe-button {
@@ -110,9 +110,9 @@
   overflow: hidden;
   isolation: isolate;
   height: 40px;
-  border: 1px solid #214132; /* green */
-  background-color: #214132; /* green */
-  color: #ffffff;
+  border: 1px solid var(--app-primary);
+  background-color: var(--app-primary);
+  color: var(--app-primary-contrast);
   border-radius: 6px;
   padding: 0 18px;
   font-size: 0.875rem;
@@ -148,7 +148,7 @@
     transparent 0%,
     rgba(255, 255, 255, 0.12) 24%,
     rgba(255, 255, 255, 0.8) 48%,
-    rgba(229, 220, 107, 0.75) 58%,
+    rgba(34, 135, 255, 0.75) 58%,
     rgba(255, 255, 255, 0.1) 76%,
     transparent 100%
   );
@@ -164,21 +164,21 @@
 
 .site-footer__subscribe-button:hover {
   transform: translateY(-2px);
-  border-color: #214132;
-  background: #E5DC6B;
-  color: #214132;
+  border-color: #ffffff;
+  background: #ffffff;
+  color: var(--app-primary);
 }
 
 .site-footer__bottom {
   width: 100%;
   text-align: left;
-  border-top: 1px solid rgba(12, 102, 80, 0.2); /* green */
+  border-top: 1px solid var(--app-border);
   padding-top: 12px;
 }
 
 .site-footer__offer-text {
   margin: 0;
-  color: #4b5563;
+  color: var(--app-text-muted);
   font-size: 0.92rem;
   line-height: 1.4;
   font-weight: 400;
@@ -186,7 +186,7 @@
 }
 
 .site-footer__offer-email {
-  color: #214132;
+  color: var(--app-primary);
   font-weight: 800;
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -208,8 +208,8 @@
   width: 32px;
   height: 32px;
   border-radius: 6px;
-  background-color: #214132; /* green */
-  color: #ffffff;
+  background-color: var(--app-primary);
+  color: var(--app-primary-contrast);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -225,7 +225,7 @@
 .site-footer__bottom p {
   margin: 0;
   font-size: 0.82rem;
-  color: #5b6f82;
+  color: rgba(234, 242, 255, 0.55);
   font-family: 'SN Pro', sans-serif;
 }
 

@@ -6,9 +6,9 @@
   overflow: hidden;
   padding: 44px 0;
   background:
-    radial-gradient(circle at 18% 45%, rgba(229, 220, 107, 0.18) 0%, rgba(229, 220, 107, 0) 34%),
+    radial-gradient(circle at 18% 45%, rgba(34, 135, 255, 0.22) 0%, rgba(34, 135, 255, 0) 34%),
     radial-gradient(circle at 78% 35%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 30%),
-    linear-gradient(135deg, #1b3529 0%, #214132 42%, #14291f 100%);
+    linear-gradient(135deg, #03091B 0%, #0B1738 42%, #2287FF 120%);
 }
 
 .page-header::before {
@@ -28,7 +28,7 @@
   right: -120px;
   width: 320px;
   height: 220px;
-  background: rgba(229, 220, 107, 0.08);
+  background: rgba(34, 135, 255, 0.12);
   transform: rotate(-14deg);
   pointer-events: none;
 }

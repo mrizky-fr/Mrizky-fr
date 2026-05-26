@@ -1,9 +1,5 @@
 import { useEffect } from 'react';
 import Landing from './pages/Landing';
-import About from './pages/About';
-import Services from './pages/Services/Services';
-import Gallery from './pages/Gallery/Gallery';
-import Contact from './pages/Contact/Contact';
 
 type SeoConfig = {
     title: string;
@@ -15,26 +11,6 @@ const SEO_BY_PATH: Record<string, SeoConfig> = {
         title: 'PT Bio Energy Semesta Tama | Produsen Wood Pellet Berkualitas',
         description:
             'PT Bio Energy Semesta Tama menyediakan wood pellet berkualitas untuk kebutuhan industri dengan pasokan stabil, terstandar, dan ramah lingkungan.',
-    },
-    '/about': {
-        title: 'Tentang Kami | PT Bio Energy Semesta Tama',
-        description:
-            'Profil PT Bio Energy Semesta Tama sebagai perusahaan energi biomassa yang berfokus pada produksi wood pellet berkualitas tinggi untuk pasar industri.',
-    },
-    '/services': {
-        title: 'Layanan Kami | PT Bio Energy Semesta Tama',
-        description:
-            'Layanan penyediaan wood pellet, pasokan industri berkelanjutan, kontrol kualitas produk, dan kerja sama distribusi dari PT Bio Energy Semesta Tama.',
-    },
-    '/gallery': {
-        title: 'Galeri | PT Bio Energy Semesta Tama',
-        description:
-            'Dokumentasi produk wood pellet dan aktivitas PT Bio Energy Semesta Tama dalam menghadirkan solusi energi biomassa untuk kebutuhan industri.',
-    },
-    '/contact': {
-        title: 'Kontak | PT Bio Energy Semesta Tama',
-        description:
-            'Hubungi PT Bio Energy Semesta Tama untuk informasi kerja sama, pemesanan wood pellet, dan kebutuhan pasokan energi biomassa industri.',
     },
 };
 
@@ -81,19 +57,6 @@ function App() {
         upsertMetaTag('meta[name="twitter:image"]', 'name', ogImageUrl);
         upsertCanonical(pageUrl);
     }, [pathname, seo.description, seo.title]);
-
-    if (pathname === '/about') {
-        return <About />;
-    }
-    if (pathname === '/services') {
-        return <Services />;
-    }
-    if (pathname === '/gallery') {
-        return <Gallery />;
-    }
-    if (pathname === '/contact') {
-        return <Contact />;
-    }
 
     return <Landing />;
 }
