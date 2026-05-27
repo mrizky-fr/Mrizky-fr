@@ -8,15 +8,17 @@ type HeaderMenuItem = {
   onClick?: () => void;
 };
 
+const BASE_PATH = '/mrizky';
+
 const PublicHeader: React.FC = () => {
   const [locationState, setLocationState] = useState({
-    pathname: window.location.pathname || '/',
+    pathname: (window.location.pathname || '/').replace(/\/+$/, '') || '/',
     hash: window.location.hash || '',
   });
 
   const headerMenuItems: HeaderMenuItem[] = [
-    { label: 'Home', href: '/#home' },
-    { label: 'Contact', href: '/#contact' },
+    { label: 'Home', href: `${BASE_PATH}#home` },
+    { label: 'About', href: `${BASE_PATH}/about` },
     { label: 'Next-FLM', href: 'https://digtl.web.id/next/' },
   ];
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -26,7 +28,7 @@ const PublicHeader: React.FC = () => {
   useEffect(() => {
     const updateLocation = () =>
       setLocationState({
-        pathname: window.location.pathname || '/',
+        pathname: (window.location.pathname || '/').replace(/\/+$/, '') || '/',
         hash: window.location.hash || '',
       });
 
@@ -86,10 +88,16 @@ const PublicHeader: React.FC = () => {
       return false;
     }
 
-    if (href.startsWith('/#')) {
-      const targetHash = href.slice(1);
+    if (!href.startsWith('/')) {
+      return false;
+    }
 
-      if (pathname !== '/') {
+    const target = new URL(href, window.location.origin);
+    const targetPathname = target.pathname.replace(/\/+$/, '') || '/';
+    const targetHash = target.hash;
+
+    if (targetHash) {
+      if (pathname !== targetPathname) {
         return false;
       }
 
@@ -100,11 +108,7 @@ const PublicHeader: React.FC = () => {
       return hash === targetHash;
     }
 
-    if (href.startsWith('/')) {
-      return pathname === href;
-    }
-
-    return false;
+    return pathname === targetPathname;
   };
 
   const closeDrawer = () => setIsDrawerOpen(false);
@@ -115,7 +119,7 @@ const PublicHeader: React.FC = () => {
       <div className="hero-header">
         <header ref={headerInnerRef} className="main-header">
           <div className="main-header__inner">
-            <a className="header-logo" href="/" aria-label="M Rizky-fr home">
+            <a className="header-logo" href={BASE_PATH} aria-label="M Rizky-fr home">
               <span className="header-logo__typing" aria-label="M Rizky-fr">
                 <span className="header-logo__typing-text" data-text="M Rizky-fr">M Rizky-fr</span>
               </span>
@@ -182,7 +186,7 @@ const PublicHeader: React.FC = () => {
 
           <aside className="header-drawer__content" aria-label="Mobile navigation">
             <div className="header-drawer__head">
-              <a className="header-logo" href="/" aria-label="M Rizky-fr home">
+              <a className="header-logo" href={BASE_PATH} aria-label="M Rizky-fr home">
                 <span className="header-logo__typing" aria-label="M Rizky-fr">
                   <span className="header-logo__typing-text" data-text="M Rizky-fr">M Rizky-fr</span>
                 </span>

@@ -22,8 +22,8 @@ const PublicFooter: React.FC = () => {
                     <div className="site-footer__col site-footer__col--about">
                         <h3 className="site-footer__title">Navigasi</h3>
                         <nav className="site-footer__menu" aria-label="Navigasi halaman">
-                            <a href="/#home" className="site-footer__menu-link">Home</a>
-                            <a href="/#contact" className="site-footer__menu-link">Contact</a>
+                            <a href="/mrizky#home" className="site-footer__menu-link">Home</a>
+                            <a href="/mrizky/about" className="site-footer__menu-link">About</a>
                             <a
                                 href="https://digtl.web.id/next/"
                                 className="site-footer__menu-link"

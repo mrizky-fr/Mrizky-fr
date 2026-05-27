@@ -138,7 +138,7 @@ const Landing: React.FC = () => {
                 </div>
             </section>
 
-            <section className="home-history-section" aria-label="History pekerjaan dan project publik">
+            <section id="about" className="home-history-section" aria-label="History pekerjaan dan project publik">
                 <div className="home-history-shell">
                     <h2 className="home-history-title">History Pekerjaan / Pengalaman</h2>
 

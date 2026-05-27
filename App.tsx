@@ -1,16 +1,34 @@
 import { useEffect } from 'react';
 import Landing from './pages/Landing';
+import About from './pages/About';
 
 type SeoConfig = {
     title: string;
     description: string;
 };
 
+const SHARE_IMAGE_PATH = '/assets/fav%20logo%20best.jpeg';
+
 const SEO_BY_PATH: Record<string, SeoConfig> = {
     '/': {
-        title: 'PT Bio Energy Semesta Tama | Produsen Wood Pellet Berkualitas',
+        title: 'Muhammad Rizky D (Mrizky-fr) | Frontend Developer',
         description:
-            'PT Bio Energy Semesta Tama menyediakan wood pellet berkualitas untuk kebutuhan industri dengan pasokan stabil, terstandar, dan ramah lingkungan.',
+            'Portfolio resmi Muhammad Rizky D (Mrizky-fr), frontend developer yang fokus pada pengembangan website, UI clean, responsif, dan nyaman dipakai.',
+    },
+    '/mrizky': {
+        title: 'Muhammad Rizky D (Mrizky-fr) | Home',
+        description:
+            'Halaman home portfolio Muhammad Rizky D (Mrizky-fr): profil singkat, pengalaman kerja, project publik, dan kontak kolaborasi.',
+    },
+    '/mrizky/': {
+        title: 'Muhammad Rizky D (Mrizky-fr) | Home',
+        description:
+            'Halaman home portfolio Muhammad Rizky D (Mrizky-fr): profil singkat, pengalaman kerja, project publik, dan kontak kolaborasi.',
+    },
+    '/mrizky/about': {
+        title: 'Muhammad Rizky D (Mrizky-fr) | About',
+        description:
+            'Tentang Muhammad Rizky D (Mrizky-fr): perjalanan kerja, peran di DealTech, dan fokus pengembangan frontend untuk pengalaman pengguna yang lebih baik.',
     },
 };
 
@@ -35,18 +53,19 @@ const upsertCanonical = (href: string) => {
 };
 
 function App() {
-    const pathname = window.location.pathname.toLowerCase();
+    const rawPathname = window.location.pathname.toLowerCase();
+    const pathname = rawPathname.length > 1 ? rawPathname.replace(/\/+$/, '') : rawPathname;
     const seo = SEO_BY_PATH[pathname] ?? SEO_BY_PATH['/'];
 
     useEffect(() => {
         const pageUrl = `${window.location.origin}${pathname}`;
-        const ogImageUrl = `${window.location.origin}/assets/fav%20logo%20best.jpeg`;
+        const ogImageUrl = `${window.location.origin}${SHARE_IMAGE_PATH}`;
 
         document.title = seo.title;
 
         upsertMetaTag('meta[name="description"]', 'name', seo.description);
         upsertMetaTag('meta[property="og:type"]', 'property', 'website');
-        upsertMetaTag('meta[property="og:site_name"]', 'property', 'PT Bio Energy Semesta Tama');
+        upsertMetaTag('meta[property="og:site_name"]', 'property', 'Muhammad Rizky D - Mrizky-fr');
         upsertMetaTag('meta[property="og:title"]', 'property', seo.title);
         upsertMetaTag('meta[property="og:description"]', 'property', seo.description);
         upsertMetaTag('meta[property="og:url"]', 'property', pageUrl);
@@ -57,6 +76,10 @@ function App() {
         upsertMetaTag('meta[name="twitter:image"]', 'name', ogImageUrl);
         upsertCanonical(pageUrl);
     }, [pathname, seo.description, seo.title]);
+
+    if (pathname === '/mrizky/about') {
+        return <About />;
+    }
 
     return <Landing />;
 }
