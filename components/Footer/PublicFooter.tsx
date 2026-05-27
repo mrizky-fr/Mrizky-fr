@@ -9,15 +9,12 @@ const PublicFooter: React.FC = () => {
                 <div className="site-footer__grid">
                     {/* Column 1: Contact */}
                     <div className="site-footer__col site-footer__col--contact">
-                        <h3 className="site-footer__title">Hubungi Kami</h3>
+                        <h3 className="site-footer__title">About Us</h3>
                         <p className="site-footer__description">
-                            PT Bio Energy Semesta Tama. Kami hadir sebagai mitra profesional untuk mendukung kebutuhan bisnis Anda dengan layanan yang adaptif dan berkualitas.
+                            Nama Muhammad Rizky D biasa di panggil kyy atau ( Mrizky-fr ) Developer Pemula So Thanks Udah Mampir.. Se you next build gengs...
                         </p>
                         <p className="site-footer__line">
-                            <strong>Alamat</strong> : Jalan Raya Solo Sukoharjo KM 7, Dusun Telukan, RT 003/RW 005, Solo, Jawa Tengah
-                        </p>
-                        <p className="site-footer__line">
-                            <strong>Email</strong> : <a href="mailto:info@best-pellet.com" className="site-footer__contact-link">info@best-pellet.com</a>
+                            <strong>Visit</strong> : <a href="https://tech.mudahdeal.com/company/" target="_blank" rel="noreferrer noopener" className="site-footer__contact-link">Tech.Mudahdeal.Com</a>
                         </p>
                     </div>
 
@@ -96,7 +93,7 @@ const PublicFooter: React.FC = () => {
 
                 {/* Bottom Bar */}
                 <div className="site-footer__bottom">
-                    <p>PT Bio Energy Semesta Tama &copy; {new Date().getFullYear()} | Hak Cipta Dilindungi Undang-Undang.</p>
+                    <p>Muhammad Rizky D - Mrizky-fr &copy; 2026 | Hak Cipta Dilindungi Undang-Undang.</p>
                 </div>
             </div>
         </footer>

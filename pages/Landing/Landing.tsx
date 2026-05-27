@@ -1,8 +1,8 @@
 import React from 'react';
 import {
+    ArrowUpRight,
     FileText,
     Github,
-    PhoneCall,
 } from 'lucide-react';
 import PublicHeader from '../../components/Header/PublicHeader';
 import PublicFooter from '../../components/Footer/PublicFooter';
@@ -33,6 +33,13 @@ const techLogos = [
 ];
 
 const techSliderLogos = Array.from({ length: 8 }, (_, index) => techLogos[index % techLogos.length]);
+
+const renderUnderlinedWords = (text: string) =>
+    text.split(' ').map((word, index) => (
+        <span key={`${word}-${index}`} className="home-history-item__word">
+            {word}
+        </span>
+    ));
 
 const Landing: React.FC = () => {
     return (
@@ -131,6 +138,69 @@ const Landing: React.FC = () => {
                 </div>
             </section>
 
+            <section className="home-history-section" aria-label="History pekerjaan dan project publik">
+                <div className="home-history-shell">
+                    <h2 className="home-history-title">History Pekerjaan / Pengalaman</h2>
+
+                    <article className="home-history-item">
+                        <h3 className="home-history-item__title home-history-item__title--underline">
+                            {renderUnderlinedWords('2018 - 2021 Bekerja Di Butik Emas')}
+                        </h3>
+                        <p className="home-history-item__description">
+                            Di periode ini saya banyak belajar soal disiplin kerja, komunikasi dengan customer, dan konsistensi
+                            menjaga kualitas layanan. Pengalaman tersebut jadi fondasi penting buat cara saya bekerja sampai sekarang.
+                        </p>
+                    </article>
+
+                    <article className="home-history-item">
+                        <h3 className="home-history-item__title">
+                            {renderUnderlinedWords('2021 Mulai Bekerja Di PT Mudahdeal Group Sub Devisi DealTech ( dulunya Palingmurah.net )')}
+                        </h3>
+                        <p className="home-history-item__description">
+                            Saat ini gue lagi berproses dan berkembang di Mudahdeal Group, tepatnya di Dealtech sebagai salah satu lini digitalnya.
+                            Di sini gue fokus di frontend, ngerjain dan ngembangin tampilan web biar lebih clean, responsif, dan nyaman dipake user.
+                            Lingkungannya bikin gue terus belajar hal baru, dari improve UI/UX sampai adaptasi sama perkembangan teknologi yang cepet banget.
+                            Buat gue ini bukan cuma kerja, tapi tempat buat ngasah skill, ngebangun pengalaman, dan terus upgrade diri biar makin solid di dunia digital.
+                        </p>
+                        <a
+                            href="https://tech.mudahdeal.com/company/"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            className="home-history-link"
+                        >
+                            Siapa itu DealTech
+                        </a>
+                    </article>
+
+                    <h2 className="home-history-title">Project OpenSource / Public</h2>
+                    <article className="home-history-item">
+                        <h3 className="home-history-item__title">
+                            <a
+                                href="https://digtl.web.id/next/"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                className="home-history-item__title-link"
+                            >
+                                {renderUnderlinedWords('Next-FLM Tempat berbagi flm gratis & berbayar')}
+                            </a>
+                        </h3>
+                        <p className="home-history-item__description">
+                            Next-FLM adalah project publik yang saya bangun untuk eksplorasi konsep UI, alur konten, dan pengalaman pengguna
+                            pada platform berbagi film. Project ini juga jadi ruang eksperimen saya untuk ngetes ide baru secara langsung.
+                        </p>
+                        <a
+                            href="https://tech.mudahdeal.com/company/"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            className="home-history-project-btn"
+                        >
+                            <ArrowUpRight className="home-history-project-btn__icon" aria-hidden="true" />
+                            Kenal Lebih Dengan Saya!
+                        </a>
+                    </article>
+                </div>
+            </section>
+
             <Reveal>
                 <section id="contact" className="home-cta-section" aria-label="Ajakan kerja sama PT Bio Energy Semesta Tama">
                     <div className="home-cta-shell">
@@ -154,7 +224,7 @@ const Landing: React.FC = () => {
                                     rel="noreferrer noopener"
                                     className="home-cta-button home-cta-button--contact"
                                 >
-                                    <PhoneCall className="app-button-icon" aria-hidden="true" />
+                                    <Github className="app-button-icon" aria-hidden="true" />
                                     <span className="app-button-label">Githup Saya</span>
                                 </a>
                             </Reveal>
