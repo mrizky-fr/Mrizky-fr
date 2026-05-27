@@ -726,6 +726,18 @@
   padding: 0 22px;
 }
 
+.home-history-visual {
+  margin: 0 0 14px;
+}
+
+.home-history-visual__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
+  border: 0;
+}
+
 .home-history-title {
   margin: 0;
   color: #ffffff;
@@ -1037,6 +1049,14 @@
 
   .home-history-shell {
     padding: 0 16px;
+  }
+
+  .home-history-visual {
+    margin-bottom: 12px;
+  }
+
+  .home-history-visual__image {
+    width: 100%;
   }
 
   .home-history-title {

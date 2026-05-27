@@ -11,12 +11,22 @@ const renderUnderlinedWords = (text: string) =>
     ));
 
 const About: React.FC = () => {
+    const profileImageUrl = 'https://ik.imagekit.io/vhf2xhf6b/pp%20(2)%20(1).png';
+
     return (
         <div className="min-h-screen overflow-x-hidden">
             <PublicHeader />
 
             <section className="about-intro-section" aria-label="Tentang saya">
                 <div className="about-intro-shell">
+                    <div className="about-intro-visual">
+                        <img
+                            src={profileImageUrl}
+                            alt="Foto Muhammad Rizky D"
+                            className="about-intro-visual__image"
+                            loading="lazy"
+                        />
+                    </div>
                     <h1 className="about-intro-title">Tentang Saya</h1>
                     <p className="about-intro-description">
                         kenalin gue Muhammad Rizky D | Kyy (Mrizky-fr), frontend dev yang demen ngulik UI biar keliatan clean, smooth, dan enak dipandang.

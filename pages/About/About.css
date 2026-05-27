@@ -21,6 +21,18 @@
   padding: 0 22px;
 }
 
+.about-intro-visual {
+  margin: 0 0 14px;
+}
+
+.about-intro-visual__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
+  border: 0;
+}
+
 .about-intro-title,
 .about-history-title {
   margin: 0;
@@ -125,5 +137,13 @@
   .about-intro-shell,
   .about-history-shell {
     padding: 0 16px;
+  }
+
+  .about-intro-visual {
+    margin-bottom: 12px;
+  }
+
+  .about-intro-visual__image {
+    width: 100%;
   }
 }

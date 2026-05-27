@@ -11,23 +11,23 @@ import './Landing.css';
 
 const techLogos = [
     {
-        src: 'https://raw.githubusercontent.com/mrizky-fr/News-Gallerys/main/fotos/about/Go_Logo_Blue.svg.png',
+        src: 'https://ik.imagekit.io/vhf2xhf6b/Go_Logo_Blue.svg.png',
         alt: 'Go Logo',
     },
     {
-        src: 'https://raw.githubusercontent.com/mrizky-fr/News-Gallerys/main/fotos/about/1686539179.png',
+        src: 'https://ik.imagekit.io/vhf2xhf6b/1686539179.png',
         alt: 'JavaScript Logo',
     },
     {
-        src: 'https://raw.githubusercontent.com/mrizky-fr/News-Gallerys/main/fotos/about/HTML5_Logo_512.png',
+        src: 'https://ik.imagekit.io/vhf2xhf6b/HTML5_Logo_512.png',
         alt: 'HTML5 Logo',
     },
     {
-        src: 'https://raw.githubusercontent.com/mrizky-fr/News-Gallerys/main/fotos/about/images%20(1).png',
+        src: 'https://ik.imagekit.io/vhf2xhf6b/images%20(1).png',
         alt: 'CSS Logo',
     },
     {
-        src: 'https://raw.githubusercontent.com/mrizky-fr/News-Gallerys/main/fotos/about/images.png',
+        src: 'https://ik.imagekit.io/vhf2xhf6b/images.png',
         alt: 'React Logo',
     },
 ];
@@ -42,6 +42,8 @@ const renderUnderlinedWords = (text: string) =>
     ));
 
 const Landing: React.FC = () => {
+    const profileImageUrl = 'https://ik.imagekit.io/vhf2xhf6b/pp%20(2)%20(1).png';
+
     return (
         <div className="min-h-screen overflow-x-hidden">
             <PublicHeader />
@@ -140,6 +142,14 @@ const Landing: React.FC = () => {
 
             <section id="about" className="home-history-section" aria-label="History pekerjaan dan project publik">
                 <div className="home-history-shell">
+                    <div className="home-history-visual">
+                        <img
+                            src={profileImageUrl}
+                            alt="Foto Muhammad Rizky D"
+                            className="home-history-visual__image"
+                            loading="lazy"
+                        />
+                    </div>
                     <h2 className="home-history-title">History Pekerjaan / Pengalaman</h2>
 
                     <article className="home-history-item">
