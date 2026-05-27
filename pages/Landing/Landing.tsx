@@ -11,28 +11,32 @@ import './Landing.css';
 
 const techLogos = [
     {
-        src: 'https://ik.imagekit.io/vhf2xhf6b/Go_Logo_Blue.svg.png',
-        alt: 'Go Logo',
+        src: 'https://ik.imagekit.io/vhf2xhf6b/tech.png',
+        alt: 'Tech 1',
     },
     {
-        src: 'https://ik.imagekit.io/vhf2xhf6b/1686539179.png',
-        alt: 'JavaScript Logo',
+        src: 'https://ik.imagekit.io/vhf2xhf6b/tech%20(6).png',
+        alt: 'Tech 2',
     },
     {
-        src: 'https://ik.imagekit.io/vhf2xhf6b/HTML5_Logo_512.png',
-        alt: 'HTML5 Logo',
+        src: 'https://ik.imagekit.io/vhf2xhf6b/tech%20(5).png',
+        alt: 'Tech 3',
     },
     {
-        src: 'https://ik.imagekit.io/vhf2xhf6b/images%20(1).png',
-        alt: 'CSS Logo',
+        src: 'https://ik.imagekit.io/vhf2xhf6b/tech%20(4).png',
+        alt: 'Tech 4',
     },
     {
-        src: 'https://ik.imagekit.io/vhf2xhf6b/images.png',
-        alt: 'React Logo',
+        src: 'https://ik.imagekit.io/vhf2xhf6b/tech%20(3).png',
+        alt: 'Tech 5',
+    },
+    {
+        src: 'https://ik.imagekit.io/vhf2xhf6b/tech%20(2).png',
+        alt: 'Tech 6',
     },
 ];
 
-const techSliderLogos = Array.from({ length: 8 }, (_, index) => techLogos[index % techLogos.length]);
+const techSliderLogos = techLogos;
 
 const renderUnderlinedWords = (text: string) =>
     text.split(' ').map((word, index) => (
