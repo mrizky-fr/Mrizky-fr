@@ -25,7 +25,6 @@
   background-size: 150% 150%, 150% 150%, 100% 100%;
   background-position: 0% 100%, 100% 100%, center;
   background-repeat: no-repeat;
-  animation: home-hero-soft-gradient 9s ease-in-out infinite;
 }
 
 .home-hero::before {
@@ -74,30 +73,11 @@
   max-width: 100%;
   white-space: normal;
   overflow-wrap: anywhere;
-  color: transparent;
+  color: #ffffff;
   font-size: clamp(1.28rem, 4vw, 2.85rem);
   font-weight: 900;
   font-variation-settings: "wght" 900;
   line-height: 1.25;
-  background-image: linear-gradient(
-    105deg,
-    #ffffff 0%,
-    #ffffff 38%,
-    rgba(255, 255, 255, 0.42) 46%,
-    #ffffff 50%,
-    rgba(255, 255, 255, 0.72) 56%,
-    #ffffff 64%,
-    #ffffff 100%
-  );
-  background-size: 240% 100%;
-  background-position: 140% 0;
-  background-repeat: no-repeat;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0.45px rgba(255, 255, 255, 0.72);
-  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
-  animation: home-hero-text-flash-right 3.6s linear infinite;
 }
 
 .home-hero__description {
@@ -129,7 +109,7 @@
   overflow: hidden;
   border-radius: 6px;
   padding: 0 18px;
-  font-size: 0.875rem;
+  font-size: 0.6875rem;
   line-height: 1;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -138,6 +118,13 @@
   transition: all 0.2s ease;
   text-decoration: none;
   isolation: isolate;
+}
+
+.home-hero__button .app-button-icon,
+.home-company-button .app-button-icon,
+.home-cta-button .app-button-icon {
+  width: 21px;
+  height: 21px;
 }
 
 .home-hero__button span,
@@ -543,18 +530,19 @@
 .home-cta-title {
   margin: 0;
   color: #0f172a;
-  font-size: clamp(1.35rem, 3vw, 2rem);
-  line-height: 1.25;
+  font-size: 1.325rem;
+  line-height: 1.4;
   font-weight: 600;
+  font-family: var(--snpro-font-family);
   letter-spacing: 0.01em;
   text-transform: none;
 }
 
 .home-cta-description {
-  margin: 10px 0 0;
+  margin: 5.625px 0 0;
   max-width: 760px;
   color: #475569;
-  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+  font-size: 0.92rem;
   line-height: 1.4;
 }
 
@@ -579,7 +567,7 @@
   border-radius: 6px;
   padding: 0 18px;
   border: 1px solid transparent;
-  font-size: 0.875rem;
+  font-size: 0.6875rem;
   line-height: 1;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -630,50 +618,41 @@
 }
 
 .home-cta-button--contact {
-  border-color: var(--app-primary);
-  background: var(--app-primary);
-  color: var(--app-primary-contrast);
-}
-
-.home-cta-button--contact:hover {
-  background: #ffffff;
-  border-color: var(--app-primary);
-  color: var(--app-primary);
-}
-
-.home-cta-button--profile {
-  border-color: rgba(15, 23, 42, 0.2);
-  background: #ffffff;
-  color: #0f172a;
-}
-
-.home-cta-button--profile:hover {
-  background: #0f172a;
-  border-color: #0f172a;
+  border-color: #121212;
+  background: #121212;
   color: #ffffff;
 }
 
-@keyframes home-hero-soft-gradient {
-  0% {
-    background-position: 0% 100%, 100% 100%, center;
-  }
-
-  50% {
-    background-position: 12% 88%, 88% 88%, center;
-  }
-
-  100% {
-    background-position: 0% 100%, 100% 100%, center;
-  }
+.home-cta-button--contact:hover {
+  background: #1f1f1f;
+  border-color: #121212;
+  color: #ffffff;
 }
 
-@keyframes home-hero-text-flash-right {
-  0% {
-    background-position: 160% 0;
+.home-cta-button--profile {
+  border-color: #121212;
+  background: #121212;
+  color: #ffffff;
+}
+
+.home-cta-button--profile:hover {
+  background: #1f1f1f;
+  border-color: #121212;
+  color: #ffffff;
+}
+
+@media (min-width: 641px) {
+  .home-hero__button,
+  .home-company-button,
+  .home-cta-button {
+    font-size: 0.75rem;
   }
 
-  100% {
-    background-position: -160% 0;
+  .home-hero__button .app-button-icon,
+  .home-company-button .app-button-icon,
+  .home-cta-button .app-button-icon {
+    width: 22px;
+    height: 22px;
   }
 }
 
@@ -758,12 +737,9 @@
     max-width: 100%;
     white-space: normal;
     overflow-wrap: anywhere;
-    animation: home-hero-text-flash-right 3.6s linear infinite;
     font-size: clamp(1.24rem, 7.2vw, 2rem);
     font-weight: 900;
     font-variation-settings: "wght" 900;
-    -webkit-text-stroke: 0.45px rgba(255, 255, 255, 0.72);
-    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
   }
 
   .home-hero__title {
@@ -780,6 +756,7 @@
   .home-hero__actions {
     margin-top: 22px;
     flex-direction: column;
+    align-items: stretch;
   }
 
   .home-hero__button,
@@ -812,17 +789,19 @@
   }
 
   .home-cta-title {
-    font-size: clamp(1.25rem, 7vw, 1.65rem);
+    font-size: 1.325rem;
   }
 
   .home-cta-description {
     font-size: 0.92rem;
+    line-height: 1.4;
   }
 
   .home-cta-actions {
     width: 100%;
     flex-direction: column;
     gap: 12px;
+    align-items: stretch;
   }
 
   .home-cta-button {

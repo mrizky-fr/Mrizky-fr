@@ -1,22 +1,12 @@
-import React, { useState } from 'react';
-import { Bell } from 'lucide-react';
+import React from 'react';
+import { Facebook, Github, Instagram, Music2 } from 'lucide-react';
 import './PublicFooter.css';
 
 const PublicFooter: React.FC = () => {
-    const [email, setEmail] = useState('');
-
-    const handleSubscribe = (e: React.FormEvent) => {
-        e.preventDefault();
-        if (!email) return;
-        setEmail('');
-        alert('Terima kasih telah berlangganan info PT Bio Energy Semesta Tama.');
-    };
-
     return (
         <footer className="site-footer">
             <div className="site-footer__container">
                 <div className="site-footer__grid">
-                    
                     {/* Column 1: Contact */}
                     <div className="site-footer__col site-footer__col--contact">
                         <h3 className="site-footer__title">Hubungi Kami</h3>
@@ -48,31 +38,60 @@ const PublicFooter: React.FC = () => {
                         </nav>
                     </div>
 
-                    {/* Column 3: Subscribe + CTA */}
+                    {/* Column 3: Social Media */}
                     <div className="site-footer__col site-footer__col--subscribe">
-                        <h3 className="site-footer__title">Dapatkan Info Terbaru</h3>
-                        <form className="site-footer__subscribe-form" onSubmit={handleSubscribe}>
-                            <input
-                                type="email"
-                                className="site-footer__input"
-                                placeholder="Masukkan email Anda"
-                                aria-label="Masukkan email Anda"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                required
-                            />
-                            <button type="submit" className="site-footer__subscribe-button">
-                                <Bell className="app-button-icon" aria-hidden="true" />
-                                <span className="app-button-label">Berlangganan</span>
-                            </button>
-                        </form>
+                        <h3 className="site-footer__title">Follow Sosial Media</h3>
+                        <div className="site-footer__socials" aria-label="Sosial media">
+                            <a
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                className="site-footer__social-link"
+                                aria-label="Instagram"
+                            >
+                                <Instagram size={16} aria-hidden="true" />
+                            </a>
+                            <a
+                                href="https://github.com/mrizky-fr"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                className="site-footer__social-link"
+                                aria-label="GitHub"
+                            >
+                                <Github size={16} aria-hidden="true" />
+                            </a>
+                            <a
+                                href="https://www.facebook.com/"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                className="site-footer__social-link"
+                                aria-label="Facebook"
+                            >
+                                <Facebook size={16} aria-hidden="true" />
+                            </a>
+                            <a
+                                href="https://www.tiktok.com/"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                className="site-footer__social-link"
+                                aria-label="TikTok"
+                            >
+                                <Music2 size={16} aria-hidden="true" />
+                            </a>
+                        </div>
                         <p className="site-footer__offer-text">
-                            Tertarik dengan produk wood pellet kami? Kirimkan permintaan dan pertanyaan Anda melalui email kami di{' '}
-                            <a href="mailto:info@best-pellet.com" className="site-footer__offer-email">info@best-pellet.com</a>{' '}
-                            dan tim kami akan segera merespons dengan penawaran harga terbaik sesuai kebutuhan bisnis Anda.
+                            Butuh bantuan pengembangan website atau optimasi tampilan? Saya siap bantu dari ide sampai implementasi.
+                            Yuk mulai kolaborasi lewat{' '}
+                            <a
+                                href="https://tech.mudahdeal.com/"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                className="site-footer__offer-email"
+                            >
+                                Temui Saya Di Dealtech
+                            </a>.
                         </p>
                     </div>
-
                 </div>
 
                 {/* Bottom Bar */}

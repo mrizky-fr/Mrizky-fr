@@ -74,12 +74,12 @@ const Landing: React.FC = () => {
                     <div className="home-cta-shell">
                         <div className="home-cta-copy">
                             <Reveal delay={0.1}>
-                                <h2 className="home-cta-title">Tertarik bekerja sama dengan kami</h2>
+                                <h2 className="home-cta-title">Tertarik bekerja sama dengan saya</h2>
                             </Reveal>
                             <Reveal delay={0.16}>
                                 <p className="home-cta-description">
-                                    Butuh pasokan wood pellet yang stabil, bersih, dan berkualitas?
-                                    Jangan tunda lagi, hubungi kami sekarang dan dapatkan penawaran terbaik sesuai kebutuhan bisnis Anda.
+                                    Butuh bantuan pengembangan website, optimasi tampilan, atau kolaborasi project digital?
+                                    Hubungi saya sekarang untuk diskusi dan solusi terbaik sesuai kebutuhan Anda.
                                 </p>
                             </Reveal>
                         </div>
