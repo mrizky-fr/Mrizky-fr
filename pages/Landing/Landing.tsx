@@ -9,6 +9,31 @@ import PublicFooter from '../../components/Footer/PublicFooter';
 import Reveal from '../../components/Reveal/Reveal';
 import './Landing.css';
 
+const techLogos = [
+    {
+        src: 'https://raw.githubusercontent.com/mrizky-fr/News-Gallerys/refs/heads/main/fotos/about/Go_Logo_Blue.svg.png',
+        alt: 'Go Logo',
+    },
+    {
+        src: 'https://raw.githubusercontent.com/mrizky-fr/News-Gallerys/refs/heads/main/fotos/about/1686539179.png',
+        alt: 'JavaScript Logo',
+    },
+    {
+        src: 'https://raw.githubusercontent.com/mrizky-fr/News-Gallerys/refs/heads/main/fotos/about/HTML5_Logo_512.png',
+        alt: 'HTML5 Logo',
+    },
+    {
+        src: 'https://raw.githubusercontent.com/mrizky-fr/News-Gallerys/refs/heads/main/fotos/about/images%20(1).png',
+        alt: 'CSS Logo',
+    },
+    {
+        src: 'https://raw.githubusercontent.com/mrizky-fr/News-Gallerys/refs/heads/main/fotos/about/images.png',
+        alt: 'React Logo',
+    },
+];
+
+const techSliderLogos = Array.from({ length: 8 }, (_, index) => techLogos[index % techLogos.length]);
+
 const Landing: React.FC = () => {
     return (
         <div className="min-h-screen overflow-x-hidden">
@@ -65,6 +90,43 @@ const Landing: React.FC = () => {
                                 </a>
                             </div>
                         </Reveal>
+                    </div>
+                </div>
+            </section>
+
+            <section className="home-tech-section" aria-label="Teknologi yang digunakan">
+                <div className="home-tech-card">
+                    <div className="home-tech-marquee">
+                        <div className="home-tech-marquee__track">
+                            <div className="home-tech-marquee__group">
+                                {techSliderLogos.map((logo, index) => (
+                                    <a
+                                        key={`group-a-${logo.alt}-${index}`}
+                                        className="home-tech-marquee__item"
+                                        href={logo.src}
+                                        target="_blank"
+                                        rel="noreferrer noopener"
+                                        aria-label={logo.alt}
+                                    >
+                                        <img src={logo.src} alt={logo.alt} loading="lazy" />
+                                    </a>
+                                ))}
+                            </div>
+                            <div className="home-tech-marquee__group" aria-hidden="true">
+                                {techSliderLogos.map((logo, index) => (
+                                    <a
+                                        key={`group-b-${logo.alt}-${index}`}
+                                        className="home-tech-marquee__item"
+                                        href={logo.src}
+                                        target="_blank"
+                                        rel="noreferrer noopener"
+                                        tabIndex={-1}
+                                    >
+                                        <img src={logo.src} alt="" loading="lazy" />
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
