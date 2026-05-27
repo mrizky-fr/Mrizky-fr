@@ -11,23 +11,23 @@ import './Landing.css';
 
 const techLogos = [
     {
-        src: 'https://raw.githubusercontent.com/mrizky-fr/News-Gallerys/refs/heads/main/fotos/about/Go_Logo_Blue.svg.png',
+        src: 'https://raw.githubusercontent.com/mrizky-fr/News-Gallerys/main/fotos/about/Go_Logo_Blue.svg.png',
         alt: 'Go Logo',
     },
     {
-        src: 'https://raw.githubusercontent.com/mrizky-fr/News-Gallerys/refs/heads/main/fotos/about/1686539179.png',
+        src: 'https://raw.githubusercontent.com/mrizky-fr/News-Gallerys/main/fotos/about/1686539179.png',
         alt: 'JavaScript Logo',
     },
     {
-        src: 'https://raw.githubusercontent.com/mrizky-fr/News-Gallerys/refs/heads/main/fotos/about/HTML5_Logo_512.png',
+        src: 'https://raw.githubusercontent.com/mrizky-fr/News-Gallerys/main/fotos/about/HTML5_Logo_512.png',
         alt: 'HTML5 Logo',
     },
     {
-        src: 'https://raw.githubusercontent.com/mrizky-fr/News-Gallerys/refs/heads/main/fotos/about/images%20(1).png',
+        src: 'https://raw.githubusercontent.com/mrizky-fr/News-Gallerys/main/fotos/about/images%20(1).png',
         alt: 'CSS Logo',
     },
     {
-        src: 'https://raw.githubusercontent.com/mrizky-fr/News-Gallerys/refs/heads/main/fotos/about/images.png',
+        src: 'https://raw.githubusercontent.com/mrizky-fr/News-Gallerys/main/fotos/about/images.png',
         alt: 'React Logo',
     },
 ];
@@ -115,7 +115,7 @@ const Landing: React.FC = () => {
                                         rel="noreferrer noopener"
                                         aria-label={logo.alt}
                                     >
-                                        <img src={logo.src} alt={logo.alt} loading="lazy" />
+                                        <img src={logo.src} alt={logo.alt} loading="lazy" referrerPolicy="no-referrer" />
                                     </a>
                                 ))}
                             </div>
@@ -129,7 +129,7 @@ const Landing: React.FC = () => {
                                         rel="noreferrer noopener"
                                         tabIndex={-1}
                                     >
-                                        <img src={logo.src} alt="" loading="lazy" />
+                                        <img src={logo.src} alt="" loading="lazy" referrerPolicy="no-referrer" />
                                     </a>
                                 ))}
                             </div>
@@ -189,9 +189,7 @@ const Landing: React.FC = () => {
                             pada platform berbagi film. Project ini juga jadi ruang eksperimen saya untuk ngetes ide baru secara langsung.
                         </p>
                         <a
-                            href="https://tech.mudahdeal.com/company/"
-                            target="_blank"
-                            rel="noreferrer noopener"
+                            href="/mrizky/about"
                             className="home-history-project-btn"
                         >
                             <ArrowUpRight className="home-history-project-btn__icon" aria-hidden="true" />

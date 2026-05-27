@@ -103,35 +103,6 @@
   opacity: 0.82;
 }
 
-.about-history-project-btn {
-  margin-top: 12px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7px;
-  min-height: 38px;
-  padding: 0 14px;
-  border-radius: 6px;
-  border: 1px solid #ffffff;
-  background: #ffffff;
-  color: #121212;
-  font-size: 0.75rem;
-  line-height: 1;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
-}
-
-.about-history-project-btn__icon {
-  width: 16px;
-  height: 16px;
-}
-
-.about-history-project-btn:hover {
-  background: rgba(255, 255, 255, 0.9);
-}
-
 @media (max-width: 900px) {
   .about-intro-section {
     padding: 24px 0 18px;

@@ -1,5 +1,4 @@
 import React from 'react';
-import { ArrowUpRight } from 'lucide-react';
 import PublicHeader from '../../components/Header/PublicHeader';
 import PublicFooter from '../../components/Footer/PublicFooter';
 import './About.css';
@@ -83,15 +82,6 @@ const About: React.FC = () => {
                             Next-FLM adalah project publik yang saya bangun untuk eksplorasi konsep UI, alur konten, dan pengalaman pengguna
                             pada platform berbagi film. Project ini juga jadi ruang eksperimen saya untuk ngetes ide baru secara langsung.
                         </p>
-                        <a
-                            href="https://tech.mudahdeal.com/company/"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            className="about-history-project-btn"
-                        >
-                            <ArrowUpRight className="about-history-project-btn__icon" aria-hidden="true" />
-                            Kenal Lebih Dengan Saya!
-                        </a>
                     </article>
                 </div>
             </section>
