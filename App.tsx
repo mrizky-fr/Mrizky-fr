@@ -7,7 +7,7 @@ type SeoConfig = {
     description: string;
 };
 
-const SHARE_IMAGE_PATH = '/assets/fav%20logo%20best.jpeg';
+const SHARE_IMAGE_URL = 'https://ik.imagekit.io/vhf2xhf6b/fav-mrisky%20(1).png';
 
 const SEO_BY_PATH: Record<string, SeoConfig> = {
     '/': {
@@ -59,7 +59,7 @@ function App() {
 
     useEffect(() => {
         const pageUrl = `${window.location.origin}${pathname}`;
-        const ogImageUrl = `${window.location.origin}${SHARE_IMAGE_PATH}`;
+        const ogImageUrl = SHARE_IMAGE_URL;
 
         document.title = seo.title;
 
