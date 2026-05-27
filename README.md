@@ -1,98 +1,27 @@
-# Web Biografi - Muhammad Rizky D (Mrizky-fr)
+# Tentang Saya | Muhammad Rizky D (Mrizky-fr)
 
-Project ini adalah website biografi/portofolio personal berbasis React + TypeScript.
+Kenalin gue Muhammad Rizky D | Kyy (Mrizky-fr), frontend dev yang demen ngulik UI biar keliatan clean, smooth, dan enak dipandang. Buat gue, tampilan bukan cuma soal estetik, tapi juga soal feel pas dipake. Masih di fase belajar, tapi tetep gas upgrade skill tiap hari, pelan tapi pasti naik level. Walau sekarang AI udah makin jago bikin frontend, menurut gue karya manusia tetep punya ciri khas yang beda: lebih ada rasa, style, dan identitasnya sendiri. Jadi gue tetep fokus ngembangin style gue biar tiap karya punya "nyawa" dan nggak sekadar jadi template doang.
 
-Website ini menampilkan:
-- Home
-- About
-- CTA dan social links
-- SEO metadata (title, description, Open Graph, Twitter card)
-- `sitemap.xml` dan `robots.txt`
+Selain itu, gue juga hobi bikin musik ya walau masih remixer abal-abal (hehe). Buat gue ini jadi cara buat nyalurin kreativitas di luar coding, ngulik sound, beat, dan eksperimen gaya sesuka hati. Nggak harus sempurna, yang penting enjoy prosesnya dan terus berkembang pelan-pelan.
 
-## Catatan Penggunaan
+## History Pekerjaan / Pengalaman
 
-Silakan dipakai sebagai contoh/referensi project web biografi.
-Boleh dijadikan baseline lalu diubah sesuai kebutuhan branding, konten, dan style kamu.
+### 2018 - 2021 Bekerja Di Butik Emas
 
-## Tech Stack
+Di periode ini saya banyak belajar soal disiplin kerja, komunikasi dengan customer, dan konsistensi menjaga kualitas layanan. Pengalaman tersebut jadi fondasi penting buat cara saya bekerja sampai sekarang.
 
-- React 19
-- TypeScript
-- Vite
-- CSS modular per komponen/halaman
-- Lucide React (icon)
+### 2021 Mulai Bekerja Di PT Mudahdeal Group Sub Devisi DealTech (dulunya Palingmurah.net)
 
-## Struktur Singkat
+Saat ini gue lagi berproses dan berkembang di Mudahdeal Group, tepatnya di Dealtech sebagai salah satu lini digitalnya. Di sini gue fokus di frontend, ngerjain dan ngembangin tampilan web biar lebih clean, responsif, dan nyaman dipake user. Lingkungannya bikin gue terus belajar hal baru, dari improve UI/UX sampai adaptasi sama perkembangan teknologi yang cepet banget. Buat gue ini bukan cuma kerja, tapi tempat buat ngasah skill, ngebangun pengalaman, dan terus upgrade diri biar makin solid di dunia digital.
 
-```bash
-components/
-  Header/
-  Footer/
-  Reveal/
-pages/
-  Landing/
-  About/
-public/
-  robots.txt
-  sitemap.xml
-App.tsx
-index.html
-main.tsx
-```
+Siapa itu DealTech:
+- https://tech.mudahdeal.com/company/
 
-## Routing
+## Project OpenSource / Public
 
-Path utama:
-- `/mrizky` -> Home
-- `/mrizky/about` -> About
+### Next-FLM Tempat berbagi flm gratis & berbayar
 
-## Jalankan Project
+Next-FLM adalah project publik yang saya bangun untuk eksplorasi konsep UI, alur konten, dan pengalaman pengguna pada platform berbagi film. Project ini juga jadi ruang eksperimen saya untuk ngetes ide baru secara langsung.
 
-Install dependency:
-
-```bash
-npm install
-```
-
-Jalankan dev server:
-
-```bash
-npm run dev
-```
-
-Build production:
-
-```bash
-npm run build
-```
-
-Preview hasil build:
-
-```bash
-npm run preview
-```
-
-## SEO dan Share
-
-Konfigurasi SEO utama ada di:
-- `App.tsx` (meta dinamis per path)
-- `index.html` (meta default)
-- `public/sitemap.xml`
-- `public/robots.txt`
-
-Jika mau ganti gambar share/fav icon, ubah URL gambar di:
-- `index.html`
-- `App.tsx`
-
-## Deploy
-
-Project bisa di-deploy ke:
-- Vercel
-- Netlify
-- Cloudflare Pages
-- VPS/Nginx
-- Coolify (Dockerfile sudah tersedia)
-
----
-
-Maintained by Muhammad Rizky D - Mrizky-fr.
+Link project:
+- https://digtl.web.id/next/
