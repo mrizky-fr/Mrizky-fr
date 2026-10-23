@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:2563eb&height=200&section=header&text=Muhammad%20Rizky%20D&fontColor=ffffff&fontSize=42&fontAlignY=36&desc=Frontend%20Developer%20%C2%B7%20UI%2FUX%20Developer&descSize=18&descAlignY=58" alt="Muhammad Rizky D — Frontend Developer · UI/UX Developer" width="100%" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3000&pause=1000&color=2563EB&center=true&vCenter=true&width=640&lines=Frontend+Developer+%40+DealTech;Design+system+%26+komponen+UI+reusable;React+%C2%B7+TypeScript+%C2%B7+Tailwind+CSS+%C2%B7+Laravel" alt="Frontend Developer @ DealTech" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3000&pause=1000&color=2563EB&center=true&vCenter=true&width=640&lines=Frontend+Developer+%40+DealTech;Design+system+%26+komponen+UI+reusable;PHP+%C2%B7+Laravel+%C2%B7+Golang+%C2%B7+React+%C2%B7+Vue" alt="Frontend Developer @ DealTech" />
 
 [![DealTech](https://img.shields.io/badge/DealTech-Frontend%20%26%20UI%2FUX-2563EB?style=flat-square)](https://tech.mudahdeal.com/company/)
 [![Deal-Tech on GitHub](https://img.shields.io/badge/GitHub-Deal--Tech-0f172a?style=flat-square&logo=github)](https://github.com/Deal-Tech)
@@ -25,8 +25,8 @@ Prinsip kerja saya: AI mempercepat proses, tetapi karakter sebuah antarmuka teta
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react,ts,js,vite,tailwind,html,css,laravel,php,mysql,python,docker,nginx,git,npm&perline=8" />
-    <img src="https://skillicons.dev/icons?i=react,ts,js,vite,tailwind,html,css,laravel,php,mysql,python,docker,nginx,git,npm&perline=8&theme=light" alt="React, TypeScript, JavaScript, Vite, Tailwind CSS, HTML, CSS, Laravel, PHP, MySQL, Python, Docker, Nginx, Git, npm" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=php,laravel,go,react,vue" />
+    <img src="https://skillicons.dev/icons?i=php,laravel,go,react,vue&theme=light" alt="PHP, Laravel, Golang, React, Vue" />
   </picture>
 </p>
 
