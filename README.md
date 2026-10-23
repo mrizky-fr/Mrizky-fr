@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:2563eb&height=200&section=header&text=Muhammad%20Rizky%20D&fontColor=ffffff&fontSize=42&fontAlignY=36&desc=Backend%20%26%20Frontend%20%C2%B7%20UI%2FUX%20Developer&descSize=18&descAlignY=58" alt="Muhammad Rizky D — Backend & Frontend · UI/UX Developer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:2563eb&height=200&section=header&text=Muhammad%20Rizky%20D&fontColor=ffffff&fontSize=42&fontAlignY=36&desc=Backend%20%26amp%3B%20Frontend%20%C2%B7%20UI%2FUX%20Developer&descSize=18&descAlignY=58" alt="Muhammad Rizky D — Backend & Frontend · UI/UX Developer" width="100%" />
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3000&pause=1000&color=2563EB&center=true&vCenter=true&width=640&lines=Backend+%26+Frontend+Developer+%40+DealTech;UI%2FUX+%26+design+system;PHP+%C2%B7+Golang+%C2%B7+React+%C2%B7+Vue+%C2%B7+Laravel+%C2%B7+Kotlin" alt="Backend & Frontend Developer @ DealTech" />
 
