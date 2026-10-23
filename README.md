@@ -27,9 +27,11 @@ Prinsip kerjanya: AI mempercepat proses, tetapi karakter sebuah antarmuka tetap 
   <img src="https://skillicons.dev/icons?i=php" alt="PHP" title="PHP" width="48" height="48" />&nbsp;
   <img src="https://skillicons.dev/icons?i=go" alt="Golang" title="Golang" width="48" height="48" />&nbsp;
   <img src="https://skillicons.dev/icons?i=react" alt="React" title="React" width="48" height="48" />&nbsp;
+  <img src="https://skillicons.dev/icons?i=nextjs" alt="Next.js" title="Next.js" width="48" height="48" />&nbsp;
   <img src="https://skillicons.dev/icons?i=vue" alt="Vue" title="Vue" width="48" height="48" />&nbsp;
   <img src="https://skillicons.dev/icons?i=laravel" alt="Laravel" title="Laravel" width="48" height="48" />&nbsp;
-  <img src="https://skillicons.dev/icons?i=kotlin" alt="Kotlin" title="Kotlin" width="48" height="48" />
+  <img src="https://skillicons.dev/icons?i=kotlin" alt="Kotlin" title="Kotlin" width="48" height="48" />&nbsp;
+  <img src="https://skillicons.dev/icons?i=html" alt="HTML" title="HTML" width="48" height="48" />
 </p>
 
 ## Pengalaman
