@@ -1,24 +1,24 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:2563eb&height=200&section=header&text=Muhammad%20Rizky%20D&fontColor=ffffff&fontSize=42&fontAlignY=36&desc=Frontend%20Developer%20%C2%B7%20UI%2FUX%20Developer&descSize=18&descAlignY=58" alt="Muhammad Rizky D — Frontend Developer · UI/UX Developer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:2563eb&height=200&section=header&text=Muhammad%20Rizky%20D&fontColor=ffffff&fontSize=42&fontAlignY=36&desc=Backend%20%26%20Frontend%20%C2%B7%20UI%2FUX%20Developer&descSize=18&descAlignY=58" alt="Muhammad Rizky D — Backend & Frontend · UI/UX Developer" width="100%" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3000&pause=1000&color=2563EB&center=true&vCenter=true&width=640&lines=Frontend+Developer+%40+DealTech;Design+system+%26+komponen+UI+reusable;PHP+%C2%B7+Golang+%C2%B7+React+%C2%B7+Vue+%C2%B7+Laravel+%C2%B7+Kotlin" alt="Frontend Developer @ DealTech" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3000&pause=1000&color=2563EB&center=true&vCenter=true&width=640&lines=Backend+%26+Frontend+Developer+%40+DealTech;UI%2FUX+%26+design+system;PHP+%C2%B7+Golang+%C2%B7+React+%C2%B7+Vue+%C2%B7+Laravel+%C2%B7+Kotlin" alt="Backend & Frontend Developer @ DealTech" />
 
-[![DealTech](https://img.shields.io/badge/DealTech-Frontend%20%26%20UI%2FUX-2563EB?style=flat-square)](https://tech.mudahdeal.com/company/)
+[![DealTech](https://img.shields.io/badge/DealTech-Backend%20%26%20Frontend%20%C2%B7%20UI%2FUX-2563EB?style=flat-square)](https://tech.mudahdeal.com/company/)
 [![Deal-Tech on GitHub](https://img.shields.io/badge/GitHub-Deal--Tech-0f172a?style=flat-square&logo=github)](https://github.com/Deal-Tech)
 [![Profile views](https://komarev.com/ghpvc/?username=mrizky-fr&style=flat-square&color=2563eb&label=Profile+views)](https://github.com/mrizky-fr)
 
 </div>
 
-## Tentang Saya
+## Tentang
 
-Saya **Muhammad Rizky D** (Kyy), Frontend Developer dan UI/UX Developer di **DealTech**, lini digital PT Mudahdeal Digital Grup. Sehari-hari saya merancang dan membangun antarmuka web: mulai dari design system dan library komponen, panel admin, sampai website yang responsif dan nyaman dipakai.
+**Muhammad Rizky D** (Kyy) adalah Backend & Frontend Developer sekaligus UI/UX Developer di **DealTech**, lini digital PT Mudahdeal Digital Grup. Fokusnya membangun aplikasi web secara utuh, dari sisi backend hingga antarmuka: design system dan library komponen, panel admin, sampai website yang responsif dan nyaman dipakai.
 
-Prinsip kerja saya: AI mempercepat proses, tetapi karakter sebuah antarmuka tetap lahir dari keputusan desain manusia, yaitu layout, spacing, ritme visual, dan detail interaksi yang membuat produk terasa *dirancang*, bukan sekadar *di-generate*.
+Prinsip kerjanya: AI mempercepat proses, tetapi karakter sebuah antarmuka tetap lahir dari keputusan desain manusia, yaitu layout, spacing, ritme visual, dan detail interaksi yang membuat produk terasa *dirancang*, bukan sekadar *di-generate*.
 
 - 🔭 Saat ini fokus mengembangkan **DealTech UI**, starter panel admin dan koleksi komponen publik
-- 🎨 Keahlian: design system, komponen reusable, dashboard & panel admin, landing page
-- 🤝 Terbuka untuk kolaborasi project web, UI/UX, dan pengembangan komponen
+- 🛠️ Keahlian: pengembangan backend & frontend, design system, komponen reusable, dashboard & panel admin
+- 🤝 Terbuka untuk kolaborasi project web, backend, UI/UX, dan pengembangan komponen
 - 🎧 Di luar kode: produksi dan remix musik
 
 ## Tech Stack
@@ -34,27 +34,28 @@ Prinsip kerja saya: AI mempercepat proses, tetapi karakter sebuah antarmuka teta
 
 ## Pengalaman
 
-**Frontend & UI/UX Developer** · DealTech, PT Mudahdeal Digital Grup (dulu Palingmurah.net)  
+**Backend & Frontend · UI/UX Developer** · DealTech, PT Mudahdeal Digital Grup (dulu Palingmurah.net)  
 <sub>2021 – Sekarang</sub>
 
+- Mengembangkan aplikasi web dari sisi backend hingga frontend untuk project DealTech
 - Membangun dan memelihara **DealTech UI**, library komponen React yang menjadi fondasi panel admin dan website di project DealTech
-- Mengembangkan antarmuka web yang responsif, konsisten, dan berorientasi pada pengalaman pengguna
+- Merancang antarmuka yang responsif, konsisten, dan berorientasi pada pengalaman pengguna
 - Menerjemahkan kebutuhan produk menjadi komponen dan layout yang bisa dipakai ulang lintas project
 
 **Retail & Pelayanan Pelanggan** · Butik Emas  
 <sub>2018 – 2021</sub>
 
-- Membentuk disiplin kerja, komunikasi dengan pelanggan, dan konsistensi menjaga kualitas layanan, fondasi yang terbawa ke cara saya bekerja sebagai developer
+- Membentuk disiplin kerja, komunikasi dengan pelanggan, dan konsistensi menjaga kualitas layanan, fondasi yang terbawa ke cara kerjanya sebagai developer
 
-## Open Source di DealTech
+## Kontribusi Open Source
 
-Saya kontributor utama repositori publik organisasi [Deal-Tech](https://github.com/Deal-Tech). Jumlah commit dan bintang di bawah diperbarui otomatis dari GitHub.
+Berkontribusi aktif pada repositori publik organisasi [Deal-Tech](https://github.com/Deal-Tech), terutama dalam pengembangan library komponen dan starter panel admin. Jumlah kontribusi dan bintang diperbarui otomatis dari GitHub.
 
 | Proyek | Tentang |
 | --- | --- |
-| **[dealtech-ui](https://github.com/Deal-Tech/dealtech-ui)**<br>![Commit saya](https://img.shields.io/github/commit-activity/t/Deal-Tech/dealtech-ui?authorFilter=mrizky-fr&label=commit%20saya&style=flat-square&color=2563eb)<br>![Stars](https://img.shields.io/github/stars/Deal-Tech/dealtech-ui?style=flat-square&color=0f172a)<br>[![npm](https://img.shields.io/npm/v/dealtech-ui?style=flat-square&color=cb3837)](https://www.npmjs.com/package/dealtech-ui) | Starter panel admin React yang dikustomisasi agar rapi dan konsisten. Versi terbaru **3.0** hadir dengan 59 element serta shell dan tema baru. CLI bergaya shadcn/ui untuk men-generate starter dan menambahkan element, layout, atau halaman tersedia di v1 dan v2.0-next; dukungan CLI untuk v3.0 masih dalam pengembangan.<br><sub>React · TypeScript · Tailwind CSS · npm</sub> |
-| **[dealtech-ui-for-public-component](https://github.com/Deal-Tech/dealtech-ui-for-public-component)**<br>![Commit saya](https://img.shields.io/github/commit-activity/t/Deal-Tech/dealtech-ui-for-public-component?authorFilter=mrizky-fr&label=commit%20saya&style=flat-square&color=2563eb)<br>![Stars](https://img.shields.io/github/stars/Deal-Tech/dealtech-ui-for-public-component?style=flat-square&color=0f172a) | Koleksi elements, sections, dan pages siap pakai yang dikurasi satu per satu, sekaligus menjadi acuan agar hasil kerja bersama AI tetap konsisten dan berkarakter. `#PakaiAiTapiBerasaBukanAi`<br><sub>React · TypeScript · Tailwind CSS</sub> |
-| **[vocalift-vocal-remover](https://github.com/Deal-Tech/vocalift-vocal-remover)**<br>![Commit saya](https://img.shields.io/github/commit-activity/t/Deal-Tech/vocalift-vocal-remover?authorFilter=mrizky-fr&label=commit%20saya&style=flat-square&color=2563eb) | Aplikasi web lokal untuk memisahkan lagu menjadi vokal dan instrumental berbasis HTDemucs dan RoFormer, dengan input dari file, YouTube, atau TikTok.<br><sub>Python · Audio ML</sub> |
+| **[dealtech-ui](https://github.com/Deal-Tech/dealtech-ui)**<br>![Kontribusi](https://img.shields.io/github/commit-activity/t/Deal-Tech/dealtech-ui?authorFilter=mrizky-fr&label=kontribusi&style=flat-square&color=2563eb)<br>![Stars](https://img.shields.io/github/stars/Deal-Tech/dealtech-ui?style=flat-square&color=0f172a)<br>[![npm](https://img.shields.io/npm/v/dealtech-ui?style=flat-square&color=cb3837)](https://www.npmjs.com/package/dealtech-ui) | Starter panel admin React yang dikustomisasi agar rapi dan konsisten. Versi terbaru **3.0** hadir dengan 59 element serta shell dan tema baru. CLI bergaya shadcn/ui untuk men-generate starter dan menambahkan element, layout, atau halaman tersedia di v1 dan v2.0-next; dukungan CLI untuk v3.0 masih dalam pengembangan.<br><sub>React · TypeScript · Tailwind CSS · npm</sub> |
+| **[dealtech-ui-for-public-component](https://github.com/Deal-Tech/dealtech-ui-for-public-component)**<br>![Kontribusi](https://img.shields.io/github/commit-activity/t/Deal-Tech/dealtech-ui-for-public-component?authorFilter=mrizky-fr&label=kontribusi&style=flat-square&color=2563eb)<br>![Stars](https://img.shields.io/github/stars/Deal-Tech/dealtech-ui-for-public-component?style=flat-square&color=0f172a) | Koleksi elements, sections, dan pages siap pakai yang dikurasi satu per satu, sekaligus menjadi acuan agar hasil kerja bersama AI tetap konsisten dan berkarakter. `#PakaiAiTapiBerasaBukanAi`<br><sub>React · TypeScript · Tailwind CSS</sub> |
+| **[vocalift-vocal-remover](https://github.com/Deal-Tech/vocalift-vocal-remover)**<br>![Kontribusi](https://img.shields.io/github/commit-activity/t/Deal-Tech/vocalift-vocal-remover?authorFilter=mrizky-fr&label=kontribusi&style=flat-square&color=2563eb) | Aplikasi web lokal untuk memisahkan lagu menjadi vokal dan instrumental berbasis HTDemucs dan RoFormer, dengan input dari file, YouTube, atau TikTok.<br><sub>Python · Audio ML</sub> |
 
 ## Proyek Pribadi
 
@@ -85,7 +86,7 @@ Saya kontributor utama repositori publik organisasi [Deal-Tech](https://github.c
 
 ## Kontak
 
-Untuk kolaborasi atau kebutuhan project, hubungi saya melalui DealTech.
+Kolaborasi dan kebutuhan project dapat diajukan melalui DealTech.
 
 [![Website](https://img.shields.io/badge/Website-tech.mudahdeal.com-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://tech.mudahdeal.com/company/)
 [![GitHub](https://img.shields.io/badge/GitHub-mrizky--fr-0f172a?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mrizky-fr)
