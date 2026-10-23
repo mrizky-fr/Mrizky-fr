@@ -16,7 +16,7 @@ Saya **Muhammad Rizky D** (Kyy), Frontend Developer dan UI/UX Developer di **Dea
 
 Prinsip kerja saya: AI mempercepat proses, tetapi karakter sebuah antarmuka tetap lahir dari keputusan desain manusia, yaitu layout, spacing, ritme visual, dan detail interaksi yang membuat produk terasa *dirancang*, bukan sekadar *di-generate*.
 
-- 🔭 Saat ini fokus mengembangkan **DealTech UI**, CLI starter panel admin dan koleksi komponen publik
+- 🔭 Saat ini fokus mengembangkan **DealTech UI**, starter panel admin dan koleksi komponen publik
 - 🎨 Keahlian: design system, komponen reusable, dashboard & panel admin, landing page
 - 🤝 Terbuka untuk kolaborasi project web, UI/UX, dan pengembangan komponen
 - 🎧 Di luar kode: produksi dan remix musik
@@ -50,7 +50,7 @@ Saya kontributor utama repositori publik organisasi [Deal-Tech](https://github.c
 
 | Proyek | Tentang |
 | --- | --- |
-| **[dealtech-ui](https://github.com/Deal-Tech/dealtech-ui)**<br>![Commit saya](https://img.shields.io/github/commit-activity/t/Deal-Tech/dealtech-ui?authorFilter=mrizky-fr&label=commit%20saya&style=flat-square&color=2563eb)<br>![Stars](https://img.shields.io/github/stars/Deal-Tech/dealtech-ui?style=flat-square&color=0f172a)<br>[![npm](https://img.shields.io/npm/v/dealtech-ui?style=flat-square&color=cb3837)](https://www.npmjs.com/package/dealtech-ui) | CLI bergaya shadcn/ui untuk men-generate starter panel admin React, lalu menambahkan element, layout, atau halaman secara terpisah. Tersedia tiga starter (v1, v2.0-next, v3.0) dengan hingga 59 element.<br><sub>React · TypeScript · Tailwind CSS · npm</sub> |
+| **[dealtech-ui](https://github.com/Deal-Tech/dealtech-ui)**<br>![Commit saya](https://img.shields.io/github/commit-activity/t/Deal-Tech/dealtech-ui?authorFilter=mrizky-fr&label=commit%20saya&style=flat-square&color=2563eb)<br>![Stars](https://img.shields.io/github/stars/Deal-Tech/dealtech-ui?style=flat-square&color=0f172a)<br>[![npm](https://img.shields.io/npm/v/dealtech-ui?style=flat-square&color=cb3837)](https://www.npmjs.com/package/dealtech-ui) | Starter panel admin React yang dikustomisasi agar rapi dan konsisten. Versi terbaru **3.0** hadir dengan 59 element serta shell dan tema baru. CLI bergaya shadcn/ui untuk men-generate starter dan menambahkan element, layout, atau halaman tersedia di v1 dan v2.0-next; dukungan CLI untuk v3.0 masih dalam pengembangan.<br><sub>React · TypeScript · Tailwind CSS · npm</sub> |
 | **[dealtech-ui-for-public-component](https://github.com/Deal-Tech/dealtech-ui-for-public-component)**<br>![Commit saya](https://img.shields.io/github/commit-activity/t/Deal-Tech/dealtech-ui-for-public-component?authorFilter=mrizky-fr&label=commit%20saya&style=flat-square&color=2563eb)<br>![Stars](https://img.shields.io/github/stars/Deal-Tech/dealtech-ui-for-public-component?style=flat-square&color=0f172a) | Koleksi elements, sections, dan pages siap pakai yang dikurasi satu per satu, sekaligus menjadi acuan agar hasil kerja bersama AI tetap konsisten dan berkarakter. `#PakaiAiTapiBerasaBukanAi`<br><sub>React · TypeScript · Tailwind CSS</sub> |
 | **[vocalift-vocal-remover](https://github.com/Deal-Tech/vocalift-vocal-remover)**<br>![Commit saya](https://img.shields.io/github/commit-activity/t/Deal-Tech/vocalift-vocal-remover?authorFilter=mrizky-fr&label=commit%20saya&style=flat-square&color=2563eb) | Aplikasi web lokal untuk memisahkan lagu menjadi vokal dan instrumental berbasis HTDemucs dan RoFormer, dengan input dari file, YouTube, atau TikTok.<br><sub>Python · Audio ML</sub> |
 
