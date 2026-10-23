@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://digtl.web.id/mrizky/sitemap.xml
