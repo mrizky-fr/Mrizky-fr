@@ -6,7 +6,7 @@
 
 [![DealTech](https://img.shields.io/badge/DealTech-Backend%20%26%20Frontend%20%C2%B7%20UI%2FUX-2563EB?style=flat-square)](https://tech.mudahdeal.com/company/)
 [![Deal-Tech on GitHub](https://img.shields.io/badge/GitHub-Deal--Tech-0f172a?style=flat-square&logo=github)](https://github.com/Deal-Tech)
-[![Profile views](https://komarev.com/ghpvc/?username=mrizky-fr&style=flat-square&color=2563eb&label=Profile+views&base=60000)](https://github.com/mrizky-fr)
+[![Profile views](https://komarev.com/ghpvc/?username=mrizky-fr&style=flat-square&color=2563eb&label=Profile+views&base=60000&abbreviated=true)](https://github.com/mrizky-fr)
 
 </div>
 
