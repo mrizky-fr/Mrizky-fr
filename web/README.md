@@ -2,7 +2,7 @@
 
 Website portofolio pribadi Muhammad Rizky D (Kyy), Backend & Frontend · UI/UX Developer di DealTech. Satu halaman statis yang merangkum profil, keahlian, proyek, dan pengalaman, dengan isi yang diambil dari README profil GitHub.
 
-Tata letak dan warna mengikuti gambar referensi [`../assets/developer-x-reference.webp`](../assets/developer-x-reference.webp). Ukuran teks, jarak, dan padding section disalin dari landing DealTech (Tech.Mudahdeal.Com).
+Tata letak dan warna mengikuti gambar referensi `assets/developer-x-reference.webp` (lokal, tidak di-commit). Ukuran teks, jarak, dan padding section disalin dari landing DealTech (Tech.Mudahdeal.Com).
 
 ## Features
 
