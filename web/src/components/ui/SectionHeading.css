@@ -1,0 +1,29 @@
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-related);
+}
+
+.section-heading__label {
+  margin: 0;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-heading__label span {
+  color: var(--color-accent-text);
+}
+
+.section-heading__title {
+  margin: 0;
+  max-width: 20ch;
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-size: var(--title-section);
+  font-weight: var(--font-display-weight);
+  line-height: var(--font-display-line);
+  letter-spacing: -0.02em;
+}

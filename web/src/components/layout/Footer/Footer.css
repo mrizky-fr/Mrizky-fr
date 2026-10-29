@@ -1,0 +1,73 @@
+/* Padding dan ukuran teks sama dengan footer DealTech. */
+.footer {
+  padding: 56px 0 18px;
+  background: var(--color-bg-deep);
+  color: var(--color-muted);
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 40fr 25fr 35fr;
+  gap: 28px;
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.footer__text {
+  max-width: 36ch;
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.footer__title {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: 1.06rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__link {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer__copy {
+  margin: 40px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--color-line);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 800px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+}

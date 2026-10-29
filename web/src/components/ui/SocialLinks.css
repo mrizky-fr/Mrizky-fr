@@ -1,0 +1,23 @@
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-links__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: background-color 0.15s ease;
+}
+
+.social-links__link:hover {
+  background: rgba(255, 255, 255, 0.12);
+}

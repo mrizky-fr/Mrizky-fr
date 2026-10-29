@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/InterVariable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*
+  Ukuran teks, jarak, dan padding section disalin dari landing DealTech
+  (Tech.Mudahdeal.Com). Warna diambil dari gambar referensi
+  assets/developer-x-reference.webp.
+*/
+:root {
+  --font-display: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-display-weight: 700;
+  --font-display-line: 1.05;
+
+  --btn-height: 40px;
+  --btn-height-sm: 32px;
+  --gap-related: 14px;
+
+  --header-h: 64px;
+  --shell: 1240px;
+  --gutter: 20px;
+  --section-pad-top: 40px;
+  --section-pad-bottom: 48px;
+  --radius-card: 20px;
+  --radius-sm: 12px;
+
+  --title-hero: clamp(1.913rem, 3.66vw, 2.741rem);
+  --title-section: clamp(1.4rem, 2.6vw, 2rem);
+  --title-card: clamp(1.1rem, 1.6vw, 1.25rem);
+  --text-stat: clamp(2.2rem, 3.6vw, 2.9rem);
+
+  --color-bg: #1b1e23;
+  --color-bg-alt: #232730;
+  --color-bg-deep: #16181d;
+  --color-surface: #31353e;
+  --color-line: #2e323b;
+  --color-text: #ffffff;
+  --color-muted: rgba(255, 255, 255, 0.66);
+  --color-accent: #0a5eeb;
+  --color-accent-hover: #2a74f0;
+  /* Biru terang untuk teks: kontras cukup di latar gelap. */
+  --color-accent-text: #5b97f7;
+  --color-accent-soft: rgba(10, 94, 235, 0.16);
+
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-text);
+  background: var(--color-bg);
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 901px) {
+  :root {
+    --title-hero: clamp(2.231rem, 4.148vw, 3.188rem);
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --gutter: 12px;
+    --section-pad-top: 28px;
+    --section-pad-bottom: 32px;
+  }
+}
+
+@media (max-width: 420px) {
+  :root {
+    --gutter: 10px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+a,
+button {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+img,
+svg {
+  display: block;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent-text);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ---- Tata letak bersama ---- */
+
+.shell {
+  width: min(var(--shell), 100% - 2 * var(--gutter));
+  margin-inline: auto;
+}
+
+.section {
+  padding: var(--section-pad-top) 0 var(--section-pad-bottom);
+  scroll-margin-top: var(--header-h);
+  background: var(--color-bg);
+}
+
+.section--alt {
+  background: var(--color-bg-alt);
+}
+
+.text-body {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ---- Tombol: pil, ukuran sama dengan DealTech ---- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  height: var(--btn-height);
+  padding: 0 20px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.15s ease;
+}
+
+.btn svg {
+  flex: none;
+  transition: transform 0.15s ease;
+}
+
+.btn:hover svg {
+  transform: translateX(2px);
+}
+
+.btn--sm {
+  gap: 6px;
+  height: var(--btn-height-sm);
+  padding: 0 14px;
+  font-size: 13px;
+}
+
+.btn--primary {
+  background: var(--color-accent);
+  color: #ffffff;
+}
+
+.btn--primary:hover {
+  background: var(--color-accent-hover);
+}
+
+.btn--light {
+  background: #ffffff;
+  color: #0e1827;
+}
+
+.btn--light:hover {
+  background: #e2edf9;
+}
+
+.btn--ghost {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+.btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Tombol bulat seperti di gambar referensi. */
+.circle-btn {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.15s ease, opacity 0.15s ease;
+}
+
+.circle-btn:hover {
+  background: #3d424c;
+}
+
+.circle-btn--accent {
+  background: var(--color-accent);
+}
+
+.circle-btn--accent:hover {
+  background: var(--color-accent-hover);
+}
+
+.circle-btn:disabled {
+  cursor: default;
+  opacity: 0.4;
+}
+
+/* Tautan kecil bergaris bawah, "LEARN MORE →" di referensi. */
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: border-color 0.15s ease;
+}
+
+.link-arrow svg {
+  transition: transform 0.15s ease;
+}
+
+.link-arrow:hover {
+  border-color: #ffffff;
+}
+
+.link-arrow:hover svg {
+  transform: translateX(2px);
+}
+
+.link-arrow--plain {
+  font-size: 0.92rem;
+  letter-spacing: 0;
+  text-transform: none;
+  border-bottom-style: dashed;
+}
+
+/* ---- Muncul saat digulir ---- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transform: none;
+    transition: none;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

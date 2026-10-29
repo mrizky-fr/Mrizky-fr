@@ -1,0 +1,170 @@
+/*
+  Tinggi minimum, padding, dan ukuran judul sama dengan hero DealTech.
+  Padding bawah nol: foto dipotong rata di pinggang, jadi harus duduk
+  tepat di batas section.
+*/
+.hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  min-height: calc(500px + var(--header-h));
+  padding: calc(clamp(18px, 2.5vw, 33px) + var(--header-h)) 0 0;
+  background: var(--color-bg);
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) minmax(0, 0.75fr);
+  align-items: stretch;
+  gap: clamp(24px, 3vw, 48px);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-related);
+  padding-bottom: 40px;
+}
+
+.hero__rule {
+  width: 64px;
+  height: 3px;
+  margin-bottom: 10px;
+  background: #ffffff;
+}
+
+.hero__title {
+  margin: 0;
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-size: var(--title-hero);
+  font-weight: var(--font-display-weight);
+  line-height: var(--font-display-line);
+  letter-spacing: -0.04em;
+}
+
+.hero__desc {
+  max-width: 40ch;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.hero__down {
+  width: 56px;
+  height: 56px;
+  margin-top: 14px;
+}
+
+.hero__media {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.hero__media img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+}
+
+.hero__aside {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-bottom: 40px;
+}
+
+.hero__block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.hero__block--follow {
+  padding-top: 24px;
+  border-top: 1px solid var(--color-line);
+}
+
+.hero__label {
+  margin: 0;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero__text {
+  margin: 0 0 4px;
+  color: var(--color-muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.hero__social {
+  margin-left: -8px;
+}
+
+/* Tablet & ponsel: teks, ringkasan, lalu foto di dasar section. */
+@media (max-width: 1024px) {
+  .hero {
+    min-height: calc(460px + var(--header-h));
+    padding-top: calc(60px + var(--header-h));
+  }
+
+  .hero__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+
+  .hero__content {
+    grid-column: 1 / -1;
+    padding-bottom: 0;
+  }
+
+  .hero__aside {
+    order: 2;
+    padding-bottom: 32px;
+  }
+
+  .hero__media {
+    order: 1;
+  }
+
+  .hero__media img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: calc(420px + var(--header-h));
+    padding-top: calc(56px + var(--header-h));
+  }
+
+  .hero__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__aside {
+    order: 1;
+    padding-bottom: 0;
+  }
+
+  .hero__media {
+    order: 2;
+  }
+
+  .hero__media img {
+    max-width: 320px;
+  }
+}

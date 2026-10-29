@@ -1,0 +1,96 @@
+/* Tinggi bar 64px dan ukuran menu sama dengan header DealTech. */
+.header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 100;
+  border-bottom: 1px solid transparent;
+  background: transparent;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.header--solid {
+  border-bottom-color: var(--color-line);
+  background: rgba(27, 30, 35, 0.88);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.header__inner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 20px;
+  height: var(--header-h);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: 18px;
+}
+
+.header__link {
+  color: #ffffff;
+  font-size: calc(0.92rem - 1px);
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  text-decoration: underline;
+}
+
+.header__toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.header__toggle:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.header__mobile {
+  border-top: 1px solid var(--color-line);
+  background: var(--color-bg);
+}
+
+.header__mobile[hidden] {
+  display: none;
+}
+
+.header__mobile .shell {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0 20px;
+}
+
+.header__mobile-link {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-line);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.header__mobile-cta {
+  margin-top: 16px;
+}
+
+@media (max-width: 900px) {
+  .header__nav,
+  .header__cta {
+    display: none;
+  }
+
+  .header__toggle {
+    display: inline-flex;
+    grid-column: 3;
+  }
+}
